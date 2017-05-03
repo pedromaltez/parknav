@@ -3,12 +3,14 @@ NAME: Jet Responsive parknav-section
 AUTHOR PAGE: http://codecanyon.net/user/marcoarib
 ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 /* PARK SPECIFIC AMENDMENTS */
 .parknav .menu-diff {
-  color: #2D4D9C !important; }
+  color: #2D4D9C; }
 .parknav li {
-  line-height: auto; }
+  line-height: normal; }
+.parknav .col1 {
+  width: 17%; }
 
 /* MENU CONFIGURATION
 **********************************************************/
