@@ -9,7 +9,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   color: #2D4D9C; }
 .parknav li {
   line-height: normal; }
-.parknav .parknav-section .col1 {
+.parknav .parknav-section .row .col1 {
   width: 17%; }
 
 /* MENU CONFIGURATION
