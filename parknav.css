@@ -3,655 +3,740 @@ NAME: Jet Responsive parknav-section
 AUTHOR PAGE: http://codecanyon.net/user/marcoarib
 ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 */
-
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-
 /* PARK SPECIFIC AMENDMENTS */
-
-.menu-diff
-{
-	color: #2D4D9C !important;
-}
-
-
-
+.parknav .menu-diff {
+  color: #2D4D9C !important; }
+.parknav li {
+  line-height: auto; }
 
 /* MENU CONFIGURATION
 **********************************************************/
+.parknav-wrapper {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto; }
 
-.parknav-wrapper
-{
-	max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-}
+.parknav {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  float: left;
+  list-style: none;
+  background: #2D4D9C; }
 
-.parknav{
-	width: 100%;
-	padding: 0;
-	margin: 0;
-	position: relative;
-	float: left;
-	list-style: none;
-	background: #2D4D9C;
-}
-.parknav li{
-	display: inline-block;
-	float: left;
-}
-.parknav a{
-	-o-transition: all .3s linear;
-	-webkit-transition: all .3s linear;
-	-moz-transition: all .3s linear;
-	transition: all .3s linear;
-	outline: none;
-	z-index: 10;
-}
-.parknav > li > a{
-	padding: 20px 13px;
-	font-family: Montserrat, sans-serif;
-	font-size: 14px;
-	color: #fff;
-	text-decoration: none;
-	display: inline-block;
-}
+.parknav li {
+  display: inline-block;
+  float: left; }
+
+.parknav a {
+  -o-transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  transition: all .3s linear;
+  outline: none;
+  z-index: 10; }
+
+.parknav > li > a {
+  padding: 20px 13px;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block; }
+
 .parknav > li:hover > a,
-.parknav > li.active > a{
-	background: #F2F2F2;
-	color: #2D4D9C;
-}
+.parknav > li.active > a {
+  background: #F2F2F2;
+  color: #2D4D9C; }
 
 li.used {
-	background: #444;
-}
+  background: #444; }
 
 /* DROPDOWN CONFIGURATION
 **********************************************************/
-.parknav ul.dropdown, 
+.parknav ul.dropdown,
 .parknav ul.dropdown li ul.dropdown {
-	list-style: none;
-    margin: 0;
-    padding: 0;   
-	display: none;
-    position: absolute;
-    z-index: 99;
-	min-width: 134px;
-	background: #333333;
-}
-.parknav ul.dropdown{
-    top: 60px;
-}
-.parknav ul.dropdown li ul.dropdown{
-    left: 100%;
-	top: inherit;
-}
-.parknav ul.dropdown li{
-	clear:both;
-	width:100%;
-	font-size: 12px;
-}
-.parknav ul.dropdown li a{
-	width:100%;
-	padding: 12px 24px 12px;
-	display:inline-block;
-	float:left;
-	clear:both;
-	font-family: Montserrat, sans-serif;
-	text-decoration: none;
-	color: #999;
-	box-sizing:border-box;
-	-moz-box-sizing:border-box; 
-	-webkit-box-sizing:border-box;
-}
-.parknav ul.dropdown li:hover > a{
-	background: #e0e0e0;
-	color: #555;
-}
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  position: absolute;
+  z-index: 99;
+  min-width: 134px;
+  background: #333333; }
+
+.parknav ul.dropdown {
+  top: 60px; }
+
+.parknav ul.dropdown li ul.dropdown {
+  left: 100%;
+  top: inherit; }
+
+.parknav ul.dropdown li {
+  clear: both;
+  width: 100%;
+  font-size: 12px; }
+
+.parknav ul.dropdown li a {
+  width: 100%;
+  padding: 12px 24px 12px;
+  display: inline-block;
+  float: left;
+  clear: both;
+  font-family: Montserrat, sans-serif;
+  text-decoration: none;
+  color: #999;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+.parknav ul.dropdown li:hover > a {
+  background: #e0e0e0;
+  color: #555; }
 
 /* dropdowns to left side */
-.parknav ul.dropdown li ul.dropdown.left{
-    left: auto;
-	right: 100%;
-}
+.parknav ul.dropdown li ul.dropdown.left {
+  left: auto;
+  right: 100%; }
 
 /* SUBMENU INDICATORS
 **********************************************************/
-.parknav .indicator{
-	position: relative;
-	left: 5px;
-	top: 0;
-	font-size: 14px;
-	float: right;
-}
-.parknav ul li .indicator{
-	font-size: 12px;
-	top: 1px;
-	left: 10px;
-}
+.parknav .indicator {
+  position: relative;
+  left: 5px;
+  top: 0;
+  font-size: 14px;
+  float: right; }
+
+.parknav ul li .indicator {
+  font-size: 12px;
+  top: 1px;
+  left: 10px; }
 
 /* parknav-section
 **********************************************************/
-.parknav > li > .parknav-section{
-	position: absolute;
-	display: none;
-	background: #FFF;
-	width: 25%;
-	top: 38px;
-	font-family: Montserrat, sans-serif;
-	font-size: 14px;
-	color: #444;
-	z-index: 99;
-	padding: 20px 20px 20px;
-	border-left: 1px solid #E4E4E4;
-	border-right: 1px solid #E4E4E4;
-	border-top: 3px solid #444;
-	border-bottom: 2px solid #444;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
+.parknav > li > .parknav-section {
+  position: absolute;
+  display: none;
+  background: #FFF;
+  width: 25%;
+  top: 38px;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  color: #444;
+  z-index: 99;
+  padding: 20px 20px 20px;
+  border-left: 1px solid #E4E4E4;
+  border-right: 1px solid #E4E4E4;
+  border-top: 3px solid #444;
+  border-bottom: 2px solid #444;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 /* parknav-section list */
-.parknav li > .parknav-section ul{
-	margin: 0 0 20px 0;
-	float: left;
-	padding: 0;
-	display: block;
-	position: relative;
-}
-.parknav li > .parknav-section ul li{
-	width: 100%;
-	padding: 4px 0;
-}
-.parknav li > .parknav-section ul li.title{
-	padding: 0 0 5px;
-	font-size: 18px;
-	font-weight: bold;
-	border-bottom: solid 1px #2D4D9C;
-	margin-top: 10px;
-}
+.parknav li > .parknav-section ul {
+  margin: 0 0 20px 0;
+  float: left;
+  padding: 0;
+  display: block;
+  position: relative; }
 
-.parknav li > .parknav-section ul li.title.heading-only{
-	border-bottom: none;
-}
+.parknav li > .parknav-section ul li {
+  width: 100%;
+  padding: 4px 0; }
 
-.parknav li > .parknav-section ul li.title:first-of-type{
-	margin-top: 0px;
-	}
+.parknav li > .parknav-section ul li.title {
+  padding: 0 0 5px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: solid 1px #2D4D9C;
+  margin-top: 10px; }
 
-.parknav li > .parknav-section ul li.title a{
-	font-size: 16px;
-	font-weight: bold;
-	color: #000;
-}
+.parknav li > .parknav-section ul li.title.heading-only {
+  border-bottom: none; }
 
-.parknav li > .parknav-section ul li.title a:hover{
-	color: #999;
-}
+.parknav li > .parknav-section ul li.title:first-of-type {
+  margin-top: 0px; }
+
+.parknav li > .parknav-section ul li.title a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000; }
+
+.parknav li > .parknav-section ul li.title a:hover {
+  color: #999; }
 
 /* parknav-section h5 */
-.parknav li > .parknav-section h5{
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	font-size: 15px;
-	font-weight: bold;
-	color: #2D4D9C;
-	-webkit-transition: opacity 0.2s linear; 
-	-moz-transition: opacity 0.2s linear; 
-	-o-transition: opacity 0.2s linear; 
-	transition: opacity 0.2s linear; 
-}
+.parknav li > .parknav-section h5 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: #2D4D9C;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear; }
 
-.parknav li > .parknav-section h5:hover{
-	opacity: 0.8;
-	text-decoration: none !important;
-}
-
+.parknav li > .parknav-section h5:hover {
+  opacity: 0.8;
+  text-decoration: none !important; }
 
 /* parknav-section links */
- 
+.parknav li > .parknav-section a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 12px;
+  -webkit-transition: color 0.2s linear;
+  -webkit-transition: font-weight 0.2s linear;
+  -moz-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear; }
 
-.parknav li > .parknav-section a{
-	color: #000000;
-	text-decoration: none;
-	font-size: 12px;
-	-webkit-transition: color 0.2s linear;
-	-webkit-transition: font-weight 0.2s linear; 
-	-moz-transition: color 0.2s linear; 
-	-o-transition: color 0.2s linear; 
-	transition: color 0.2s linear; 
-}
-.parknav li > .parknav-section a:hover{
-	color: #2D4D9C;
-	font-weight: bold;
-}
+.parknav li > .parknav-section a:hover {
+  color: #2D4D9C;
+  font-weight: bold; }
 
 /* parknav-section images */
-.parknav  .parknav-section img{
-	width: 100%;
-	-webkit-transition: border 0.3s linear; 
-	-moz-transition: border 0.3s linear;
-	-o-transition: border 0.3s linear;
-	transition: border 0.3s linear;
-}
+.parknav .parknav-section img {
+  width: 100%;
+  -webkit-transition: border 0.3s linear;
+  -moz-transition: border 0.3s linear;
+  -o-transition: border 0.3s linear;
+  transition: border 0.3s linear; }
 
 /* to fix right attribute on submenus (menu aligned to left (default)) */
 .parknav > li.fix-sub > .parknav-section,
 .parknav > li.fix-sub > .parknav-section.half-width,
-.parknav > li.fix-sub > .dropdown{
-	right: 0;
-}
+.parknav > li.fix-sub > .dropdown {
+  right: 0; }
 
 /* parknav-section WIDTHS
 **********************************************************/
-.parknav > li > .parknav-section.half-width{
-	width: 50%;
-}
-.parknav > li > .parknav-section.full-width{
-	width: 100%;
-	left: 0;
-}
+.parknav > li > .parknav-section.half-width {
+  width: 50%; }
+
+.parknav > li > .parknav-section.full-width {
+  width: 100%;
+  left: 0; }
 
 /* parknav-section FORM CONFIGURATION
 **********************************************************/
-.parknav li > .parknav-section form{
-	width: 100%;
-}
+.parknav li > .parknav-section form {
+  width: 100%; }
 
 /* parknav-section inputs */
 .parknav li > .parknav-section form input[type="text"],
-.parknav li > .parknav-section form textarea{
-	padding: 5px;
-	color: #999;
-	background: #444;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	border: solid 1px transparent;
-	outline: none;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-transition: border 0.3s linear; 
-	-moz-transition: border 0.3s linear;
-	-o-transition: border 0.3s linear;
-	transition: border 0.3s linear;
-}
+.parknav li > .parknav-section form textarea {
+  padding: 5px;
+  color: #999;
+  background: #444;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  border: solid 1px transparent;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border 0.3s linear;
+  -moz-transition: border 0.3s linear;
+  -o-transition: border 0.3s linear;
+  transition: border 0.3s linear; }
+
 .parknav li > .parknav-section form input[type="text"]:focus,
-.parknav li > .parknav-section form textarea:focus{
-	border-color: #e0e0e0;
-}
-.parknav li > .parknav-section form input[type="text"]{
-	width: 100%;
-	margin-top: 10px;
-}
-.parknav li > .parknav-section form textarea{
-	width: 100%;
-	margin-top: 10px;
-}
-.parknav li > .parknav-section form input[type="submit"]{
-	width: 25%;
-	float: right;
-	height: 30px;
-	margin-top: 10px;
-	border: none;
-	cursor: pointer;
-	background: #444;
-	color: #777;
-	font-family: 'Open Sans', sans-serif;
-	-webkit-transition: background 0.3s linear; 
-	-moz-transition: background 0.3s linear; 
-	-o-transition: background 0.3s linear; 
-	transition: background 0.3s linear; 
-}
-.parknav li > .parknav-section form input[type="submit"]:hover{
-	background: #e0e0e0;
-	color: #555;
-}
+.parknav li > .parknav-section form textarea:focus {
+  border-color: #e0e0e0; }
+
+.parknav li > .parknav-section form input[type="text"] {
+  width: 100%;
+  margin-top: 10px; }
+
+.parknav li > .parknav-section form textarea {
+  width: 100%;
+  margin-top: 10px; }
+
+.parknav li > .parknav-section form input[type="submit"] {
+  width: 25%;
+  float: right;
+  height: 30px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  background: #444;
+  color: #777;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-transition: background 0.3s linear;
+  -moz-transition: background 0.3s linear;
+  -o-transition: background 0.3s linear;
+  transition: background 0.3s linear; }
+
+.parknav li > .parknav-section form input[type="submit"]:hover {
+  background: #e0e0e0;
+  color: #555; }
 
 /* parknav-section GRID SYSTEM
 **********************************************************/
-.parknav-section .row{
-	width: 100%;
-	margin-top: 15px;
-}
+.parknav-section .row {
+  width: 100%;
+  margin-top: 15px; }
+
 .parknav-section .row:first-child {
-	margin-top: 0;
-}
+  margin-top: 0; }
+
 .parknav-section .row:before,
 .parknav-section .row:after {
-	display: table;
-	content: "";
-	line-height: 0;
-}
+  display: table;
+  content: "";
+  line-height: 0; }
+
 .parknav-section .row:after {
-	clear: both;
-}
+  clear: both; }
+
 .parknav-section .row .col1,
 .parknav-section .row .col2,
 .parknav-section .row .col3,
 .parknav-section .row .col4,
 .parknav-section .row .col5,
-.parknav-section .row .col6{
-	display: block;
-	width: 100%;
-	min-height: 20px;
-	float: left;
-	margin-left: 2.127659574468085%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
+.parknav-section .row .col6 {
+  display: block;
+  width: 100%;
+  min-height: 20px;
+  float: left;
+  margin-left: 2.127659574468085%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 .parknav-section .row [class*="col"]:first-child {
-	margin-left: 0;
-}
-.parknav-section .row .col1{
-	width: 16%;
-}
-.parknav-section .row .col2{
-	width: 31.914893617021278%;
-}
-.parknav-section .row .col3{
-	width: 48.93617021276595%;
-}
-.parknav-section .row .col4{
-	width: 65.95744680851064%;
-}
-.parknav-section .row .col5{
-	width: 82.97872340425532%;
-}
-.parknav-section .row .col6{
-	width: 100%;
-}
+  margin-left: 0; }
+
+.parknav-section .row .col1 {
+  width: 16%; }
+
+.parknav-section .row .col2 {
+  width: 31.914893617021278%; }
+
+.parknav-section .row .col3 {
+  width: 48.93617021276595%; }
+
+.parknav-section .row .col4 {
+  width: 65.95744680851064%; }
+
+.parknav-section .row .col5 {
+  width: 82.97872340425532%; }
+
+.parknav-section .row .col6 {
+  width: 100%; }
 
 /* RIGHT ALIGNMENT (MENU ITEM)
 **********************************************************/
-.parknav > li.right{
-	float: right;
-}
+.parknav > li.right {
+  float: right; }
+
 .parknav > li.right > .parknav-section,
 .parknav > li.right > .parknav-section.half-width,
-.parknav > li.right > .dropdown{
-	right: 0;
-}
+.parknav > li.right > .dropdown {
+  right: 0; }
 
 /* to fix right attribute on submenus (menu aligned to right) */
-.parknav > li.jsright{
-	float: right;
-}
+.parknav > li.jsright {
+  float: right; }
+
 .parknav > li.jsright.last > .parknav-section,
 .parknav > li.jsright.last > .parknav-section.half-width,
-.parknav > li.jsright.last > .dropdown{
-	right: 0;
-}
+.parknav > li.jsright.last > .dropdown {
+  right: 0; }
 
 /* ICONS (FONT AWESOME)
 **********************************************************/
-.parknav > li > a > i{
-	line-height: 23px !important;
-	margin-right: 6px;
-	font-size: 18px;
-	float: left;
-}
+.parknav > li > a > i {
+  line-height: 23px !important;
+  margin-right: 6px;
+  font-size: 18px;
+  float: left; }
 
 /* COLLAPSIBLE MENU
 **********************************************************/
-.parknav > li.showhide{
-	display: none;
-	width: 100%;
-	height: 50px;
-	cursor: pointer;
-	color: #FFF;
-	background: #2D4D9C;
-	font-weight: bold;
-	font-size: 18px;
-}
-.parknav > li.showhide span.title{
-	margin: 15px 0 0 25px;
-	font-family: 'Open Sans', sans-serif;
-	float: left;
-}
-.parknav > li.showhide span.icon{
-	margin: 17px 20px;
-	float: right;
-}
-.parknav > li.showhide .icon em{
-	margin-bottom: 3px;
-	display: block;
-	width: 20px;
-	height: 2px;
-	background: #FFF;
-}
+.parknav > li.showhide {
+  display: none;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  color: #FFF;
+  background: #2D4D9C;
+  font-weight: bold;
+  font-size: 18px; }
+
+.parknav > li.showhide span.title {
+  margin: 15px 0 0 25px;
+  font-family: 'Open Sans', sans-serif;
+  float: left; }
+
+.parknav > li.showhide span.icon {
+  margin: 17px 20px;
+  float: right; }
+
+.parknav > li.showhide .icon em {
+  margin-bottom: 3px;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #FFF; }
 
 /* STYLES
 **********************************************************/
-
 /* black */
-.black > li:hover > a, .black > li.active > a{ background: #111111;	color: #fff; }
-.black ul.dropdown li:hover > a{ background: #111111; color: #fff; }
-.black li > .parknav-section form input[type="text"]:focus, .black li > .parknav-section form textarea:focus{ border-color: #111111; }
-.black li > .parknav-section form input[type="submit"]:hover{ background: #111111; color: #fff; }
-.black li > .parknav-section a:hover{ color: #dedede; }
+.black > li:hover > a, .black > li.active > a {
+  background: #111111;
+  color: #fff; }
+
+.black ul.dropdown li:hover > a {
+  background: #111111;
+  color: #fff; }
+
+.black li > .parknav-section form input[type="text"]:focus, .black li > .parknav-section form textarea:focus {
+  border-color: #111111; }
+
+.black li > .parknav-section form input[type="submit"]:hover {
+  background: #111111;
+  color: #fff; }
+
+.black li > .parknav-section a:hover {
+  color: #dedede; }
 
 /* grey */
-.grey > li:hover > a, .grey > li.active > a{ background: #82837E;	color: #fff; }
-.grey ul.dropdown li:hover > a{ background: #82837E; color: #fff; }
-.grey li > .parknav-section form input[type="text"]:focus, .grey li > .parknav-section form textarea:focus{ border-color: #82837E; }
-.grey li > .parknav-section form input[type="submit"]:hover{ background: #82837E; color: #fff; }
-.grey li > .parknav-section a:hover{ color: #dedede; }
+.grey > li:hover > a, .grey > li.active > a {
+  background: #82837E;
+  color: #fff; }
+
+.grey ul.dropdown li:hover > a {
+  background: #82837E;
+  color: #fff; }
+
+.grey li > .parknav-section form input[type="text"]:focus, .grey li > .parknav-section form textarea:focus {
+  border-color: #82837E; }
+
+.grey li > .parknav-section form input[type="submit"]:hover {
+  background: #82837E;
+  color: #fff; }
+
+.grey li > .parknav-section a:hover {
+  color: #dedede; }
 
 /* blue */
-.blue > li:hover > a, .blue > li.active > a{	background: #02b8fa; color: #fff; }
-.blue ul.dropdown li:hover > a{ background: #02b8fa; color: #fff; }
-.blue li > .parknav-section form input[type="text"]:focus, .blue li > .parknav-section form textarea:focus{ border-color: #02b8fa; }
-.blue li > .parknav-section form input[type="submit"]:hover{ background: #02b8fa; color: #fff; }
-.blue li > .parknav-section a:hover{ color: #02b8fa; }
+.blue > li:hover > a, .blue > li.active > a {
+  background: #02b8fa;
+  color: #fff; }
+
+.blue ul.dropdown li:hover > a {
+  background: #02b8fa;
+  color: #fff; }
+
+.blue li > .parknav-section form input[type="text"]:focus, .blue li > .parknav-section form textarea:focus {
+  border-color: #02b8fa; }
+
+.blue li > .parknav-section form input[type="submit"]:hover {
+  background: #02b8fa;
+  color: #fff; }
+
+.blue li > .parknav-section a:hover {
+  color: #02b8fa; }
 
 /* deeper */
-.deeper > li:hover > a, .deeper > li.active > a{	background: #008C9E; color: #fff; }
-.deeper ul.dropdown li:hover > a{ background: #008C9E; color: #fff; }
-.deeper li > .parknav-section form input[type="text"]:focus, .deeper li > .parknav-section form textarea:focus{ border-color: #008C9E; }
-.deeper li > .parknav-section form input[type="submit"]:hover{ background: #008C9E; color: #fff; }
-.deeper li > .parknav-section a:hover{ color: #008C9E; }
+.deeper > li:hover > a, .deeper > li.active > a {
+  background: #008C9E;
+  color: #fff; }
+
+.deeper ul.dropdown li:hover > a {
+  background: #008C9E;
+  color: #fff; }
+
+.deeper li > .parknav-section form input[type="text"]:focus, .deeper li > .parknav-section form textarea:focus {
+  border-color: #008C9E; }
+
+.deeper li > .parknav-section form input[type="submit"]:hover {
+  background: #008C9E;
+  color: #fff; }
+
+.deeper li > .parknav-section a:hover {
+  color: #008C9E; }
 
 /* green */
-.green > li:hover > a, .green > li.active > a{ background: #88c425;	color: #fff; }
-.green ul.dropdown li:hover > a{ background: #88c425; color: #fff; }
-.green li > .parknav-section form input[type="text"]:focus, .green li > .parknav-section form textarea:focus{ border-color: #88c425; }
-.green li > .parknav-section form input[type="submit"]:hover{ background: #88c425; color: #fff; }
-.green li > .parknav-section a:hover{ color: #88c425; }
+.green > li:hover > a, .green > li.active > a {
+  background: #88c425;
+  color: #fff; }
+
+.green ul.dropdown li:hover > a {
+  background: #88c425;
+  color: #fff; }
+
+.green li > .parknav-section form input[type="text"]:focus, .green li > .parknav-section form textarea:focus {
+  border-color: #88c425; }
+
+.green li > .parknav-section form input[type="submit"]:hover {
+  background: #88c425;
+  color: #fff; }
+
+.green li > .parknav-section a:hover {
+  color: #88c425; }
 
 /* emerald */
-.emerald > li:hover > a, .emerald > li.active > a{ background: #2ecc71;	color: #fff; }
-.emerald ul.dropdown li:hover > a{ background: #2ecc71; color: #fff; }
-.emerald li > .parknav-section form input[type="text"]:focus, .emerald li > .parknav-section form textarea:focus{ border-color: #2ecc71; }
-.emerald li > .parknav-section form input[type="submit"]:hover{ background: #2ecc71; color: #fff; }
-.emerald li > .parknav-section a:hover{ color: #2ecc71; }
+.emerald > li:hover > a, .emerald > li.active > a {
+  background: #2ecc71;
+  color: #fff; }
+
+.emerald ul.dropdown li:hover > a {
+  background: #2ecc71;
+  color: #fff; }
+
+.emerald li > .parknav-section form input[type="text"]:focus, .emerald li > .parknav-section form textarea:focus {
+  border-color: #2ecc71; }
+
+.emerald li > .parknav-section form input[type="submit"]:hover {
+  background: #2ecc71;
+  color: #fff; }
+
+.emerald li > .parknav-section a:hover {
+  color: #2ecc71; }
 
 /* red */
-.red > li:hover > a, .red > li.active > a{ background: #C21A01;	color: #fff; }
-.red ul.dropdown li:hover > a{ background: #C21A01; color: #fff; }
-.red li > .parknav-section form input[type="text"]:focus, .red li > .parknav-section form textarea:focus{ border-color: #C21A01; }
-.red li > .parknav-section form input[type="submit"]:hover{ background: #C21A01; color: #fff; }
-.red li > .parknav-section a:hover{ color: #C21A01; }
+.red > li:hover > a, .red > li.active > a {
+  background: #C21A01;
+  color: #fff; }
+
+.red ul.dropdown li:hover > a {
+  background: #C21A01;
+  color: #fff; }
+
+.red li > .parknav-section form input[type="text"]:focus, .red li > .parknav-section form textarea:focus {
+  border-color: #C21A01; }
+
+.red li > .parknav-section form input[type="submit"]:hover {
+  background: #C21A01;
+  color: #fff; }
+
+.red li > .parknav-section a:hover {
+  color: #C21A01; }
 
 /* pox */
-.pox > li:hover > a, .pox > li.active > a{ background: #FA023C;	color: #fff; }
-.pox ul.dropdown li:hover > a{ background: #FA023C; color: #fff; }
-.pox li > .parknav-section form input[type="text"]:focus, .pox li > .parknav-section form textarea:focus{ border-color: #FA023C; }
-.pox li > .parknav-section form input[type="submit"]:hover{ background: #FA023C; color: #fff; }
-.pox li > .parknav-section a:hover{ color: #FA023C; }
+.pox > li:hover > a, .pox > li.active > a {
+  background: #FA023C;
+  color: #fff; }
+
+.pox ul.dropdown li:hover > a {
+  background: #FA023C;
+  color: #fff; }
+
+.pox li > .parknav-section form input[type="text"]:focus, .pox li > .parknav-section form textarea:focus {
+  border-color: #FA023C; }
+
+.pox li > .parknav-section form input[type="submit"]:hover {
+  background: #FA023C;
+  color: #fff; }
+
+.pox li > .parknav-section a:hover {
+  color: #FA023C; }
 
 /* orange */
-.orange > li:hover > a, .orange > li.active > a{	background: #ff670f; color: #fff; }
-.orange ul.dropdown li:hover > a{ background: #ff670f; color: #fff; }
-.orange li > .parknav-section form input[type="text"]:focus, .orange li > .parknav-section form textarea:focus{ border-color: #ff670f; }
-.orange li > .parknav-section form input[type="submit"]:hover{ background: #ff670f; color: #fff; }
-.orange li > .parknav-section a:hover{ color: #ff670f; }
+.orange > li:hover > a, .orange > li.active > a {
+  background: #ff670f;
+  color: #fff; }
+
+.orange ul.dropdown li:hover > a {
+  background: #ff670f;
+  color: #fff; }
+
+.orange li > .parknav-section form input[type="text"]:focus, .orange li > .parknav-section form textarea:focus {
+  border-color: #ff670f; }
+
+.orange li > .parknav-section form input[type="submit"]:hover {
+  background: #ff670f;
+  color: #fff; }
+
+.orange li > .parknav-section a:hover {
+  color: #ff670f; }
 
 /* sunburst */
-.sunburst > li:hover > a, .sunburst > li.active > a{	background: #D46D22; color: #fff; }
-.sunburst ul.dropdown li:hover > a{ background: #D46D22; color: #fff; }
-.sunburst li > .parknav-section form input[type="text"]:focus, .sunburst li > .parknav-section form textarea:focus{ border-color: #D46D22; }
-.sunburst li > .parknav-section form input[type="submit"]:hover{ background: #D46D22; color: #fff; }
-.sunburst li > .parknav-section a:hover{ color: #D46D22; }
+.sunburst > li:hover > a, .sunburst > li.active > a {
+  background: #D46D22;
+  color: #fff; }
+
+.sunburst ul.dropdown li:hover > a {
+  background: #D46D22;
+  color: #fff; }
+
+.sunburst li > .parknav-section form input[type="text"]:focus, .sunburst li > .parknav-section form textarea:focus {
+  border-color: #D46D22; }
+
+.sunburst li > .parknav-section form input[type="submit"]:hover {
+  background: #D46D22;
+  color: #fff; }
+
+.sunburst li > .parknav-section a:hover {
+  color: #D46D22; }
 
 /* yellow */
-.yellow > li:hover > a, .yellow > li.active > a{	background: #febf01; color: #222; }
-.yellow ul.dropdown li:hover > a{ background: #febf01; color: #222; }
-.yellow li > .parknav-section form input[type="text"]:focus, .yellow li > .parknav-section form textarea:focus{ border-color: #febf01; }
-.yellow li > .parknav-section form input[type="submit"]:hover{ background: #febf01; color: #222; }
-.yellow li > .parknav-section a:hover{ color: #febf01; }
+.yellow > li:hover > a, .yellow > li.active > a {
+  background: #febf01;
+  color: #222; }
+
+.yellow ul.dropdown li:hover > a {
+  background: #febf01;
+  color: #222; }
+
+.yellow li > .parknav-section form input[type="text"]:focus, .yellow li > .parknav-section form textarea:focus {
+  border-color: #febf01; }
+
+.yellow li > .parknav-section form input[type="submit"]:hover {
+  background: #febf01;
+  color: #222; }
+
+.yellow li > .parknav-section a:hover {
+  color: #febf01; }
 
 /* purple */
-.purple > li:hover > a, .purple > li.active > a{	background: #a849a3; color: #fff; }
-.purple ul.dropdown li:hover > a{ background: #a849a3; color: #fff; }
-.purple li > .parknav-section form input[type="text"]:focus, .purple li > .parknav-section form textarea:focus{ border-color: #a849a3; }
-.purple li > .parknav-section form input[type="submit"]:hover{ background: #a849a3; color: #fff; }
-.purple li > .parknav-section a:hover{ color: #a849a3; }
+.purple > li:hover > a, .purple > li.active > a {
+  background: #a849a3;
+  color: #fff; }
+
+.purple ul.dropdown li:hover > a {
+  background: #a849a3;
+  color: #fff; }
+
+.purple li > .parknav-section form input[type="text"]:focus, .purple li > .parknav-section form textarea:focus {
+  border-color: #a849a3; }
+
+.purple li > .parknav-section form input[type="submit"]:hover {
+  background: #a849a3;
+  color: #fff; }
+
+.purple li > .parknav-section a:hover {
+  color: #a849a3; }
 
 /* pink */
-.pink > li:hover > a, .pink > li.active > a{	background: #F56991; color: #fff; }
-.pink ul.dropdown li:hover > a{ background: #F56991; color: #fff; }
-.pink li > .parknav-section form input[type="text"]:focus, .pink li > .parknav-section form textarea:focus{ border-color: #F56991; }
-.pink li > .parknav-section form input[type="submit"]:hover{ background: #F56991; color: #fff; }
-.pink li > .parknav-section a:hover{ color: #F56991; }
+.pink > li:hover > a, .pink > li.active > a {
+  background: #F56991;
+  color: #fff; }
+
+.pink ul.dropdown li:hover > a {
+  background: #F56991;
+  color: #fff; }
+
+.pink li > .parknav-section form input[type="text"]:focus, .pink li > .parknav-section form textarea:focus {
+  border-color: #F56991; }
+
+.pink li > .parknav-section form input[type="submit"]:hover {
+  background: #F56991;
+  color: #fff; }
+
+.pink li > .parknav-section a:hover {
+  color: #F56991; }
 
 /* RESPONSIVE LAYOUT
 **********************************************************/
 @media (max-width: 768px) {
-	.parknav > li{
-		display: block;
-		width: 100%;
-		box-sizing:border-box;
-		-moz-box-sizing:border-box; 
-		-webkit-box-sizing:border-box;
-	}
-	.parknav > li > a{
-		padding: 15px 25px;
-	}
-	.parknav a{
-		width: 100%;
+  .parknav > li {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
 
-		box-sizing:border-box;
-		-moz-box-sizing:border-box; 
-		-webkit-box-sizing:border-box; 
-	}
-	.parknav li > .parknav-section ul li.title {
-		border-bottom: 0;
-	}
-	.parknav ul.dropdown, 
-	.parknav ul.dropdown li ul.dropdown{
-		width: 100% !important;
-		left: 0;
-		position: static !important;
-		border: none;
-		box-sizing:border-box;
-		-moz-box-sizing:border-box; 
-		-webkit-box-sizing:border-box; 
-	}
-	.parknav ul.dropdown li {
-		background: #fff !important;
-		border: none;
-	}
-	.parknav ul.dropdown > li > a{
-		padding-left: 40px !important;
-	}
-	.parknav > li > .parknav-section{
-		width: 100% !important;
-		position: static;
-		border-top: none;
-	}
-	.parknav > li > .parknav-section .row [class*="col"]{
-		float: none;
-		display: block;
-		width: 100% !important;
-		margin-left: 0;
-		margin-top: 15px;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
-	}
-	.parknav > li > .parknav-section .row:first-child  [class*="col"]:first-child {
-		margin-top: 0;
-	}
-	.parknav > li > .parknav-section .row{
-		margin-top: 0;
-	}
-	.parknav > li > ul.dropdown > li > a{ padding-left: 40px !important; }
-	.parknav > li > ul.dropdown > li > ul.dropdown > li > a{ padding-left: 60px !important; }
-	.parknav > li > ul.dropdown > li > ul.dropdown > li > ul.dropdown > li > a{ padding-left: 80px !important; }
-}
+  .parknav > li > a {
+    padding: 15px 25px; }
+
+  .parknav a {
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+
+  .parknav li > .parknav-section ul li.title {
+    border-bottom: 0; }
+
+  .parknav ul.dropdown,
+  .parknav ul.dropdown li ul.dropdown {
+    width: 100% !important;
+    left: 0;
+    position: static !important;
+    border: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+
+  .parknav ul.dropdown li {
+    background: #fff !important;
+    border: none; }
+
+  .parknav ul.dropdown > li > a {
+    padding-left: 40px !important; }
+
+  .parknav > li > .parknav-section {
+    width: 100% !important;
+    position: static;
+    border-top: none; }
+
+  .parknav > li > .parknav-section .row [class*="col"] {
+    float: none;
+    display: block;
+    width: 100% !important;
+    margin-left: 0;
+    margin-top: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .parknav > li > .parknav-section .row:first-child [class*="col"]:first-child {
+    margin-top: 0; }
+
+  .parknav > li > .parknav-section .row {
+    margin-top: 0; }
+
+  .parknav > li > ul.dropdown > li > a {
+    padding-left: 40px !important; }
+
+  .parknav > li > ul.dropdown > li > ul.dropdown > li > a {
+    padding-left: 60px !important; }
+
+  .parknav > li > ul.dropdown > li > ul.dropdown > li > ul.dropdown > li > a {
+    padding-left: 80px !important; } }
 @media (min-width: 768px) and (max-width: 900px) {
-	.parknav > li > .parknav-section{
-		width: 100% !important;
-		left: 0 !important;
-	}
-}
-
-
-
-
+  .parknav > li > .parknav-section {
+    width: 100% !important;
+    left: 0 !important; } }
 /* Extra Responsive Bits */
-
-
-
-
-
-
-/*Full Screen*/ 
+/*Full Screen*/
 @media only screen and (min-width: 1156px) {
-
-	.parknav > li > a
-	{
-	padding: 10px 16px;
-	}
-}
-
-/* Large */ 
-@media only screen and (min-width: 1065px) and (max-width:1155px) {
-
-	.parknav > li > a
-	{
-	padding: 20px 11px;
-	}
-}
-
-/* Medium */ 
-@media only screen and (min-width: 965px) and (max-width:1064px) {
-
-	.parknav > li > a
-	{
-		font-size: 12px;
-		padding: 20px 12px;
-	}
-}
-
-
-/* Small */ 
+  .parknav > li > a {
+    padding: 10px 16px; } }
+/* Large */
+@media only screen and (min-width: 1065px) and (max-width: 1155px) {
+  .parknav > li > a {
+    padding: 20px 11px; } }
+/* Medium */
+@media only screen and (min-width: 965px) and (max-width: 1064px) {
+  .parknav > li > a {
+    font-size: 12px;
+    padding: 20px 12px; } }
+/* Small */
 @media only screen and (min-width: 841px) and (max-width: 964px) {
-	.parknav > li > a
-	{
-		font-size: 12px;
-		padding: 20px 8px;
-	}
-}
-
-/* Extra Small */ 
+  .parknav > li > a {
+    font-size: 12px;
+    padding: 20px 8px; } }
+/* Extra Small */
 @media only screen and (min-width: 768px) and (max-width: 840px) {
-	.parknav > li > a
-	{
-	font-size: 11px;
-	padding: 20px 7px;
-	}
+  .parknav > li > a {
+    font-size: 11px;
+    padding: 20px 7px; }
 
-	.parknav li > .parknav-section ul li.title a
-	{
-		font-size: 12px;
-	}
+  .parknav li > .parknav-section ul li.title a {
+    font-size: 12px; }
 
-	.parknav li > .parknav-section a
-	{
-		font-size: 11px;
-	}
-}
+  .parknav li > .parknav-section a {
+    font-size: 11px; } }
+
+/*# sourceMappingURL=parknav.css.map */
