@@ -10,14 +10,13 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 .parknav li {
   line-height: normal; }
 
-.parknav .parknav-section li a:hover {
-  font-weight: normal;
-  background-color: #2D4D9C;
-  color: white; }
 .parknav .parknav-section .row {
   margin-left: 0; }
   .parknav .parknav-section .row .col1 {
     width: 17%; }
+
+.parknav .parknav-section li a::hover {
+  font-size: 11px; }
 
 /* MENU CONFIGURATION
 **********************************************************/
