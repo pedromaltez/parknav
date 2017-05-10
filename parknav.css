@@ -1,5 +1,5 @@
 /*
-NAME: Jet Responsive parknav-section 
+NAME: Jet Responsive parknav-section
 AUTHOR PAGE: http://codecanyon.net/user/marcoarib
 ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 */
@@ -7,9 +7,15 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 /* PARK SPECIFIC AMENDMENTS */
 .parknav .menu-diff {
   color: #2D4D9C; }
+.parknav .used {
+  background: #444; }
 .parknav li {
   line-height: normal; }
-
+  .parknav li > .parknav-section ul li {
+    padding: 0; }
+    .parknav li > .parknav-section ul li a {
+      display: block;
+      padding: 0 4px; }
 .parknav .parknav-section .row {
   margin-left: 0; }
   .parknav .parknav-section .row .col1 {
@@ -55,9 +61,6 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 .parknav > li.active > a {
   background: #F2F2F2;
   color: #2D4D9C; }
-
-li.used {
-  background: #444; }
 
 /* DROPDOWN CONFIGURATION
 **********************************************************/
@@ -391,255 +394,6 @@ li.used {
   width: 20px;
   height: 2px;
   background: #FFF; }
-
-/* STYLES
-**********************************************************/
-/* black */
-.black > li:hover > a, .black > li.active > a {
-  background: #111111;
-  color: #fff; }
-
-.black ul.dropdown li:hover > a {
-  background: #111111;
-  color: #fff; }
-
-.black li > .parknav-section form input[type="text"]:focus, .black li > .parknav-section form textarea:focus {
-  border-color: #111111; }
-
-.black li > .parknav-section form input[type="submit"]:hover {
-  background: #111111;
-  color: #fff; }
-
-.black li > .parknav-section a:hover {
-  color: #dedede; }
-
-/* grey */
-.grey > li:hover > a, .grey > li.active > a {
-  background: #82837E;
-  color: #fff; }
-
-.grey ul.dropdown li:hover > a {
-  background: #82837E;
-  color: #fff; }
-
-.grey li > .parknav-section form input[type="text"]:focus, .grey li > .parknav-section form textarea:focus {
-  border-color: #82837E; }
-
-.grey li > .parknav-section form input[type="submit"]:hover {
-  background: #82837E;
-  color: #fff; }
-
-.grey li > .parknav-section a:hover {
-  color: #dedede; }
-
-/* blue */
-.blue > li:hover > a, .blue > li.active > a {
-  background: #02b8fa;
-  color: #fff; }
-
-.blue ul.dropdown li:hover > a {
-  background: #02b8fa;
-  color: #fff; }
-
-.blue li > .parknav-section form input[type="text"]:focus, .blue li > .parknav-section form textarea:focus {
-  border-color: #02b8fa; }
-
-.blue li > .parknav-section form input[type="submit"]:hover {
-  background: #02b8fa;
-  color: #fff; }
-
-.blue li > .parknav-section a:hover {
-  color: #02b8fa; }
-
-/* deeper */
-.deeper > li:hover > a, .deeper > li.active > a {
-  background: #008C9E;
-  color: #fff; }
-
-.deeper ul.dropdown li:hover > a {
-  background: #008C9E;
-  color: #fff; }
-
-.deeper li > .parknav-section form input[type="text"]:focus, .deeper li > .parknav-section form textarea:focus {
-  border-color: #008C9E; }
-
-.deeper li > .parknav-section form input[type="submit"]:hover {
-  background: #008C9E;
-  color: #fff; }
-
-.deeper li > .parknav-section a:hover {
-  color: #008C9E; }
-
-/* green */
-.green > li:hover > a, .green > li.active > a {
-  background: #88c425;
-  color: #fff; }
-
-.green ul.dropdown li:hover > a {
-  background: #88c425;
-  color: #fff; }
-
-.green li > .parknav-section form input[type="text"]:focus, .green li > .parknav-section form textarea:focus {
-  border-color: #88c425; }
-
-.green li > .parknav-section form input[type="submit"]:hover {
-  background: #88c425;
-  color: #fff; }
-
-.green li > .parknav-section a:hover {
-  color: #88c425; }
-
-/* emerald */
-.emerald > li:hover > a, .emerald > li.active > a {
-  background: #2ecc71;
-  color: #fff; }
-
-.emerald ul.dropdown li:hover > a {
-  background: #2ecc71;
-  color: #fff; }
-
-.emerald li > .parknav-section form input[type="text"]:focus, .emerald li > .parknav-section form textarea:focus {
-  border-color: #2ecc71; }
-
-.emerald li > .parknav-section form input[type="submit"]:hover {
-  background: #2ecc71;
-  color: #fff; }
-
-.emerald li > .parknav-section a:hover {
-  color: #2ecc71; }
-
-/* red */
-.red > li:hover > a, .red > li.active > a {
-  background: #C21A01;
-  color: #fff; }
-
-.red ul.dropdown li:hover > a {
-  background: #C21A01;
-  color: #fff; }
-
-.red li > .parknav-section form input[type="text"]:focus, .red li > .parknav-section form textarea:focus {
-  border-color: #C21A01; }
-
-.red li > .parknav-section form input[type="submit"]:hover {
-  background: #C21A01;
-  color: #fff; }
-
-.red li > .parknav-section a:hover {
-  color: #C21A01; }
-
-/* pox */
-.pox > li:hover > a, .pox > li.active > a {
-  background: #FA023C;
-  color: #fff; }
-
-.pox ul.dropdown li:hover > a {
-  background: #FA023C;
-  color: #fff; }
-
-.pox li > .parknav-section form input[type="text"]:focus, .pox li > .parknav-section form textarea:focus {
-  border-color: #FA023C; }
-
-.pox li > .parknav-section form input[type="submit"]:hover {
-  background: #FA023C;
-  color: #fff; }
-
-.pox li > .parknav-section a:hover {
-  color: #FA023C; }
-
-/* orange */
-.orange > li:hover > a, .orange > li.active > a {
-  background: #ff670f;
-  color: #fff; }
-
-.orange ul.dropdown li:hover > a {
-  background: #ff670f;
-  color: #fff; }
-
-.orange li > .parknav-section form input[type="text"]:focus, .orange li > .parknav-section form textarea:focus {
-  border-color: #ff670f; }
-
-.orange li > .parknav-section form input[type="submit"]:hover {
-  background: #ff670f;
-  color: #fff; }
-
-.orange li > .parknav-section a:hover {
-  color: #ff670f; }
-
-/* sunburst */
-.sunburst > li:hover > a, .sunburst > li.active > a {
-  background: #D46D22;
-  color: #fff; }
-
-.sunburst ul.dropdown li:hover > a {
-  background: #D46D22;
-  color: #fff; }
-
-.sunburst li > .parknav-section form input[type="text"]:focus, .sunburst li > .parknav-section form textarea:focus {
-  border-color: #D46D22; }
-
-.sunburst li > .parknav-section form input[type="submit"]:hover {
-  background: #D46D22;
-  color: #fff; }
-
-.sunburst li > .parknav-section a:hover {
-  color: #D46D22; }
-
-/* yellow */
-.yellow > li:hover > a, .yellow > li.active > a {
-  background: #febf01;
-  color: #222; }
-
-.yellow ul.dropdown li:hover > a {
-  background: #febf01;
-  color: #222; }
-
-.yellow li > .parknav-section form input[type="text"]:focus, .yellow li > .parknav-section form textarea:focus {
-  border-color: #febf01; }
-
-.yellow li > .parknav-section form input[type="submit"]:hover {
-  background: #febf01;
-  color: #222; }
-
-.yellow li > .parknav-section a:hover {
-  color: #febf01; }
-
-/* purple */
-.purple > li:hover > a, .purple > li.active > a {
-  background: #a849a3;
-  color: #fff; }
-
-.purple ul.dropdown li:hover > a {
-  background: #a849a3;
-  color: #fff; }
-
-.purple li > .parknav-section form input[type="text"]:focus, .purple li > .parknav-section form textarea:focus {
-  border-color: #a849a3; }
-
-.purple li > .parknav-section form input[type="submit"]:hover {
-  background: #a849a3;
-  color: #fff; }
-
-.purple li > .parknav-section a:hover {
-  color: #a849a3; }
-
-/* pink */
-.pink > li:hover > a, .pink > li.active > a {
-  background: #F56991;
-  color: #fff; }
-
-.pink ul.dropdown li:hover > a {
-  background: #F56991;
-  color: #fff; }
-
-.pink li > .parknav-section form input[type="text"]:focus, .pink li > .parknav-section form textarea:focus {
-  border-color: #F56991; }
-
-.pink li > .parknav-section form input[type="submit"]:hover {
-  background: #F56991;
-  color: #fff; }
-
-.pink li > .parknav-section a:hover {
-  color: #F56991; }
 
 /* RESPONSIVE LAYOUT
 **********************************************************/
