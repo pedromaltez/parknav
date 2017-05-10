@@ -4,23 +4,6 @@ AUTHOR PAGE: http://codecanyon.net/user/marcoarib
 ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-/* PARK SPECIFIC AMENDMENTS */
-.parknav .menu-diff {
-  color: #2D4D9C; }
-.parknav .used {
-  background: #444; }
-.parknav li {
-  line-height: normal; }
-  .parknav li > .parknav-section ul li {
-    padding: 0; }
-    .parknav li > .parknav-section ul li a {
-      display: block;
-      padding: 0 4px; }
-.parknav .parknav-section .row {
-  margin-left: 0; }
-  .parknav .parknav-section .row .col1 {
-    width: 17%; }
-
 /* MENU CONFIGURATION
 **********************************************************/
 .parknav-wrapper {
@@ -497,5 +480,21 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 
   .parknav li > .parknav-section a {
     font-size: 11px; } }
+/* PARK SPECIFIC AMENDMENTS */
+.parknav .menu-diff {
+  color: #2D4D9C; }
+.parknav .used {
+  background: #444; }
+.parknav li {
+  line-height: normal; }
+  .parknav li > .parknav-section ul li {
+    padding: 0; }
+    .parknav li > .parknav-section ul li a {
+      display: block;
+      padding: 0 4px; }
+.parknav .parknav-section .row {
+  margin-left: 0; }
+  .parknav .parknav-section .row .col1 {
+    width: 17%; }
 
 /*# sourceMappingURL=parknav.css.map */
