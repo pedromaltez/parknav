@@ -26,7 +26,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 		var lastScreenWidth = windowWidth();
 		var bigScreen = false;
 
-		$(menu).prepend("<li class='showhide'><span class='title'>MENU</span><span class='icon'><em></em><em></em><em></em><em></em></span></li>");
+		$(menu).prepend("<li class='parknav-mobile-menu'><div class='parknav-title'>MENU</div><div class='parknav-burger'><div></div><div></div><div></div><div></div></div></li>");
 
 		if(settings.indicator == true){
 			$(menu).find("a").each(function(){
@@ -134,7 +134,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 		}
 
 		function bindClick(){
-			$(menu).find("li:not(.showhide)").each(function(){
+			$(menu).find("li:not(.parknav-mobile-menu)").each(function(){
 				if($(this).children(".dropdown, .parknav-section").length > 0){
 					$(this).children("a").bind("click", function(e){
 						if($(this).siblings(".dropdown, .parknav-section").css("display") == "none"){
@@ -152,16 +152,16 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 		}
 
 		function showCollapse(){
-			$(menu).children("li:not(.showhide)").hide(0);
-			$(menu).children("li.showhide").show(0);
-			$(menu).children("li.showhide").bind("click", function(){
+			$(menu).children("li:not(.parknav-mobile-menu)").hide(0);
+			$(menu).children("li.parknav-mobile-menu").show(0);
+			$(menu).children("li.parknav-mobile-menu").bind("click", function(){
 				if($(menu).children("li").is(":hidden")){
 					$(menu).children("li").slideDown(settings.speed);
 					scrollable(true);
 				}
 				else{
-					$(menu).children("li:not(.showhide)").slideUp(settings.speed);
-					$(menu).children("li.showhide").show(0);
+					$(menu).children("li:not(.parknav-mobile-menu)").slideUp(settings.speed);
+					$(menu).children("li.parknav-mobile-menu").show(0);
 					$(menu).find(".dropdown, .parknav-section").hide(settings.speed);
 					scrollable(false);
 				}
@@ -170,14 +170,14 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 
 		function hideCollapse(){
 			$(menu).children("li").show(0);
-			$(menu).children("li.showhide").hide(0);
+			$(menu).children("li.parknav-mobile-menu").hide(0);
 			scrollable(false);
 		}
 
 		function rightAlignMenu(){
 			$(menu).children("li").addClass("jsright");
 			var items = $(menu).children("li");
-			$(menu).children("li:not(.showhide)").detach();
+			$(menu).children("li:not(.parknav-mobile-menu)").detach();
 			for(var i = items.length; i >= 1; i--){
 				$(menu).append(items[i]);
 			}
