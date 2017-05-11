@@ -18,7 +18,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   position: relative;
   float: left;
   list-style: none;
-  background: parkblue; }
+  background: #2D4D9C; }
 
 .parknav li {
   display: inline-block;
@@ -43,7 +43,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 .parknav > li:hover > a,
 .parknav > li.active > a {
   background: #F2F2F2;
-  color: parkblue; }
+  color: #2D4D9C; }
 
 /* DROPDOWN CONFIGURATION
 **********************************************************/
@@ -143,7 +143,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   padding: 0 0 5px;
   font-size: 18px;
   font-weight: bold;
-  border-bottom: solid 1px parkblue;
+  border-bottom: solid 1px #2D4D9C;
   margin-top: 10px; }
 
 .parknav li > .parknav-section ul li.title.heading-only {
@@ -167,7 +167,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   padding: 0;
   font-size: 15px;
   font-weight: bold;
-  color: parkblue;
+  color: #2D4D9C;
   -webkit-transition: opacity 0.2s linear;
   -moz-transition: opacity 0.2s linear;
   -o-transition: opacity 0.2s linear;
@@ -189,7 +189,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   transition: color 0.2s linear; }
 
 .parknav li > .parknav-section a:hover {
-  color: parkblue;
+  color: #2D4D9C;
   font-weight: bold; }
 
 /* parknav-section images */
@@ -358,7 +358,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   height: 50px;
   cursor: pointer;
   color: #FFF;
-  background: parkblue;
+  background: #2D4D9C;
   font-weight: bold;
   font-size: 18px; }
 
@@ -482,7 +482,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
     font-size: 11px; } }
 /* PARK SPECIFIC AMENDMENTS */
 .parknav .menu-diff {
-  color: parkblue; }
+  color: #2D4D9C; }
 .parknav .used {
   background: #444; }
 .parknav li {
