@@ -352,7 +352,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 
 /* COLLAPSIBLE MENU
 **********************************************************/
-.parknav > li.showhide {
+.parknav .parknav-mobile-menu {
   display: none;
   width: 100%;
   height: 50px;
@@ -362,16 +362,16 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   font-weight: bold;
   font-size: 18px; }
 
-.parknav > li.showhide span.title {
-  margin: 15px 0 0 25px;
+.parknav .parknav-mobile-menu .parknav-title {
+  margin: 15px 0 0 10px;
   font-family: 'Open Sans', sans-serif;
   float: left; }
 
-.parknav > li.showhide span.icon {
-  margin: 17px 20px;
+.parknav .parknav-burger {
+  margin: 17px 10px;
   float: right; }
 
-.parknav > li.showhide .icon em {
+.parknav .parknav-burger div {
   margin-bottom: 3px;
   display: block;
   width: 20px;
@@ -503,9 +503,18 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
     left: 0;
     z-index: 1; } }
 
-.parkcameras-top-header-mobile .parkcameras-sli-search {
-  display: block; }
+@media screen and (max-width: 768px) {
+  .parkcameras-top-header .parkcameras-sli-search {
+    display: block;
+    position: initial; }
+    .parkcameras-top-header .parkcameras-sli-search .sli_searchbox_textfield {
+      float: left; }
+    .parkcameras-top-header .parkcameras-sli-search .icon-search {
+      position: initial;
+      left: -40px; }
 
+  .brand_dropdown {
+    display: none; } }
 .bg > header {
   display: none; }
 
