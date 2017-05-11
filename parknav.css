@@ -18,7 +18,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   position: relative;
   float: left;
   list-style: none;
-  background: #2D4D9C; }
+  background: parkblue; }
 
 .parknav li {
   display: inline-block;
@@ -43,7 +43,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 .parknav > li:hover > a,
 .parknav > li.active > a {
   background: #F2F2F2;
-  color: #2D4D9C; }
+  color: parkblue; }
 
 /* DROPDOWN CONFIGURATION
 **********************************************************/
@@ -143,7 +143,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   padding: 0 0 5px;
   font-size: 18px;
   font-weight: bold;
-  border-bottom: solid 1px #2D4D9C;
+  border-bottom: solid 1px parkblue;
   margin-top: 10px; }
 
 .parknav li > .parknav-section ul li.title.heading-only {
@@ -167,7 +167,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   padding: 0;
   font-size: 15px;
   font-weight: bold;
-  color: #2D4D9C;
+  color: parkblue;
   -webkit-transition: opacity 0.2s linear;
   -moz-transition: opacity 0.2s linear;
   -o-transition: opacity 0.2s linear;
@@ -189,7 +189,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   transition: color 0.2s linear; }
 
 .parknav li > .parknav-section a:hover {
-  color: #2D4D9C;
+  color: parkblue;
   font-weight: bold; }
 
 /* parknav-section images */
@@ -358,7 +358,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   height: 50px;
   cursor: pointer;
   color: #FFF;
-  background: #2D4D9C;
+  background: parkblue;
   font-weight: bold;
   font-size: 18px; }
 
@@ -482,7 +482,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
     font-size: 11px; } }
 /* PARK SPECIFIC AMENDMENTS */
 .parknav .menu-diff {
-  color: #2D4D9C; }
+  color: parkblue; }
 .parknav .used {
   background: #444; }
 .parknav li {
@@ -526,17 +526,22 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   .brand_dropdown {
     display: none; }
 
-  .miniBasket {
-    z-index: 0; }
-
   .parkcameras-header-links {
     display: visible; }
     .parkcameras-header-links .parkcameras-header-link {
       display: visible;
       list-style: none;
       float: left; }
+      .parkcameras-header-links .parkcameras-header-link a {
+        text-decoration: none; }
       .parkcameras-header-links .parkcameras-header-link .desk {
-        display: none; }
+        display: none !important; }
+      .parkcameras-header-links .parkcameras-header-link .miniBasket {
+        z-index: 0; }
+        .parkcameras-header-links .parkcameras-header-link .miniBasket .notification {
+          width: initial; }
+          .parkcameras-header-links .parkcameras-header-link .miniBasket .notification .icon-basket {
+            padding: 0 !important; }
 
   .AP .straplineLink {
     display: none; } }
@@ -551,7 +556,9 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
     margin-left: -99999999px; }
 
 .parkcameras-header-links {
-  display: visible; }
+  display: visible;
+  color: #444;
+  background: #eee; }
 
 .bg > header {
   display: none; }
