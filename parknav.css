@@ -529,18 +529,21 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   .parkcameras-header-links {
     display: visible; }
     .parkcameras-header-links .parkcameras-header-link {
-      display: visible;
-      color: #444;
-      background: #eee;
-      list-style: none;
-      float: left;
-      height: 30px; }
+      display: visible; }
+      .parkcameras-header-links .parkcameras-header-link li {
+        color: #444;
+        background: #eee;
+        list-style: none;
+        float: left;
+        height: 40px; }
       .parkcameras-header-links .parkcameras-header-link a {
         text-decoration: none;
-        padding: 5px; }
+        padding: 10px; }
       .parkcameras-header-links .parkcameras-header-link .desk {
         display: none !important; }
       .parkcameras-header-links .parkcameras-header-link .miniBasket {
+        position: relative;
+        left: 50px;
         z-index: 0; }
         .parkcameras-header-links .parkcameras-header-link .miniBasket .notification {
           width: initial; }
