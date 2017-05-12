@@ -767,8 +767,13 @@ $gutter-small: 5px;
     &:focus {
       width: 100% !important;
       border: none;
+      + .sli-searchbox-textfield-underline {
+        background-position: left bottom;
+        background-color: $parkblue;
+      }
     }
   }
+
 
   .sli-searchbox-textfield-underline {
     display: block;
@@ -780,10 +785,10 @@ $gutter-small: 5px;
     transition: all 200ms linear;
     // background-color: #ddd;
     clear: left;
-    &.sli-searchbox-textfield-underline-infocus {
-      background-position: left bottom;
-      background-color: $parkblue;
-    }
+    // &.sli-searchbox-textfield-underline-infocus {
+    //   background-position: left bottom;
+    //   background-color: $parkblue;
+    // }
   }
 }
 
@@ -821,4 +826,4 @@ $gutter-small: 5px;
 }
 
 
-/* 15:32 */
+/* 15:35 */
