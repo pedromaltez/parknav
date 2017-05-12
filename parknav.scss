@@ -756,10 +756,15 @@ $gutter-small: 5px;
   .sli-searchbox-textfield-underline {
     display: block;
     width: 100%;
+    background-size: 300% 100%;
     height: 2px;
-    background-color: #ddd;
+    background: linear-gradient(to right, #ddd 34%, $parkblue 65%);
+    background-position: left bottom;
+    transition: background 300ms linear;
+    // background-color: #ddd;
     clear: left;
     &.sli-searchbox-textfield-underline-infocus {
+      background-position: right bottom;
       background-color: $parkblue;
     }
   }
