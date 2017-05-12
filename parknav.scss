@@ -719,18 +719,9 @@ $gutter-small: 5px;
   }
 }
 
-// header.parkcameras-top-header .search input.sli_searchbox_textfield:focus {
-//   @media screen and (max-width: 529px) {
-//     width: 100% !important;
-//   }
-// }
-
 .parkcameras-sli-search {
   @media screen and (max-width: 529px) {
     input.sli_searchbox_textfield:focus {
-      width: 100% !important;
-    }
-    .search input[type=text]:focus {
       width: 100% !important;
     }
   }
@@ -826,4 +817,4 @@ $gutter-small: 5px;
 }
 
 
-/* 15:35 */
+/* 15:41 */

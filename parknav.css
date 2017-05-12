@@ -603,8 +603,6 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 
 @media screen and (max-width: 529px) {
   .parkcameras-sli-search input.sli_searchbox_textfield:focus {
-    width: 100% !important; }
-  .parkcameras-sli-search .search input[type=text]:focus {
     width: 100% !important; } }
 @media screen and (max-width: 768px) {
   .parkcameras-sli-search {
@@ -663,6 +661,6 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 
   .strapline {
     display: none; } }
-/* 15:35 */
+/* 15:41 */
 
 /*# sourceMappingURL=parknav.css.map */
