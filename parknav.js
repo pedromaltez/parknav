@@ -236,13 +236,14 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 		}
 	}
 
-  // Stop menu links from working when using mobile accordion style menu
 
 
 }(jQuery));
 
 
+// Stop menu links from working when using mobile accordion style menu
+
 $(".parknav-section-name").click(function(e) {
   e.preventDefault();
   console.log("preventDefault", e)
-})();
+});
