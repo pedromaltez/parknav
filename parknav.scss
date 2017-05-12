@@ -804,10 +804,13 @@ $gutter-small: 5px;
     // }
   }
 
-  #sli_autocomplete {
-    width: calc(100% - 20px) !important;
-  }
 }
+
+#sli_autocomplete {
+  width: calc(100% - 20px) !important;
+}
+
+
 
 
 
@@ -844,4 +847,10 @@ $gutter-small: 5px;
 }
 
 
-/* 16:58 */
+// No thank you, cookie notice.
+
+#cccwr {
+  display: none;
+}
+
+/* 17:05 */
