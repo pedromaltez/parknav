@@ -723,6 +723,10 @@ $gutter-small: 5px;
         .notification {
           width: 36px;
           padding: 0;
+          background-color: $parkblue;
+          &:hover {
+            background-color: darken($parkblue, 10%);
+          }
           .icon-basket {
             margin: 0;
             display: block;
@@ -836,4 +840,4 @@ $gutter-small: 5px;
 }
 
 
-/* 15:41 */
+/* 16:43 */
