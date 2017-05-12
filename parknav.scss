@@ -762,7 +762,7 @@ $gutter-small: 5px;
     display: block;
     width: 100%;
     height: 2px;
-    background: linear-gradient(to right, #ddd 34%, $parkblue 65%);
+    background: linear-gradient(to right, $parkblue 34%, #ddd 65%);
     background-size: 300% 100%;
     background-position: right bottom;
     transition: all 200ms linear;
