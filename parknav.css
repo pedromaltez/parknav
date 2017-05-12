@@ -506,6 +506,8 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 @media screen and (max-width: 768px) {
   .parknav li a {
     padding-left: 10px; }
+  .parknav a:not([href]) {
+    cursor: pointer; }
 
   .parkcameras-top-header {
     overflow: hidden;
@@ -631,7 +633,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   .topNav {
     display: none !important; }
 
-  .straplineHighlight {
+  .strapline {
     display: none; } }
 
 /*# sourceMappingURL=parknav.css.map */

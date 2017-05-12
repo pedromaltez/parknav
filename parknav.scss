@@ -593,6 +593,9 @@ $gutter-small: 5px;
         padding-left: 10px;
       }
     }
+    a:not([href]) {
+      cursor: pointer;
+    }
   }
   .parkcameras-top-header {
     overflow: hidden;
@@ -704,11 +707,11 @@ $gutter-small: 5px;
   @media screen and (max-width:768px) {
     display: block;
     position: initial;
-    width: 100%;
+    width: 100% !important;
     .sli_searchform {
       margin: 0 10px;
     }
-    .sli_searchbox_textfield {
+    input.sli_searchbox_textfield {
       width: 100% !important;
       float: left;
     }
@@ -759,7 +762,7 @@ $gutter-small: 5px;
     display: none !important;
   }
 
-  .straplineHighlight {
+  .strapline {
     display: none;
   }
 }
