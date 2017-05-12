@@ -720,6 +720,12 @@ $gutter-small: 5px;
 }
 
 .parkcameras-sli-search {
+  @media screen and (max-width: 529px) {
+    input.sli_searchbox_textfield::focus {
+      width: 100% !important;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     display: block;
     position: initial;
@@ -743,12 +749,8 @@ $gutter-small: 5px;
       float: right;
     }
   }
-  @media screen and (max-width: 529px) {
-    input.sli_searchbox_textfield::focus {
-      width: 100% !important;
-    }
-  }
-  .sli_searchbox_textfield {
+
+  input.sli_searchbox_textfield {
     -webkit-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
     margin-bottom: 0;
@@ -758,6 +760,7 @@ $gutter-small: 5px;
       border: none;
     }
   }
+
   .sli-searchbox-textfield-underline {
     display: block;
     width: 100%;
