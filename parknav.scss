@@ -647,6 +647,10 @@ $gutter-small: 5px;
       border-bottom: none;
       border-left: none;
       border-right: none;
+      padding: 0;
+      .row {
+        padding: 20px;
+      }
     }
   }
 }
@@ -850,4 +854,4 @@ $gutter-small: 5px;
   display: none;
 }
 
-/* 17:36 */
+/* 18:03 */
