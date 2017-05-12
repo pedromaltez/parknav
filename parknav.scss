@@ -735,7 +735,8 @@ $gutter-small: 5px;
     }
     .icon-search {
       position: relative;
-      top: -50px;
+      top: -42px;
+      left: 0px;
       height: 40px;
       line-height: 32px;
       float: right;
@@ -757,9 +758,9 @@ $gutter-small: 5px;
     height: 2px;
     background-color: #ddd;
     clear: left;
-  }
-  .sli_searchbox_textfield::focus + .sli-searchbox-textfield-underline {
-    background-color: $parkblue;
+    &.sli-searchbox-textfield-underline-infocus {
+      background-color: $parkblue;
+    }
   }
 }
 
