@@ -745,12 +745,10 @@ $gutter-small: 5px;
     width: 100% !important;
   }
   .sli_searchbox_textfield {
+    margin-bottom: 0;
     &::focus {
       background-color: #ddd;
       border-color: #ddd;
-      + .sli-searchbox-textfield-underline {
-        background-color: $parkblue;
-      }
     }
   }
   .sli-searchbox-textfield-underline {
@@ -759,6 +757,9 @@ $gutter-small: 5px;
     height: 2px;
     background-color: #ddd;
     clear: left;
+  }
+  .sli_searchbox_textfield::focus + .sli-searchbox-textfield-underline {
+    background-color: $parkblue;
   }
 }
 
