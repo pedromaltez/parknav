@@ -747,9 +747,10 @@ $gutter-small: 5px;
   }
   .sli_searchbox_textfield {
     margin-bottom: 0;
+    border: none;
     &::focus {
       background-color: #ddd;
-      border-color: #ddd;
+      border: none;
     }
   }
   .sli-searchbox-textfield-underline {
