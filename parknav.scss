@@ -745,7 +745,7 @@ $gutter-small: 5px;
       float: right;
     }
   }
-  @media screen and (max-width: 529px) {
+  @media screen only and (max-width: 529px) {
     width: 100% !important;
     input.sli_searchbox_textfield {
       &::focus {
