@@ -609,8 +609,6 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
     .parkcameras-sli-search .sli_searchform {
       margin: 0 10px; }
     .parkcameras-sli-search input.sli_searchbox_textfield {
-      -webkit-transition: background-color 0.5s ease-in;
-      transition: background-color 0.5s ease-in;
       width: 100% !important;
       float: left; }
       .parkcameras-sli-search input.sli_searchbox_textfield::focus {
@@ -628,6 +626,8 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
     .parkcameras-sli-search input.sli_searchbox_textfield::focus {
       width: 100% !important; } }
 .parkcameras-sli-search .sli_searchbox_textfield {
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
   margin-bottom: 0;
   border: none; }
   .parkcameras-sli-search .sli_searchbox_textfield::focus {
@@ -640,10 +640,9 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   background: linear-gradient(to right, #ddd 34%, #2D4D9C 65%);
   background-size: 300% 100%;
   background-position: left bottom;
-  transition: all 100ms linear;
+  transition: all 200ms linear;
   clear: left; }
   .parkcameras-sli-search .sli-searchbox-textfield-underline.sli-searchbox-textfield-underline-infocus {
-    transition: all 100ms linear;
     background-position: right bottom;
     background-color: #2D4D9C; }
 
