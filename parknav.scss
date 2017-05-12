@@ -803,6 +803,10 @@ $gutter-small: 5px;
     //   background-color: $parkblue;
     // }
   }
+
+  #sli_autocomplete {
+    width: calc(100% - 20px) !important;
+  }
 }
 
 
@@ -840,4 +844,4 @@ $gutter-small: 5px;
 }
 
 
-/* 16:43 */
+/* 16:58 */
