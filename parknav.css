@@ -368,7 +368,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   float: left; }
 
 .parknav .parknav-burger {
-  margin: 17px 10px;
+  margin: 17px 17px 0 0;
   float: right; }
 
 .parknav .parknav-burger div {
@@ -514,31 +514,34 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
       margin-top: 10px; } }
     @media screen and (max-width: 768px) and (max-width: 529px) {
       .parkcameras-top-header .parkcameras-logo, .parkcameras-top-header .parkcameras-header-links, .parkcameras-top-header .parkcameras-sli-search {
-        margin-top: 10px; } }
-  @media screen and (max-width: 768px) and (max-width: 529px) {
-    .parkcameras-top-header .parkcameras-logo {
-      background-size: 200px auto;
-      width: 200px; } }
-@media screen and (max-width: 768px) {
-    .parkcameras-top-header .parkcameras-sli-search {
-      display: block;
-      position: initial;
-      width: 100%; }
-      .parkcameras-top-header .parkcameras-sli-search .sli_searchform {
-        margin: 0 10px; }
-      .parkcameras-top-header .parkcameras-sli-search .sli_searchbox_textfield {
-        width: 100% !important;
-        float: left; }
-      .parkcameras-top-header .parkcameras-sli-search .icon-search {
-        position: relative;
-        top: -50px;
-        height: 40px;
-        line-height: 32px;
-        float: right; }
+        margin-top: 5px; } }
 
+@media screen and (max-width: 768px) {
   .brand_dropdown {
     display: none; }
 
+  .AP .straplineLink {
+    display: none; } }
+.parkcameras-logo {
+  background: url(https://content.parkcameras.com/5/1/images/pc_logo.png) center left no-repeat;
+  height: 45px;
+  background-size: 250px auto;
+  width: 250px;
+  margin-left: 10px;
+  float: left;
+  overflow: hidden; }
+  .parkcameras-logo span {
+    margin-left: -99999999px; }
+  @media screen and (max-width: 529px) {
+    .parkcameras-logo {
+      background-size: 200px auto;
+      width: 200px; } }
+  @media screen and (max-width: 370px) {
+    .parkcameras-logo {
+      background-size: 170px auto;
+      width: 170px; } }
+
+@media screen and (max-width: 768px) {
   .parkcameras-header-links {
     float: right;
     margin-right: 10px; }
@@ -561,7 +564,11 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
       .parkcameras-header-links .parkcameras-header-link .floatl, .parkcameras-header-links .parkcameras-header-link .floatr {
         float: none; }
       .parkcameras-header-links .parkcameras-header-link + .parkcameras-header-basket-container {
-        background-color: transparent; }
+        background-color: transparent; } }
+      @media screen and (max-width: 768px) and (max-width: 400px) {
+        .parkcameras-header-links .parkcameras-header-link + .parkcameras-header-basket-container {
+          margin-left: 10px; } }
+@media screen and (max-width: 768px) {
       .parkcameras-header-links .parkcameras-header-link a {
         text-decoration: none;
         padding: 10px; }
@@ -579,28 +586,42 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
           width: 36px;
           padding: 0; }
           .parkcameras-header-links .parkcameras-header-link .miniBasket .notification .icon-basket {
+            margin: 0;
             display: block;
             height: 40px;
             line-height: 32px;
             text-align: center;
-            padding: 5px !important; }
+            padding: 5px !important; } }
 
-  .AP .straplineLink {
-    display: none; } }
-.parkcameras-logo {
-  background: url(https://content.parkcameras.com/5/1/images/pc_logo.png) center left no-repeat;
-  height: 45px;
-  background-size: 250px auto;
-  width: 250px;
-  margin-left: 10px;
-  float: left;
-  overflow: hidden; }
-  .parkcameras-logo span {
-    margin-left: -99999999px; }
+@media screen and (max-width: 768px) {
+  .parkcameras-sli-search {
+    display: block;
+    position: initial;
+    width: 100%; }
+    .parkcameras-sli-search .sli_searchform {
+      margin: 0 10px; }
+    .parkcameras-sli-search .sli_searchbox_textfield {
+      width: 100% !important;
+      float: left; }
+    .parkcameras-sli-search .icon-search {
+      position: relative;
+      top: -50px;
+      height: 40px;
+      line-height: 32px;
+      float: right; } }
+@media screen and (max-width: 529px) {
+  .parkcameras-sli-search {
+    width: 100% !important; } }
+.parkcameras-sli-search .sli_searchbox_textfield::focus {
+  background-color: #ddd;
+  border-color: #ddd; }
 
-.bg > header {
-  display: none; }
+@media screen and (max-width: 529px) {
+  html {
+    overflow: initial; }
 
+  #mainBody {
+    margin-top: 0; } }
 @media screen and (max-width: 768px) {
   .megamenuContainer {
     display: none !important; }
@@ -608,6 +629,9 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
       display: none !important; }
 
   .topNav {
-    display: none !important; } }
+    display: none !important; }
+
+  .straplineHighlight {
+    display: none; } }
 
 /*# sourceMappingURL=parknav.css.map */
