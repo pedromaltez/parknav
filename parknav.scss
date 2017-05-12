@@ -720,7 +720,6 @@ $gutter-small: 5px;
 }
 
 .parkcameras-sli-search {
-  border-bottom: $parkblue 2px solid;
   @media screen and (max-width: 768px) {
     display: block;
     position: initial;
@@ -747,17 +746,15 @@ $gutter-small: 5px;
   }
   .sli_searchbox_textfield {
     &::focus {
-      // border-bottom: $parkblue 2px solid;
       background-color: #ddd;
       border-color: #ddd;
     }
-    &::after {
-      content: " ";
-      display: block;
-      width: 100%;
-      height: 2px;
-      background-color: $parkblue;
-    }
+  }
+  .sli-searchbox-textfield-underline {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $parkblue;
   }
 }
 

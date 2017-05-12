@@ -601,38 +601,35 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
             text-align: center;
             padding: 5px !important; } }
 
-.parkcameras-sli-search {
-  border-bottom: #2D4D9C 2px solid; }
-  @media screen and (max-width: 768px) {
-    .parkcameras-sli-search {
-      display: block;
-      position: initial;
-      width: 100% !important; }
-      .parkcameras-sli-search .sli_searchform {
-        margin: 0 10px; }
-      .parkcameras-sli-search input.sli_searchbox_textfield {
-        -webkit-transition: background-color 0.5s ease-in;
-        transition: background-color 0.5s ease-in;
-        width: 100% !important;
-        float: left; }
-      .parkcameras-sli-search .icon-search {
-        position: relative;
-        top: -50px;
-        height: 40px;
-        line-height: 32px;
-        float: right; } }
-  @media screen and (max-width: 529px) {
-    .parkcameras-sli-search {
-      width: 100% !important; } }
-  .parkcameras-sli-search .sli_searchbox_textfield::focus {
-    background-color: #ddd;
-    border-color: #ddd; }
-  .parkcameras-sli-search .sli_searchbox_textfield::after {
-    content: " ";
+@media screen and (max-width: 768px) {
+  .parkcameras-sli-search {
     display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #2D4D9C; }
+    position: initial;
+    width: 100% !important; }
+    .parkcameras-sli-search .sli_searchform {
+      margin: 0 10px; }
+    .parkcameras-sli-search input.sli_searchbox_textfield {
+      -webkit-transition: background-color 0.5s ease-in;
+      transition: background-color 0.5s ease-in;
+      width: 100% !important;
+      float: left; }
+    .parkcameras-sli-search .icon-search {
+      position: relative;
+      top: -50px;
+      height: 40px;
+      line-height: 32px;
+      float: right; } }
+@media screen and (max-width: 529px) {
+  .parkcameras-sli-search {
+    width: 100% !important; } }
+.parkcameras-sli-search .sli_searchbox_textfield::focus {
+  background-color: #ddd;
+  border-color: #ddd; }
+.parkcameras-sli-search .sli-searchbox-textfield-underline {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #2D4D9C; }
 
 @media screen and (max-width: 529px) {
   html {
