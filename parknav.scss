@@ -748,13 +748,17 @@ $gutter-small: 5px;
     &::focus {
       background-color: #ddd;
       border-color: #ddd;
+      + .sli-searchbox-textfield-underline {
+        background-color: $parkblue;
+      }
     }
   }
   .sli-searchbox-textfield-underline {
     display: block;
     width: 100%;
     height: 2px;
-    background-color: $parkblue;
+    background-color: #ddd;
+    clear: left;
   }
 }
 
