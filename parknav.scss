@@ -643,7 +643,10 @@ $gutter-small: 5px;
         width: 100%;
         background-color: #444;
       }
-      border: none;
+      border-top: none;
+      border-bottom: none;
+      border-left: none;
+      border-right: none;
     }
   }
 }
