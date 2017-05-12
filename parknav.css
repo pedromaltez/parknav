@@ -487,6 +487,8 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   .parknav li > .parknav-section a {
     font-size: 11px; } }
 /* PARK SPECIFIC AMENDMENTS */
+.parknav a:not([href]) {
+  cursor: pointer; }
 .parknav .menu-diff {
   color: #2D4D9C; }
 .parknav .used {
@@ -512,8 +514,6 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 @media screen and (max-width: 768px) {
   .parknav li a {
     padding-left: 10px; }
-  .parknav a:not([href]) {
-    cursor: pointer; }
 
   .parkcameras-top-header {
     overflow: hidden;

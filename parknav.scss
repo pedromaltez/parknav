@@ -565,6 +565,9 @@ $gutter-small: 5px;
 /* PARK SPECIFIC AMENDMENTS */
 
 .parknav {
+  a:not([href]) {
+    cursor: pointer;
+  }
   .menu-diff {
     color: $parkblue;
   }
@@ -608,9 +611,6 @@ $gutter-small: 5px;
       a {
         padding-left: 10px;
       }
-    }
-    a:not([href]) {
-      cursor: pointer;
     }
   }
   .parkcameras-top-header {
