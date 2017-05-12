@@ -240,6 +240,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 
   $(".parknav-section-name").click(function(e) {
     e.preventDefault();
+    console.log("preventDefault", e)
   })
 
 }(jQuery));
