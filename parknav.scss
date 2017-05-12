@@ -503,7 +503,23 @@ $gutter-small: 5px;
   }
 }
 
+
+
 /* Large */
+@media screen and (max-width: 1155px) {
+  .parknav > li > .parknav-section.full-width {
+    top: 55px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .parknav > li > .parknav-section.full-width {
+    top: 54px;
+  }
+}
+
+
+
+
 @media only screen and (min-width: 1065px) and (max-width:1155px) {
   .parknav > li > a {
     padding: 20px 11px;
@@ -577,7 +593,7 @@ $gutter-small: 5px;
       }
     }
   }
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     position: absolute;
     top: 0;
     left: 0;
@@ -602,7 +618,7 @@ $gutter-small: 5px;
     margin-top: 50px;
     .parkcameras-logo, .parkcameras-header-links, .parkcameras-sli-search {
       margin-top: 10px;
-      @media screen and (max-width:529px) {
+      @media screen and (max-width: 529px) {
         margin-top: 5px;
       }
     }
@@ -629,18 +645,18 @@ $gutter-small: 5px;
   span {
     margin-left: -99999999px;
   }
-  @media screen and (max-width:529px) {
+  @media screen and (max-width: 529px) {
     background-size: 200px auto;
     width: 200px;
   }
-  @media screen and (max-width:370px) {
+  @media screen and (max-width: 370px) {
     background-size: 170px auto;
     width: 170px;
   }
 }
 
 .parkcameras-header-links {
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     float: right;
     margin-right: 10px;
     .parkcameras-header-link {
@@ -668,7 +684,7 @@ $gutter-small: 5px;
       }
       + .parkcameras-header-basket-container {
         background-color: transparent;
-        @media screen and (max-width:400px) {
+        @media screen and (max-width: 400px) {
           margin-left: 10px;
         }
       }
@@ -682,7 +698,7 @@ $gutter-small: 5px;
       .miniBasket {
         z-index: 0;
         height: 40px;
-        @media screen and (max-width:529px) {
+        @media screen and (max-width: 529px) {
           float: initial;
           top: initial;
         }
@@ -704,7 +720,7 @@ $gutter-small: 5px;
 }
 
 .parkcameras-sli-search {
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     display: block;
     position: initial;
     width: 100% !important;
@@ -725,7 +741,7 @@ $gutter-small: 5px;
       float: right;
     }
   }
-  @media screen and (max-width:529px) {
+  @media screen and (max-width: 529px) {
     width: 100% !important;
   }
   .sli_searchbox_textfield {
@@ -740,7 +756,7 @@ $gutter-small: 5px;
 
 // Get rid of weird styles
 
-@media screen and (max-width:529px) {
+@media screen and (max-width: 529px) {
   html {
     overflow: initial;
   }
@@ -752,7 +768,7 @@ $gutter-small: 5px;
 // Hide old header
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .megamenuContainer {
     display: none !important;
     + .strapline {
