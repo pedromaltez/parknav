@@ -724,6 +724,9 @@ $gutter-small: 5px;
     input.sli_searchbox_textfield::focus {
       width: 100% !important;
     }
+    .search input[type=text]:focus {
+      width: 100% !important;
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -810,3 +813,6 @@ $gutter-small: 5px;
     display: none;
   }
 }
+
+
+/* 15:21 */
