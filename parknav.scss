@@ -749,6 +749,7 @@ $gutter-small: 5px;
     margin-bottom: 0;
     border: none;
     &::focus {
+      width: 100% !important;
       background-color: #ddd;
       border: none;
     }
