@@ -633,6 +633,21 @@ $gutter-small: 5px;
   }
 }
 
+.parknav {
+  .parknav-section {
+    @media screen and (min-width: 768px) {
+      &:before, &:after {
+        content: " ";
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: #444;
+      }
+      border: none;
+    }
+  }
+}
+
 
 .parkcameras-logo {
   background: url(https://content.parkcameras.com/5/1/images/pc_logo.png) center left no-repeat;
@@ -790,6 +805,7 @@ $gutter-small: 5px;
 @media screen and (max-width: 529px) {
   html {
     overflow: initial;
+    min-width: initial;
   }
   #mainBody {
     margin-top: 0;
