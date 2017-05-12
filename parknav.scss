@@ -743,8 +743,7 @@ $gutter-small: 5px;
       float: right;
     }
   }
-  @media screen only and (max-width: 529px) {
-    width: 100% !important;
+  @media screen and (max-width: 529px) {
     input.sli_searchbox_textfield::focus {
       width: 100% !important;
     }
@@ -765,12 +764,12 @@ $gutter-small: 5px;
     height: 2px;
     background: linear-gradient(to right, #ddd 34%, $parkblue 65%);
     background-size: 300% 100%;
-    background-position: left bottom;
+    background-position: right bottom;
     transition: all 200ms linear;
     // background-color: #ddd;
     clear: left;
     &.sli-searchbox-textfield-underline-infocus {
-      background-position: right bottom;
+      background-position: left bottom;
       background-color: $parkblue;
     }
   }
