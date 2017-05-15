@@ -123,40 +123,40 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   box-sizing: border-box; }
 
 /* parknav-section list */
-.parknav li .parknav-section ul {
+.parknav .parknav-section ul {
   margin: 0 0 20px 0;
   float: left;
   padding: 0;
   display: block;
   position: relative; }
 
-.parknav li .parknav-section ul li {
+.parknav .parknav-section ul li {
   width: 100%;
   padding: 4px 0; }
 
-.parknav li .parknav-section ul li.title {
+.parknav .parknav-section ul li.title {
   padding: 0 0 5px;
   font-size: 18px;
   font-weight: bold;
   border-bottom: solid 1px #2D4D9C;
   margin-top: 10px; }
 
-.parknav li .parknav-section ul li.title.heading-only {
+.parknav .parknav-section ul li.title.heading-only {
   border-bottom: none; }
 
-.parknav li .parknav-section ul li.title:first-of-type {
+.parknav .parknav-section ul li.title:first-of-type {
   margin-top: 0px; }
 
-.parknav li .parknav-section ul li.title a {
+.parknav .parknav-section ul li.title a {
   font-size: 16px;
   font-weight: bold;
   color: #000; }
 
-.parknav li .parknav-section ul li.title a:hover {
+.parknav .parknav-section ul li.title a:hover {
   color: #999; }
 
 /* parknav-section h5 */
-.parknav li .parknav-section h5 {
+.parknav .parknav-section h5 {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -168,7 +168,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   -o-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear; }
 
-.parknav li .parknav-section h5:hover {
+.parknav .parknav-section h5:hover {
   opacity: 0.8;
   text-decoration: none !important; }
 
@@ -504,7 +504,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1; } }
+    z-index: 9999999; } }
 
 @media screen and (max-width: 768px) {
   .parknav li a {
@@ -689,6 +689,6 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 #cccwr {
   display: none; }
 
-/* 09:13 */
+/* 09:18 */
 
 /*# sourceMappingURL=parknav.css.map */
