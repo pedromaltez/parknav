@@ -428,8 +428,12 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
     box-sizing: border-box; }
 
   .parknav > li > .parknav-section .row:first-child [class*="col"]:first-child {
-    margin-top: 0; }
+    margin-top: 0; } }
+  @media screen and (max-width: 768px) and (max-width: 768px) {
+    .parknav > li > .parknav-section .row:first-child [class*="col"]:first-child {
+      margin-top: -15px; } }
 
+@media (max-width: 768px) {
   .parknav > li > .parknav-section .row {
     margin-top: 0; }
 
@@ -689,6 +693,25 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 #cccwr {
   display: none; }
 
-/* 09:18 */
+.awards_list ul li {
+  margin-top: 10px; }
+
+@media screen and (max-width: 768px) {
+  header + div {
+    position: relative;
+    top: -45px; } }
+@media screen and (max-width: 529px) {
+  header + div {
+    top: -50px; } }
+
+@media screen and (max-width: 768px) {
+  .container.parkcameras-homepage-container {
+    width: 100%; }
+    .container.parkcameras-homepage-container:not(.parkcameras-carousel-container) {
+      max-width: 98%; }
+    .container.parkcameras-homepage-container + .parkcameras-carousel-container {
+      width: 100%; } }
+
+/* 16:40 */
 
 /*# sourceMappingURL=parknav.css.map */

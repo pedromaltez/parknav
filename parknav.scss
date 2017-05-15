@@ -161,15 +161,15 @@ $gutter-small: 5px;
   margin-top: 10px;
 }
 
-.parknav .parknav-section ul li.title.heading-only{
+.parknav .parknav-section ul li.title.heading-only {
   border-bottom: none;
 }
 
-.parknav .parknav-section ul li.title:first-of-type{
+.parknav .parknav-section ul li.title:first-of-type {
   margin-top: 0px;
-  }
+}
 
-.parknav .parknav-section ul li.title a{
+.parknav .parknav-section ul li.title a {
   font-size: 16px;
   font-weight: bold;
   color: #000;
@@ -474,6 +474,9 @@ $gutter-small: 5px;
   }
   .parknav > li > .parknav-section .row:first-child  [class*="col"]:first-child {
     margin-top: 0;
+    @media screen and (max-width: 768px) {
+      margin-top: -15px;
+    }
   }
   .parknav > li > .parknav-section .row{
     margin-top: 0;
@@ -603,7 +606,6 @@ $gutter-small: 5px;
     z-index: 9999999;
   }
 }
-
 
 @media screen and (max-width:768px) {
   .parknav {
@@ -863,4 +865,30 @@ $gutter-small: 5px;
   display: none;
 }
 
-/* 09:18 */
+.awards_list ul li {
+  margin-top: 10px;
+}
+
+header + div {
+  @media screen and (max-width: 768px) {
+    position: relative;
+    top: -45px;
+  }
+  @media screen and (max-width: 529px) {
+    top: -50px;
+  }
+}
+
+.container.parkcameras-homepage-container {
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    &:not(.parkcameras-carousel-container) {
+      max-width: 98%;
+    }
+    + .parkcameras-carousel-container {
+      width: 100%;
+    }
+  }
+}
+
+/* 16:40 */
