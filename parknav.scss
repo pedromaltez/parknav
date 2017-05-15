@@ -882,13 +882,13 @@ header + div {
 .container.parkcameras-homepage-container {
   @media screen and (max-width: 768px) {
     width: 100%;
-    &:not(.parkcameras-carousel-container) {
+    > &:not(.parkcameras-carousel-container) {
       max-width: 98%;
     }
-    + .parkcameras-carousel-container {
+    > .parkcameras-carousel-container {
       width: 100%;
     }
   }
 }
 
-/* 16:40 */
+/* 17:14 */
