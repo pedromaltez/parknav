@@ -108,7 +108,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 
 /* parknav-section
 **********************************************************/
-.parknav > li > .parknav-section {
+.parknav li .parknav-section {
   position: absolute;
   display: none;
   background: #FFF;
@@ -123,40 +123,40 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   box-sizing: border-box; }
 
 /* parknav-section list */
-.parknav li > .parknav-section ul {
+.parknav li .parknav-section ul {
   margin: 0 0 20px 0;
   float: left;
   padding: 0;
   display: block;
   position: relative; }
 
-.parknav li > .parknav-section ul li {
+.parknav li .parknav-section ul li {
   width: 100%;
   padding: 4px 0; }
 
-.parknav li > .parknav-section ul li.title {
+.parknav li .parknav-section ul li.title {
   padding: 0 0 5px;
   font-size: 18px;
   font-weight: bold;
   border-bottom: solid 1px #2D4D9C;
   margin-top: 10px; }
 
-.parknav li > .parknav-section ul li.title.heading-only {
+.parknav li .parknav-section ul li.title.heading-only {
   border-bottom: none; }
 
-.parknav li > .parknav-section ul li.title:first-of-type {
+.parknav li .parknav-section ul li.title:first-of-type {
   margin-top: 0px; }
 
-.parknav li > .parknav-section ul li.title a {
+.parknav li .parknav-section ul li.title a {
   font-size: 16px;
   font-weight: bold;
   color: #000; }
 
-.parknav li > .parknav-section ul li.title a:hover {
+.parknav li .parknav-section ul li.title a:hover {
   color: #999; }
 
 /* parknav-section h5 */
-.parknav li > .parknav-section h5 {
+.parknav li .parknav-section h5 {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -168,7 +168,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   -o-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear; }
 
-.parknav li > .parknav-section h5:hover {
+.parknav li .parknav-section h5:hover {
   opacity: 0.8;
   text-decoration: none !important; }
 
@@ -525,6 +525,10 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 
   .AP .straplineLink {
     display: none; } }
+@media screen and (min-width: 529px) {
+  .parknav .parknav-section ul {
+    margin-left: 10px;
+    float: none; } }
 @media screen and (min-width: 768px) {
   .parknav .parknav-section {
     border-top: none;
@@ -594,7 +598,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
       .parkcameras-header-links .parkcameras-header-link .desk {
         display: none !important; }
       .parkcameras-header-links .parkcameras-header-link .miniBasket {
-        z-index: 0;
+        z-index: 1;
         height: 40px; } }
       @media screen and (max-width: 768px) and (max-width: 529px) {
         .parkcameras-header-links .parkcameras-header-link .miniBasket {
@@ -660,6 +664,9 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 
 #sli_autocomplete {
   width: calc(100% - 20px) !important; }
+  @media screen and (max-width: 529px) {
+    #sli_autocomplete {
+      margin-left: 0; } }
 
 @media screen and (max-width: 529px) {
   html {
@@ -682,6 +689,6 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 #cccwr {
   display: none; }
 
-/* 18:09 */
+/* 09:13 */
 
 /*# sourceMappingURL=parknav.css.map */

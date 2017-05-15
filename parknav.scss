@@ -121,7 +121,7 @@ $gutter-small: 5px;
 
 /* parknav-section
 **********************************************************/
-.parknav > li > .parknav-section{
+.parknav li .parknav-section{
   position: absolute;
   display: none;
   background: #FFF;
@@ -142,18 +142,18 @@ $gutter-small: 5px;
 }
 
 /* parknav-section list */
-.parknav li > .parknav-section ul{
+.parknav li .parknav-section ul{
   margin: 0 0 20px 0;
   float: left;
   padding: 0;
   display: block;
   position: relative;
 }
-.parknav li > .parknav-section ul li{
+.parknav li .parknav-section ul li{
   width: 100%;
   padding: 4px 0;
 }
-.parknav li > .parknav-section ul li.title{
+.parknav li .parknav-section ul li.title{
   padding: 0 0 5px;
   font-size: 18px;
   font-weight: bold;
@@ -161,26 +161,26 @@ $gutter-small: 5px;
   margin-top: 10px;
 }
 
-.parknav li > .parknav-section ul li.title.heading-only{
+.parknav li .parknav-section ul li.title.heading-only{
   border-bottom: none;
 }
 
-.parknav li > .parknav-section ul li.title:first-of-type{
+.parknav li .parknav-section ul li.title:first-of-type{
   margin-top: 0px;
   }
 
-.parknav li > .parknav-section ul li.title a{
+.parknav li .parknav-section ul li.title a{
   font-size: 16px;
   font-weight: bold;
   color: #000;
 }
 
-.parknav li > .parknav-section ul li.title a:hover{
+.parknav li .parknav-section ul li.title a:hover{
   color: #999;
 }
 
 /* parknav-section h5 */
-.parknav li > .parknav-section h5{
+.parknav li .parknav-section h5{
   width: 100%;
   margin: 0;
   padding: 0;
@@ -193,7 +193,7 @@ $gutter-small: 5px;
   transition: opacity 0.2s linear;
 }
 
-.parknav li > .parknav-section h5:hover{
+.parknav li .parknav-section h5:hover{
   opacity: 0.8;
   text-decoration: none !important;
 }
@@ -635,6 +635,12 @@ $gutter-small: 5px;
 
 .parknav {
   .parknav-section {
+    @media screen and (min-width: 529px) {
+      ul {
+        margin-left: 10px;
+        float: none;
+      }
+    }
     @media screen and (min-width: 768px) {
       &:before, &:after {
         content: " ";
@@ -718,7 +724,7 @@ $gutter-small: 5px;
         display: none !important;
       }
       .miniBasket {
-        z-index: 0;
+        z-index: 1;
         height: 40px;
         @media screen and (max-width: 529px) {
           float: initial;
@@ -812,6 +818,9 @@ $gutter-small: 5px;
 
 #sli_autocomplete {
   width: calc(100% - 20px) !important;
+  @media screen and (max-width: 529px) {
+    margin-left: 0;
+  }
 }
 
 
@@ -854,4 +863,4 @@ $gutter-small: 5px;
   display: none;
 }
 
-/* 18:09 */
+/* 09:13 */
