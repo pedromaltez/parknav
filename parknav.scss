@@ -616,7 +616,6 @@ $gutter-small: 5px;
     }
   }
   .parkcameras-top-header {
-    overflow: hidden;
     margin-top: 50px;
     .parkcameras-logo, .parkcameras-header-links, .parkcameras-sli-search {
       margin-top: 10px;
@@ -706,7 +705,7 @@ $gutter-small: 5px;
       float: left;
       height: 40px;
       line-height: 40px;
-      li {
+      > li {
         line-height: 40px;
       }
       .floatl, .floatr {
@@ -891,4 +890,4 @@ header + div {
   }
 }
 
-/* 17:14 */
+/* 17:36 */
