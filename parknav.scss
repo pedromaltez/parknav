@@ -505,10 +505,10 @@ $gutter-small: 5px;
 /* Extra Responsive Bits */
 
 /*Full Screen*/
-@media only screen and (min-width: 1156px) {
+@media screen and (min-width: 1156px) {
   .parknav > li > a
   {
-  padding: 10px 16px;
+    padding: 10px 16px;
   }
 }
 
@@ -529,14 +529,14 @@ $gutter-small: 5px;
 
 
 
-@media only screen and (min-width: 1065px) and (max-width:1155px) {
+@media screen and (min-width: 1065px) {
   .parknav > li > a {
     padding: 10px 12px;
   }
 }
 
 /* Medium */
-@media only screen and (min-width: 965px) and (max-width:1064px) {
+@media screen and (min-width: 965px) {
   .parknav > li > a {
     font-size: 12px;
     padding: 10px 12px;
@@ -545,19 +545,19 @@ $gutter-small: 5px;
 
 
 /* Small */
-@media only screen and (min-width: 841px) and (max-width: 964px) {
+@media screen and (min-width: 841px)  {
   .parknav > li > a
   {
     font-size: 12px;
-    padding: 20px 8px;
+    padding: 10px 8px;
   }
 }
 
 /* Extra Small */
-@media only screen and (min-width: 768px) and (max-width: 840px) {
+@media screen and (min-width: 768px) {
   .parknav > li > a {
     font-size: 11px;
-    padding: 20px 7px;
+    padding: 10px 7px;
   }
 
   .parknav li > .parknav-section ul li.title a {
@@ -569,6 +569,17 @@ $gutter-small: 5px;
   }
 }
 
+
+// .parknav {
+//   > li {
+//     > a {
+//       @media screen and (min-width: 768px) {
+//         font-size: 11px;
+//         padding: 10px 7px;
+//       }
+//     }
+//   }
+// }
 
 
 /* PARK SPECIFIC AMENDMENTS */
@@ -908,6 +919,7 @@ $gutter-small: 5px;
 }
 
 
+
 // No thank you, cookie notice.
 
 #cccwr {
@@ -923,6 +935,10 @@ $gutter-small: 5px;
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
+    > .strapline {
+      width: 100%;
+      margin: 0 !important;
+    }
   }
   @media screen and (min-width: 1129px) {
     max-width: 1140px;
@@ -966,5 +982,5 @@ $gutter-small: 5px;
   }
 }
 
-/* 14:20 */
+/* 14:40 */
 

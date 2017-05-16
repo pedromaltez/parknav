@@ -461,7 +461,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
     left: 0 !important; } }
 /* Extra Responsive Bits */
 /*Full Screen*/
-@media only screen and (min-width: 1156px) {
+@media screen and (min-width: 1156px) {
   .parknav > li > a {
     padding: 10px 16px; } }
 /* Large */
@@ -471,24 +471,24 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 @media screen and (max-width: 840px) {
   .parknav > li > .parknav-section.full-width {
     top: 54px; } }
-@media only screen and (min-width: 1065px) and (max-width: 1155px) {
+@media screen and (min-width: 1065px) {
   .parknav > li > a {
     padding: 10px 12px; } }
 /* Medium */
-@media only screen and (min-width: 965px) and (max-width: 1064px) {
+@media screen and (min-width: 965px) {
   .parknav > li > a {
     font-size: 12px;
     padding: 10px 12px; } }
 /* Small */
-@media only screen and (min-width: 841px) and (max-width: 964px) {
+@media screen and (min-width: 841px) {
   .parknav > li > a {
     font-size: 12px;
-    padding: 20px 8px; } }
+    padding: 10px 8px; } }
 /* Extra Small */
-@media only screen and (min-width: 768px) and (max-width: 840px) {
+@media screen and (min-width: 768px) {
   .parknav > li > a {
     font-size: 11px;
-    padding: 20px 7px; }
+    padding: 10px 7px; }
 
   .parknav li > .parknav-section ul li.title a {
     font-size: 12px; }
@@ -741,7 +741,10 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   .parkcameras-top-header {
     max-width: 960px;
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+    .parkcameras-top-header > .strapline {
+      width: 100%;
+      margin: 0 !important; } }
 @media screen and (min-width: 1129px) {
   .parkcameras-top-header {
     max-width: 1140px;
@@ -776,6 +779,6 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   .container.parkcameras-homepage-container {
     width: 1140px; } }
 
-/* 14:20 */
+/* 14:40 */
 
 /*# sourceMappingURL=parknav.css.map */
