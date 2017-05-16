@@ -799,6 +799,15 @@ $gutter-small: 5px;
       }
     }
   }
+  @media screen and (min-width: 768px) {
+    float: right;
+    .parkcameras-header-link {
+      float: left;
+      &.parkcameras-header-basket-container {
+        clear: left;
+      }
+    }
+  }
 }
 
 .parkcameras-sli-search {
@@ -973,4 +982,4 @@ $gutter-small: 5px;
   }
 }
 
-/* 16:16 */
+/* 16:24 */
