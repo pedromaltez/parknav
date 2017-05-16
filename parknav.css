@@ -589,77 +589,68 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
       background-size: 338px auto;
       width: 338px; } }
 
-.parkcameras-header-links .parkcameras-header-link {
-  list-style: none; }
-  .parkcameras-header-links .parkcameras-header-link a {
-    text-decoration: none; }
-@media screen and (max-width: 768px) {
-  .parkcameras-header-links {
-    float: right; }
-    .parkcameras-header-links .parkcameras-header-link {
-      color: #444;
-      background: #eee;
-      margin-left: 10px;
-      float: left;
-      height: 40px;
+.parkcameras-header-links {
+  float: right; }
+  .parkcameras-header-links .parkcameras-header-link {
+    list-style: none;
+    color: #444;
+    background: #eee;
+    margin-left: 10px;
+    float: left;
+    height: 40px;
+    line-height: 40px; }
+    .parkcameras-header-links .parkcameras-header-link:first-child {
+      margin-left: 0; }
+    .parkcameras-header-links .parkcameras-header-link:last-child {
+      margin-left: 30px; }
+    .parkcameras-header-links .parkcameras-header-link:hover {
+      background: #d5d5d5; }
+    .parkcameras-header-links .parkcameras-header-link > li {
       line-height: 40px; }
-      .parkcameras-header-links .parkcameras-header-link:first-child {
-        margin-left: 0; }
-      .parkcameras-header-links .parkcameras-header-link:last-child {
-        margin-left: 30px; }
-      .parkcameras-header-links .parkcameras-header-link:hover {
-        background: #d5d5d5; }
-      .parkcameras-header-links .parkcameras-header-link > li {
-        line-height: 40px; }
-      .parkcameras-header-links .parkcameras-header-link .floatl, .parkcameras-header-links .parkcameras-header-link .floatr {
-        float: none; }
-      .parkcameras-header-links .parkcameras-header-link + .parkcameras-header-basket-container {
-        background-color: transparent; }
-        .parkcameras-header-links .parkcameras-header-link + .parkcameras-header-basket-container li {
-          line-height: initial; } }
-      @media screen and (max-width: 768px) and (max-width: 400px) {
+    .parkcameras-header-links .parkcameras-header-link + .parkcameras-header-basket-container {
+      background-color: transparent;
+      margin-left: 10px; }
+      .parkcameras-header-links .parkcameras-header-link + .parkcameras-header-basket-container li {
+        line-height: initial; }
+      @media screen and (min-width: 400px) {
         .parkcameras-header-links .parkcameras-header-link + .parkcameras-header-basket-container {
-          margin-left: 10px; } }
-@media screen and (max-width: 768px) {
-      .parkcameras-header-links .parkcameras-header-link a {
-        text-decoration: none;
-        padding: 10px; }
-      .parkcameras-header-links .parkcameras-header-link .desk {
-        display: none !important; }
-      .parkcameras-header-links .parkcameras-header-link .miniBasket {
-        z-index: 99999;
-        height: 40px; }
-        .parkcameras-header-links .parkcameras-header-link .miniBasket .mini_basket_utilities {
-          overflow: hidden;
-          margin-bottom: 0; }
-          .parkcameras-header-links .parkcameras-header-link .miniBasket .mini_basket_utilities > div {
-            width: 45% !important;
-            float: left !important; }
-            .parkcameras-header-links .parkcameras-header-link .miniBasket .mini_basket_utilities > div:last-child {
-              margin-left: 15px; }
-          .parkcameras-header-links .parkcameras-header-link .miniBasket .mini_basket_utilities + .promoText {
-            margin-top: 10px; } }
-      @media screen and (max-width: 768px) and (max-width: 529px) {
-        .parkcameras-header-links .parkcameras-header-link .miniBasket {
-          float: initial;
-          top: initial; } }
-@media screen and (max-width: 768px) {
-        .parkcameras-header-links .parkcameras-header-link .miniBasket .notification {
-          width: 36px;
-          padding: 0;
-          background-color: #2D4D9C; }
-          .parkcameras-header-links .parkcameras-header-link .miniBasket .notification:hover {
-            background-color: #223974; }
-          .parkcameras-header-links .parkcameras-header-link .miniBasket .notification .icon-basket {
-            margin: 0;
-            display: block;
-            height: 40px;
-            line-height: 32px;
-            text-align: center;
-            padding: 5px !important; } }
-@media screen and (min-width: 768px) {
-  .parkcameras-header-links {
-    float: right; }
+          margin-left: initial; } }
+    .parkcameras-header-links .parkcameras-header-link a {
+      text-decoration: none;
+      padding: 10px; }
+    .parkcameras-header-links .parkcameras-header-link .floatl, .parkcameras-header-links .parkcameras-header-link .floatr {
+      float: none; }
+    .parkcameras-header-links .parkcameras-header-link .desk {
+      display: none !important; }
+    .parkcameras-header-links .parkcameras-header-link .miniBasket {
+      z-index: 99999;
+      height: 40px;
+      float: initial;
+      top: initial; }
+      .parkcameras-header-links .parkcameras-header-link .miniBasket .mini_basket_utilities {
+        overflow: hidden;
+        margin-bottom: 0; }
+        .parkcameras-header-links .parkcameras-header-link .miniBasket .mini_basket_utilities > div {
+          width: 45% !important;
+          float: left !important; }
+          .parkcameras-header-links .parkcameras-header-link .miniBasket .mini_basket_utilities > div:last-child {
+            margin-left: 15px; }
+        .parkcameras-header-links .parkcameras-header-link .miniBasket .mini_basket_utilities + .promoText {
+          margin-top: 10px; }
+      .parkcameras-header-links .parkcameras-header-link .miniBasket .notification {
+        width: 36px;
+        padding: 0;
+        background-color: #2D4D9C; }
+        .parkcameras-header-links .parkcameras-header-link .miniBasket .notification:hover {
+          background-color: #223974; }
+        .parkcameras-header-links .parkcameras-header-link .miniBasket .notification .icon-basket {
+          margin: 0;
+          display: block;
+          height: 40px;
+          line-height: 32px;
+          text-align: center;
+          padding: 5px !important; }
+  @media screen and (min-width: 768px) {
     .parkcameras-header-links .parkcameras-header-link {
       float: left; }
       .parkcameras-header-links .parkcameras-header-link.parkcameras-header-basket-container {
@@ -778,13 +769,13 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
     .container.parkcameras-homepage-container > .parkcameras-carousel-container {
       max-width: 100%;
       width: 100%; } }
-@media only screen and (min-width: 950px) {
+@media screen and (min-width: 950px) {
   .container.parkcameras-homepage-container {
     width: 960px; } }
-@media only screen and (min-width: 1129px) {
+@media screen and (min-width: 1129px) {
   .container.parkcameras-homepage-container {
     width: 1140px; } }
 
-/* 16:39 */
+/* 17:10 */
 
 /*# sourceMappingURL=parknav.css.map */

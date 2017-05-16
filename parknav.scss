@@ -60,11 +60,11 @@ $gutter-small: 5px;
 .parknav ul.dropdown,
 .parknav ul.dropdown li ul.dropdown {
   list-style: none;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
   display: none;
-    position: absolute;
-    z-index: 99;
+  position: absolute;
+  z-index: 99;
   min-width: 134px;
   background: #333333;
 }
@@ -100,7 +100,7 @@ $gutter-small: 5px;
 
 /* dropdowns to left side */
 .parknav ul.dropdown li ul.dropdown.left{
-    left: auto;
+  left: auto;
   right: 100%;
 }
 
@@ -713,94 +713,85 @@ $gutter-small: 5px;
 }
 
 .parkcameras-header-links {
+  float: right;
   .parkcameras-header-link {
     list-style: none;
+    color: #444;
+    background: #eee;
+    margin-left: 10px;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-left: 30px;
+    }
+    &:hover {
+      background: darken(#eee, 10%);
+    }
+    > li {
+      line-height: 40px;
+    }
+    + .parkcameras-header-basket-container {
+      background-color: transparent;
+      li {
+        line-height: initial;
+      }
+      margin-left: 10px;
+      @media screen and (min-width: 400px) {
+        margin-left: initial; // 30px
+      }
+    }
     a {
       text-decoration: none;
+      padding: 10px;
     }
-  }
-  @media screen and (max-width: 768px) {
-    float: right;
-    .parkcameras-header-link {
-      color: #444;
-      background: #eee;
-      margin-left: 10px;
-      &:first-child {
-        margin-left: 0;
-      }
-      &:last-child {
-        margin-left: 30px;
-      }
-      &:hover {
-        background: darken(#eee, 10%);
-      }
-      float: left;
+    .floatl, .floatr {
+      float: none;
+    }
+    .desk {
+      display: none !important;
+    }
+    .miniBasket {
+      z-index: 99999;
       height: 40px;
-      line-height: 40px;
-      > li {
-        line-height: 40px;
-      }
-      .floatl, .floatr {
-        float: none;
-      }
-      + .parkcameras-header-basket-container {
-        background-color: transparent;
-        li {
-          line-height: initial;
-        }
-        @media screen and (max-width: 400px) {
-          margin-left: 10px;
-        }
-      }
-      a {
-        text-decoration: none;
-        padding: 10px;
-      }
-      .desk {
-        display: none !important;
-      }
-      .miniBasket {
-        z-index: 99999;
-        height: 40px;
-        .mini_basket_utilities {
-          overflow: hidden;
-          margin-bottom: 0;
-          > div {
-            width: 45% !important;
-            float: left !important;
-            &:last-child {
-              margin-left: 15px;
-            }
-          }
-          + .promoText {
-            margin-top: 10px;
+      float: initial;
+      top: initial;
+      .mini_basket_utilities {
+        overflow: hidden;
+        margin-bottom: 0;
+        > div {
+          width: 45% !important;
+          float: left !important;
+          &:last-child {
+            margin-left: 15px;
           }
         }
-        @media screen and (max-width: 529px) {
-          float: initial;
-          top: initial;
+        + .promoText {
+          margin-top: 10px;
         }
-        .notification {
-          width: 36px;
-          padding: 0;
-          background-color: $parkblue;
-          &:hover {
-            background-color: darken($parkblue, 10%);
-          }
-          .icon-basket {
-            margin: 0;
-            display: block;
-            height: 40px;
-            line-height: 32px;
-            text-align: center;
-            padding: 5px !important;
-          }
+      }
+      .notification {
+        width: 36px;
+        padding: 0;
+        background-color: $parkblue;
+        &:hover {
+          background-color: darken($parkblue, 10%);
+        }
+        .icon-basket {
+          margin: 0;
+          display: block;
+          height: 40px;
+          line-height: 32px;
+          text-align: center;
+          padding: 5px !important;
         }
       }
     }
   }
   @media screen and (min-width: 768px) {
-    float: right;
     .parkcameras-header-link {
       float: left;
       &.parkcameras-header-basket-container {
@@ -974,12 +965,12 @@ $gutter-small: 5px;
       width: 100%;
     }
   }
-  @media only screen and (min-width: 950px) {
+  @media screen and (min-width: 950px) {
     width: 960px;
   }
-  @media only screen and (min-width: 1129px) {
+  @media screen and (min-width: 1129px) {
     width: 1140px;
   }
 }
 
-/* 16:39 */
+/* 17:10 */
