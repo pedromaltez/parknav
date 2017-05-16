@@ -475,7 +475,10 @@ $gutter-small: 5px;
   .parknav > li > .parknav-section .row:first-child  [class*="col"]:first-child {
     margin-top: 0;
     @media screen and (max-width: 768px) {
-      margin-top: -15px;
+      margin-top: 5px;
+      > ul {
+        overflow: hidden;
+      }
     }
   }
   .parknav > li > .parknav-section .row{
@@ -814,7 +817,6 @@ $gutter-small: 5px;
     //   background-color: $parkblue;
     // }
   }
-
 }
 
 #sli_autocomplete {
