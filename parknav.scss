@@ -579,11 +579,14 @@ $gutter-small: 5px;
 
 .parkcameras-top-header {
   margin-top: 50px;
-  .parkcameras-logo, .parkcameras-header-links, .parkcameras-sli-search {
-    margin-top: 10px;
-    @media screen and (max-width: 529px) {
-      margin-top: 5px;
+  .parkcameras-logo, .parkcameras-sli-search {
+    margin-top: 5px;
+    @media screen and (min-width: 529px) {
+      margin-top: 10px;
     }
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
   }
 }
 
@@ -593,7 +596,6 @@ $gutter-small: 5px;
     display: block;
   }
 }
-
 
 .parknav {
   @media screen and (max-width: 768px) {
@@ -716,7 +718,10 @@ $gutter-small: 5px;
       margin-left: 0;
     }
     &:last-child {
-      margin-left: 30px;
+      margin-left: 10px;
+      @media screen and (min-width: 400px) {
+        margin-left: 30px;
+      }
     }
     &:hover {
       background: darken(#eee, 10%);
@@ -728,10 +733,6 @@ $gutter-small: 5px;
       background-color: transparent;
       li {
         line-height: initial;
-      }
-      margin-left: 10px;
-      @media screen and (min-width: 400px) {
-        margin-left: initial; // 30px
       }
     }
     a {
@@ -812,6 +813,9 @@ $gutter-small: 5px;
     float: left;
     &:focus {
       background-color: #eee;
+    }
+    @media screen and (min-width: 768px) {
+      margin-left: 0 !important;
     }
   }
   .icon-search {
@@ -965,4 +969,4 @@ $gutter-small: 5px;
 }
 
 
-/* 17:47 */
+/* 18:04 */
