@@ -360,7 +360,15 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 .parknav .parknav-mobile-menu .parknav-title {
   margin: 15px 0 0 10px;
   font-family: 'Open Sans', sans-serif;
-  float: left; }
+  float: left;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */ }
 
 .parknav .parknav-burger {
   margin: 17px 17px 0 0;
@@ -604,7 +612,14 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
         display: none !important; }
       .parkcameras-header-links .parkcameras-header-link .miniBasket {
         z-index: 99999;
-        height: 40px; } }
+        height: 40px; }
+        .parkcameras-header-links .parkcameras-header-link .miniBasket .mini_basket_utilities {
+          overflow: hidden; }
+          .parkcameras-header-links .parkcameras-header-link .miniBasket .mini_basket_utilities > div {
+            width: 45% !important;
+            float: left !important; }
+          .parkcameras-header-links .parkcameras-header-link .miniBasket .mini_basket_utilities + .promoText {
+            margin-top: 10px; } }
       @media screen and (max-width: 768px) and (max-width: 529px) {
         .parkcameras-header-links .parkcameras-header-link .miniBasket {
           float: initial;
@@ -703,11 +718,11 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   margin-top: 10px; }
 
 @media screen and (max-width: 768px) {
-  header + div {
+  .parkcameras-top-header + div {
     position: relative;
     top: -30px; } }
 @media screen and (max-width: 529px) {
-  header + div {
+  .parkcameras-top-header + div {
     top: -35px; } }
 
 @media screen and (max-width: 768px) {
@@ -724,6 +739,6 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
       max-width: 100%;
       width: 100%; } }
 
-/* 10:37 */
+/* 11:08 */
 
 /*# sourceMappingURL=parknav.css.map */
