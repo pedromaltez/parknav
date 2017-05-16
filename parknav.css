@@ -538,9 +538,9 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 
   .AP .straplineLink {
     display: none; } }
+.parknav .parknav-section .parknav-subheading-with-image + img {
+  margin-top: 10px; }
 @media screen and (max-width: 768px) {
-  .parknav .parknav-section .parknav-subheading-with-image + img {
-    margin-top: 10px; }
   .parknav .parknav-section ul {
     margin-left: 10px;
     margin-right: 10px;
@@ -752,13 +752,13 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
     .container.parkcameras-homepage-container > .parkcameras-carousel-container {
       max-width: 100%;
       width: 100%; } }
-@media only screen and (min-width: 1129px) {
-  .container.parkcameras-homepage-container {
-    max-width: 1140px; } }
 @media only screen and (min-width: 950px) {
   .container.parkcameras-homepage-container {
-    max-width: 960px; } }
+    width: 960px; } }
+@media only screen and (min-width: 1129px) {
+  .container.parkcameras-homepage-container {
+    width: 1140px; } }
 
-/* 12:20 */
+/* 12:34 */
 
 /*# sourceMappingURL=parknav.css.map */
