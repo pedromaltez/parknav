@@ -684,6 +684,11 @@ $gutter-small: 5px;
   margin-left: 10px;
   float: left;
   overflow: hidden;
+  a {
+    overflow: hidden;
+    display: block;
+    height: 100%;
+  }
   span {
     margin-left: -99999999px;
   }
@@ -936,4 +941,4 @@ $gutter-small: 5px;
   }
 }
 
-/* 11:08 */
+/* 12:11 */

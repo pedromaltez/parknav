@@ -569,6 +569,10 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   margin-left: 10px;
   float: left;
   overflow: hidden; }
+  .parkcameras-logo a {
+    overflow: hidden;
+    display: block;
+    height: 100%; }
   .parkcameras-logo span {
     margin-left: -99999999px; }
   @media screen and (max-width: 529px) {
@@ -749,6 +753,6 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
       max-width: 100%;
       width: 100%; } }
 
-/* 11:08 */
+/* 12:11 */
 
 /*# sourceMappingURL=parknav.css.map */
