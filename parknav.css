@@ -113,7 +113,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   display: none;
   background: #FFF;
   width: 25%;
-  top: 38px;
+  top: 34px;
   font-family: Montserrat, sans-serif;
   font-size: 14px;
   color: #444;
@@ -564,9 +564,6 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 .parkcameras-logo {
   background: url(https://content.parkcameras.com/5/1/images/pc_logo.png) center left no-repeat;
   height: 45px;
-  background-size: 250px auto;
-  width: 250px;
-  margin-left: 10px;
   float: left;
   overflow: hidden; }
   .parkcameras-logo a {
@@ -575,14 +572,14 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
     height: 100%; }
   .parkcameras-logo span {
     margin-left: -99999999px; }
-  @media screen and (max-width: 529px) {
-    .parkcameras-logo {
-      background-size: 200px auto;
-      width: 200px; } }
   @media screen and (max-width: 370px) {
     .parkcameras-logo {
       background-size: 170px auto;
       width: 170px; } }
+  @media screen and (max-width: 529px) {
+    .parkcameras-logo {
+      background-size: 200px auto;
+      width: 200px; } }
   @media screen and (min-width: 768px) {
     .parkcameras-logo {
       height: 63px;
@@ -595,8 +592,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
     text-decoration: none; }
 @media screen and (max-width: 768px) {
   .parkcameras-header-links {
-    float: right;
-    margin-right: 10px; }
+    float: right; }
     .parkcameras-header-links .parkcameras-header-link {
       color: #444;
       background: #eee;
@@ -667,8 +663,6 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
     display: block;
     position: initial;
     width: 100% !important; }
-    .parkcameras-sli-search .sli_searchform {
-      margin: 0 10px; }
     .parkcameras-sli-search input.sli_searchbox_textfield {
       width: 100% !important;
       float: left; }
@@ -737,26 +731,26 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 .awards_list ul li {
   margin-top: 10px; }
 
-@media screen and (min-width: 768px) {
-  .parkcameras-top-header {
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto; }
-    .parkcameras-top-header > .strapline {
-      width: 100%;
-      margin: 0 !important; } }
-@media screen and (min-width: 1129px) {
-  .parkcameras-top-header {
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto; } }
-@media screen and (max-width: 768px) {
-  .parkcameras-top-header + div {
-    position: relative;
-    top: -30px; } }
-@media screen and (max-width: 529px) {
-  .parkcameras-top-header + div {
-    top: -35px; } }
+.parkcameras-top-header {
+  width: calc(100% - 20px);
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (min-width: 768px) {
+    .parkcameras-top-header {
+      max-width: 960px; }
+      .parkcameras-top-header > .strapline {
+        width: 100%;
+        margin: 0 !important; } }
+  @media screen and (min-width: 1129px) {
+    .parkcameras-top-header {
+      max-width: 1140px; } }
+  @media screen and (max-width: 768px) {
+    .parkcameras-top-header + div {
+      position: relative;
+      top: -30px; } }
+  @media screen and (max-width: 529px) {
+    .parkcameras-top-header + div {
+      top: -35px; } }
 
 @media screen and (max-width: 768px) {
   .container.parkcameras-homepage-container {
@@ -779,6 +773,6 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   .container.parkcameras-homepage-container {
     width: 1140px; } }
 
-/* 14:46 */
+/* 15:08 */
 
 /*# sourceMappingURL=parknav.css.map */

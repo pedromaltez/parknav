@@ -126,7 +126,7 @@ $gutter-small: 5px;
   display: none;
   background: #FFF;
   width: 25%;
-  top: 38px;
+  top: 34px;
   font-family: Montserrat, sans-serif;
   font-size: 14px;
   color: #444;
@@ -684,9 +684,8 @@ $gutter-small: 5px;
 .parkcameras-logo {
   background: url(https://content.parkcameras.com/5/1/images/pc_logo.png) center left no-repeat;
   height: 45px;
-  background-size: 250px auto;
-  width: 250px;
-  margin-left: 10px;
+  // background-size: 250px auto;
+  // width: 250px;
   float: left;
   overflow: hidden;
   a {
@@ -697,13 +696,13 @@ $gutter-small: 5px;
   span {
     margin-left: -99999999px;
   }
-  @media screen and (max-width: 529px) {
-    background-size: 200px auto;
-    width: 200px;
-  }
   @media screen and (max-width: 370px) {
     background-size: 170px auto;
     width: 170px;
+  }
+  @media screen and (max-width: 529px) {
+    background-size: 200px auto;
+    width: 200px;
   }
   @media screen and (min-width: 768px) {
     height: 63px;
@@ -721,7 +720,6 @@ $gutter-small: 5px;
   }
   @media screen and (max-width: 768px) {
     float: right;
-    margin-right: 10px;
     .parkcameras-header-link {
       color: #444;
       background: #eee;
@@ -813,9 +811,6 @@ $gutter-small: 5px;
     display: block;
     position: initial;
     width: 100% !important;
-    .sli_searchform {
-      margin: 0 10px;
-    }
     input.sli_searchbox_textfield {
       width: 100% !important;
       float: left;
@@ -926,10 +921,11 @@ $gutter-small: 5px;
 }
 
 .parkcameras-top-header {
+  width: calc(100% - 20px);
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (min-width: 768px) {
     max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
     > .strapline {
       width: 100%;
       margin: 0 !important;
@@ -937,8 +933,6 @@ $gutter-small: 5px;
   }
   @media screen and (min-width: 1129px) {
     max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
   }
   + div {
     @media screen and (max-width: 768px) {
@@ -977,4 +971,4 @@ $gutter-small: 5px;
   }
 }
 
-/* 14:46 */
+/* 15:08 */
