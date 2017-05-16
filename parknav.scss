@@ -728,7 +728,7 @@ $gutter-small: 5px;
         display: none !important;
       }
       .miniBasket {
-        z-index: 1;
+        z-index: 99999;
         height: 40px;
         @media screen and (max-width: 529px) {
           float: initial;
@@ -833,6 +833,13 @@ $gutter-small: 5px;
   html {
     overflow: initial;
     min-width: initial;
+    &:before, &:after {
+      content: " ";
+      display: table /* 2 */;
+    }
+    &:after {
+      clear: both;
+    }
   }
   #mainBody {
     margin-top: 0;
@@ -873,18 +880,24 @@ $gutter-small: 5px;
 header + div {
   @media screen and (max-width: 768px) {
     position: relative;
-    top: -45px;
+    top: -30px;
   }
   @media screen and (max-width: 529px) {
-    top: -50px;
+    top: -35px;
   }
 }
 
 .container.parkcameras-homepage-container {
   @media screen and (max-width: 768px) {
+    #SDBanner {
+      margin-top: 0 !important;
+    }
     width: 100%;
+    max-width: 100%;
     > * {
       max-width: 98%;
+      margin-left: auto;
+      margin-right: auto;
     }
     > .parkcameras-carousel-container {
       max-width: 100%;
@@ -893,4 +906,4 @@ header + div {
   }
 }
 
-/* 09:00 */
+/* 10:37 */
