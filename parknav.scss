@@ -939,6 +939,14 @@ $gutter-small: 5px;
       width: 100%;
     }
   }
+  @media only screen and (min-width: 1129px) {
+    max-width: 1140px;
+  }
+
+  @media only screen and (min-width: 950px) {
+    max-width: 960px;
+  }
 }
 
-/* 12:11 */
+/* 12:20 */
+
