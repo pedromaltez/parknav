@@ -33,7 +33,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   z-index: 10; }
 
 .parknav > li > a {
-  padding: 20px 13px;
+  padding: 10px 13px;
   font-family: Montserrat, sans-serif;
   font-size: 14px;
   color: #fff;
@@ -473,12 +473,12 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
     top: 54px; } }
 @media only screen and (min-width: 1065px) and (max-width: 1155px) {
   .parknav > li > a {
-    padding: 20px 11px; } }
+    padding: 10px 12px; } }
 /* Medium */
 @media only screen and (min-width: 965px) and (max-width: 1064px) {
   .parknav > li > a {
     font-size: 12px;
-    padding: 20px 12px; } }
+    padding: 10px 12px; } }
 /* Small */
 @media only screen and (min-width: 841px) and (max-width: 964px) {
   .parknav > li > a {
@@ -583,9 +583,16 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
     .parkcameras-logo {
       background-size: 170px auto;
       width: 170px; } }
+  @media screen and (min-width: 768px) {
+    .parkcameras-logo {
+      height: 63px;
+      background-size: 338px auto;
+      width: 338px; } }
 
 .parkcameras-header-links .parkcameras-header-link {
   list-style: none; }
+  .parkcameras-header-links .parkcameras-header-link a {
+    text-decoration: none; }
 @media screen and (max-width: 768px) {
   .parkcameras-header-links {
     float: right;
@@ -730,6 +737,16 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 .awards_list ul li {
   margin-top: 10px; }
 
+@media screen and (min-width: 768px) {
+  .parkcameras-top-header {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto; } }
+@media screen and (min-width: 1129px) {
+  .parkcameras-top-header {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto; } }
 @media screen and (max-width: 768px) {
   .parkcameras-top-header + div {
     position: relative;
@@ -759,6 +776,6 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   .container.parkcameras-homepage-container {
     width: 1140px; } }
 
-/* 12:34 */
+/* 14:20 */
 
 /*# sourceMappingURL=parknav.css.map */
