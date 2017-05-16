@@ -706,9 +706,10 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 @media screen and (max-width: 768px) {
   .container.parkcameras-homepage-container {
     width: 100%; }
-    > .container.parkcameras-homepage-container:not(.parkcameras-carousel-container) {
+    .container.parkcameras-homepage-container > * {
       max-width: 98%; }
     .container.parkcameras-homepage-container > .parkcameras-carousel-container {
+      max-width: 100%;
       width: 100%; } }
 
 /* 17:36 */
