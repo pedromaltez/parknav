@@ -644,8 +644,14 @@ $gutter-small: 5px;
 .parknav {
   .parknav-section {
     @media screen and (max-width: 768px) {
+      .parknav-subheading-with-image {
+        + img {
+          margin-top: 10px;
+        }
+      }
       ul {
         margin-left: 10px;
+        margin-right: 10px;
         float: none;
       }
     }
@@ -692,6 +698,9 @@ $gutter-small: 5px;
 }
 
 .parkcameras-header-links {
+  .parkcameras-header-link {
+    list-style: none;
+  }
   @media screen and (max-width: 768px) {
     float: right;
     margin-right: 10px;
@@ -708,7 +717,6 @@ $gutter-small: 5px;
       &:hover {
         background: darken(#eee, 10%);
       }
-      list-style: none;
       float: left;
       height: 40px;
       line-height: 40px;
@@ -720,6 +728,9 @@ $gutter-small: 5px;
       }
       + .parkcameras-header-basket-container {
         background-color: transparent;
+        li {
+          line-height: initial;
+        }
         @media screen and (max-width: 400px) {
           margin-left: 10px;
         }
@@ -736,9 +747,13 @@ $gutter-small: 5px;
         height: 40px;
         .mini_basket_utilities {
           overflow: hidden;
+          margin-bottom: 0;
           > div {
             width: 45% !important;
             float: left !important;
+            &:last-child {
+              margin-left: 15px;
+            }
           }
           + .promoText {
             margin-top: 10px;
@@ -909,7 +924,8 @@ $gutter-small: 5px;
     width: 100%;
     max-width: 100%;
     > * {
-      max-width: 98%;
+      max-width: 100%;
+      width: calc(100% - 20px);
       margin-left: auto;
       margin-right: auto;
     }
