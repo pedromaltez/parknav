@@ -496,6 +496,28 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   .parknav > li > a {
     padding: 10px 12px; } }
 /* PARK SPECIFIC AMENDMENTS */
+.parkcameras-top-header {
+  margin-top: 50px; }
+  .parkcameras-top-header .parkcameras-logo, .parkcameras-top-header .parkcameras-header-links, .parkcameras-top-header .parkcameras-sli-search {
+    margin-top: 10px; }
+    @media screen and (max-width: 529px) {
+      .parkcameras-top-header .parkcameras-logo, .parkcameras-top-header .parkcameras-header-links, .parkcameras-top-header .parkcameras-sli-search {
+        margin-top: 5px; } }
+
+.AP .straplineLink, .parkcameras-shop-by-brand-dropdown {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .AP .straplineLink, .parkcameras-shop-by-brand-dropdown {
+      display: block; } }
+
+@media screen and (max-width: 768px) {
+  .parknav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999999; } }
+.parknav li a {
+  padding-left: 10px; }
 .parknav a:not([href]) {
   cursor: pointer; }
 .parknav .menu-diff {
@@ -513,31 +535,6 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   margin-left: 0; }
   .parknav .parknav-section .row .col1 {
     width: 17%; }
-@media screen and (max-width: 768px) {
-  .parknav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 9999999; } }
-
-@media screen and (max-width: 768px) {
-  .parknav li a {
-    padding-left: 10px; }
-
-  .parkcameras-top-header {
-    margin-top: 50px; }
-    .parkcameras-top-header .parkcameras-logo, .parkcameras-top-header .parkcameras-header-links, .parkcameras-top-header .parkcameras-sli-search {
-      margin-top: 10px; } }
-    @media screen and (max-width: 768px) and (max-width: 529px) {
-      .parkcameras-top-header .parkcameras-logo, .parkcameras-top-header .parkcameras-header-links, .parkcameras-top-header .parkcameras-sli-search {
-        margin-top: 5px; } }
-
-.AP .straplineLink, .parkcameras-shop-by-brand-dropdown {
-  display: none; }
-  @media screen and (min-width: 768px) {
-    .AP .straplineLink, .parkcameras-shop-by-brand-dropdown {
-      display: block; } }
-
 .parknav .parknav-section .parknav-subheading-with-image + img {
   margin-top: 10px; }
 @media screen and (max-width: 768px) {
@@ -651,10 +648,12 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
           text-align: center;
           padding: 5px !important; }
   @media screen and (min-width: 768px) {
-    .parkcameras-header-links .parkcameras-header-link {
-      float: left; }
-      .parkcameras-header-links .parkcameras-header-link.parkcameras-header-basket-container {
-        clear: left; } }
+    .parkcameras-header-links {
+      margin-top: 12.5px; }
+      .parkcameras-header-links .parkcameras-header-link {
+        float: left; }
+        .parkcameras-header-links .parkcameras-header-link.parkcameras-header-basket-container {
+          clear: left; } }
 
 .parkcameras-sli-search {
   float: left !important; }
@@ -776,6 +775,6 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   .container.parkcameras-homepage-container {
     width: 1140px; } }
 
-/* 17:10 */
+/* 17:20 */
 
 /*# sourceMappingURL=parknav.css.map */

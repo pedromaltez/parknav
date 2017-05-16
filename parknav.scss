@@ -563,8 +563,6 @@ $gutter-small: 5px;
   }
 }
 
-
-
 // .parknav {
 //   > li {
 //     > a {
@@ -579,7 +577,36 @@ $gutter-small: 5px;
 
 /* PARK SPECIFIC AMENDMENTS */
 
+.parkcameras-top-header {
+  margin-top: 50px;
+  .parkcameras-logo, .parkcameras-header-links, .parkcameras-sli-search {
+    margin-top: 10px;
+    @media screen and (max-width: 529px) {
+      margin-top: 5px;
+    }
+  }
+}
+
+.AP .straplineLink, .parkcameras-shop-by-brand-dropdown {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+
 .parknav {
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+  }
+  li {
+    a {
+      padding-left: 10px;
+    }
+  }
   a:not([href]) {
     cursor: pointer;
   }
@@ -610,44 +637,6 @@ $gutter-small: 5px;
         width: 17%;
       }
     }
-  }
-  @media screen and (max-width: 768px) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 9999999;
-  }
-}
-
-@media screen and (max-width:768px) {
-  .parknav {
-    li {
-      a {
-        padding-left: 10px;
-      }
-    }
-  }
-  .parkcameras-top-header {
-    margin-top: 50px;
-    .parkcameras-logo, .parkcameras-header-links, .parkcameras-sli-search {
-      margin-top: 10px;
-      @media screen and (max-width: 529px) {
-        margin-top: 5px;
-      }
-    }
-  }
-}
-
-.AP .straplineLink, .parkcameras-shop-by-brand-dropdown {
-  display: none;
-  @media screen and (min-width: 768px) {
-    display: block;
-  }
-}
-
-
-.parknav {
-  .parknav-section {
     .parknav-subheading-with-image {
       + img {
         margin-top: 10px;
@@ -792,6 +781,7 @@ $gutter-small: 5px;
     }
   }
   @media screen and (min-width: 768px) {
+    margin-top: 12.5px;
     .parkcameras-header-link {
       float: left;
       &.parkcameras-header-basket-container {
@@ -973,4 +963,4 @@ $gutter-small: 5px;
   }
 }
 
-/* 17:10 */
+/* 17:20 */
