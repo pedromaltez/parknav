@@ -643,12 +643,12 @@ $gutter-small: 5px;
 
 .parknav {
   .parknav-section {
-    @media screen and (max-width: 768px) {
-      .parknav-subheading-with-image {
-        + img {
-          margin-top: 10px;
-        }
+    .parknav-subheading-with-image {
+      + img {
+        margin-top: 10px;
       }
+    }
+    @media screen and (max-width: 768px) {
       ul {
         margin-left: 10px;
         margin-right: 10px;
@@ -939,14 +939,13 @@ $gutter-small: 5px;
       width: 100%;
     }
   }
-  @media only screen and (min-width: 1129px) {
-    max-width: 1140px;
-  }
-
   @media only screen and (min-width: 950px) {
-    max-width: 960px;
+    width: 960px;
+  }
+  @media only screen and (min-width: 1129px) {
+    width: 1140px;
   }
 }
 
-/* 12:20 */
+/* 12:34 */
 
