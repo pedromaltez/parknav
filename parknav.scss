@@ -504,55 +504,6 @@ $gutter-small: 5px;
 
 /* Extra Responsive Bits */
 
-/*Full Screen*/
-@media screen and (min-width: 1156px) {
-  .parknav > li > a
-  {
-    padding: 10px 16px;
-  }
-}
-
-
-
-/* Large */
-@media screen and (max-width: 1155px) {
-  .parknav > li > .parknav-section.full-width {
-    top: 55px;
-  }
-}
-@media screen and (max-width: 840px) {
-  .parknav > li > .parknav-section.full-width {
-    top: 54px;
-  }
-}
-
-
-
-
-@media screen and (min-width: 1065px) {
-  .parknav > li > a {
-    padding: 10px 12px;
-  }
-}
-
-/* Medium */
-@media screen and (min-width: 965px) {
-  .parknav > li > a {
-    font-size: 12px;
-    padding: 10px 12px;
-  }
-}
-
-
-/* Small */
-@media screen and (min-width: 841px)  {
-  .parknav > li > a
-  {
-    font-size: 12px;
-    padding: 10px 8px;
-  }
-}
-
 /* Extra Small */
 @media screen and (min-width: 768px) {
   .parknav > li > a {
@@ -568,6 +519,50 @@ $gutter-small: 5px;
     font-size: 11px;
   }
 }
+
+/* Small */
+@media screen and (min-width: 841px)  {
+  .parknav > li > a
+  {
+    font-size: 12px;
+    padding: 10px 8px;
+  }
+}
+
+/* Medium */
+@media screen and (min-width: 965px) {
+  .parknav > li > a {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+}
+
+/* Large */
+@media screen and (max-width: 1155px) {
+  .parknav > li > .parknav-section.full-width {
+    top: 33px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .parknav > li > .parknav-section.full-width {
+    top: 34px;
+  }
+}
+
+/*Full Screen*/
+@media screen and (min-width: 1156px) {
+  .parknav > li > a
+  {
+    padding: 10px 16px;
+  }
+}
+
+@media screen and (min-width: 1065px) {
+  .parknav > li > a {
+    padding: 10px 12px;
+  }
+}
+
 
 
 // .parknav {
@@ -982,5 +977,4 @@ $gutter-small: 5px;
   }
 }
 
-/* 14:40 */
-
+/* 14:46 */

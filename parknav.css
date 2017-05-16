@@ -460,30 +460,6 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
     width: 100% !important;
     left: 0 !important; } }
 /* Extra Responsive Bits */
-/*Full Screen*/
-@media screen and (min-width: 1156px) {
-  .parknav > li > a {
-    padding: 10px 16px; } }
-/* Large */
-@media screen and (max-width: 1155px) {
-  .parknav > li > .parknav-section.full-width {
-    top: 55px; } }
-@media screen and (max-width: 840px) {
-  .parknav > li > .parknav-section.full-width {
-    top: 54px; } }
-@media screen and (min-width: 1065px) {
-  .parknav > li > a {
-    padding: 10px 12px; } }
-/* Medium */
-@media screen and (min-width: 965px) {
-  .parknav > li > a {
-    font-size: 12px;
-    padding: 10px 12px; } }
-/* Small */
-@media screen and (min-width: 841px) {
-  .parknav > li > a {
-    font-size: 12px;
-    padding: 10px 8px; } }
 /* Extra Small */
 @media screen and (min-width: 768px) {
   .parknav > li > a {
@@ -495,6 +471,30 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 
   .parknav li > .parknav-section a {
     font-size: 11px; } }
+/* Small */
+@media screen and (min-width: 841px) {
+  .parknav > li > a {
+    font-size: 12px;
+    padding: 10px 8px; } }
+/* Medium */
+@media screen and (min-width: 965px) {
+  .parknav > li > a {
+    font-size: 12px;
+    padding: 10px 12px; } }
+/* Large */
+@media screen and (max-width: 1155px) {
+  .parknav > li > .parknav-section.full-width {
+    top: 33px; } }
+@media screen and (max-width: 840px) {
+  .parknav > li > .parknav-section.full-width {
+    top: 34px; } }
+/*Full Screen*/
+@media screen and (min-width: 1156px) {
+  .parknav > li > a {
+    padding: 10px 16px; } }
+@media screen and (min-width: 1065px) {
+  .parknav > li > a {
+    padding: 10px 12px; } }
 /* PARK SPECIFIC AMENDMENTS */
 .parknav a:not([href]) {
   cursor: pointer; }
@@ -779,6 +779,6 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   .container.parkcameras-homepage-container {
     width: 1140px; } }
 
-/* 14:40 */
+/* 14:46 */
 
 /*# sourceMappingURL=parknav.css.map */
