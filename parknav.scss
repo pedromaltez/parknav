@@ -802,12 +802,16 @@ $gutter-small: 5px;
 
 .parkcameras-sli-search {
   float: left !important;
-  input.sli_searchbox_textfield:focus {
-    width: 100% !important;
+  @media screen and (max-width: 529px) {
+    input.sli_searchbox_textfield:focus {
+      width: 100% !important;
+    }
   }
+
   @media screen and (max-width: 768px) {
     display: block;
     position: initial;
+    width: 100% !important;
     input.sli_searchbox_textfield {
       width: 100% !important;
       float: left;
@@ -968,4 +972,4 @@ $gutter-small: 5px;
   }
 }
 
-/* 16:11 */
+/* 16:14 */
