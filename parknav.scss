@@ -602,11 +602,6 @@ $gutter-small: 5px;
     left: 0;
     z-index: 9999999;
   }
-  li {
-    a {
-      padding-left: 10px;
-    }
-  }
   a:not([href]) {
     cursor: pointer;
   }
@@ -618,6 +613,9 @@ $gutter-small: 5px;
   }
   li {
     line-height: normal;
+    a {
+      padding-left: 10px;
+    }
     > .parknav-section {
       ul {
         li {
@@ -629,6 +627,9 @@ $gutter-small: 5px;
         }
       }
     }
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 10px;
   }
   .parknav-section {
     .row {
@@ -742,6 +743,9 @@ $gutter-small: 5px;
     }
     .desk {
       display: none !important;
+      @media screen and (min-width: 768px) {
+        display: block !important;
+      }
     }
     .miniBasket {
       z-index: 99999;
@@ -780,8 +784,10 @@ $gutter-small: 5px;
       }
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 529px) {
     margin-top: 12.5px;
+  }
+  @media screen and (min-width: 768px) {
     .parkcameras-header-link {
       float: left;
       &.parkcameras-header-basket-container {
@@ -793,31 +799,28 @@ $gutter-small: 5px;
 
 .parkcameras-sli-search {
   float: left !important;
-  @media screen and (max-width: 529px) {
-    input.sli_searchbox_textfield:focus {
-      width: 100% !important;
-    }
+  display: block;
+  position: initial;
+  width: 100% !important;
+
+  input.sli_searchbox_textfield:focus {
+    width: 100% !important;
   }
 
-  @media screen and (max-width: 768px) {
-    display: block;
-    position: initial;
+  input.sli_searchbox_textfield {
     width: 100% !important;
-    input.sli_searchbox_textfield {
-      width: 100% !important;
-      float: left;
-      &:focus {
-        background-color: #eee;
-      }
+    float: left;
+    &:focus {
+      background-color: #eee;
     }
-    .icon-search {
-      position: relative;
-      top: -42px;
-      left: 0px;
-      height: 40px;
-      line-height: 32px;
-      float: right;
-    }
+  }
+  .icon-search {
+    position: relative;
+    top: -42px;
+    left: 0px;
+    height: 40px;
+    line-height: 32px;
+    float: right;
   }
 
   input.sli_searchbox_textfield {
@@ -834,7 +837,6 @@ $gutter-small: 5px;
       }
     }
   }
-
 
   .sli-searchbox-textfield-underline {
     display: block;
@@ -880,25 +882,6 @@ $gutter-small: 5px;
   }
 }
 
-// Hide old header
-
-
-@media screen and (max-width: 768px) {
-  .megamenuContainer {
-    display: none !important;
-    + .strapline {
-      display: none !important;
-    }
-  }
-
-  .topNav {
-    display: none !important;
-  }
-
-  .strapline {
-    display: none;
-  }
-}
 
 
 
@@ -963,4 +946,23 @@ $gutter-small: 5px;
   }
 }
 
-/* 17:20 */
+// Hide old header
+@media screen and (max-width: 768px) {
+  .megamenuContainer {
+    display: none !important;
+    + .strapline {
+      display: none !important;
+    }
+  }
+
+  .topNav {
+    display: none !important;
+  }
+
+  .strapline {
+    display: none;
+  }
+}
+
+
+/* 17:32 */
