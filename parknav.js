@@ -39,7 +39,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 		screenSize();
 
 		$(window).resize(function() {
-			if(lastScreenWidth <= 768 && windowWidth() > 768){
+			if(lastScreenWidth <= 769 && windowWidth() > 769){
 				unbindEvents();
 				hideCollapse();
 				bindHover();
@@ -48,7 +48,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 					bigScreen = true;
 				}
 			}
-			if(lastScreenWidth > 768 && windowWidth() <= 768){
+			if(lastScreenWidth > 769 && windowWidth() <= 769){
 				unbindEvents();
 				showCollapse();
 				bindClick();
@@ -58,18 +58,18 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 				}
 			}
 			if(settings.align == "right"){
-				if(lastScreenWidth > 768 && windowWidth() > 768)
+				if(lastScreenWidth > 769 && windowWidth() > 769)
 					fixSubmenuRight();
 			}
 			else{
-				if(lastScreenWidth > 768 && windowWidth() > 768)
+				if(lastScreenWidth > 769 && windowWidth() > 769)
 					fixSubmenuLeft();
 			}
 			lastScreenWidth = windowWidth();
 		});
 
 		function screenSize(){
-			if(windowWidth() <= 768){
+			if(windowWidth() <= 769){
 				showCollapse();
 				bindClick();
 				if(bigScreen == true){
@@ -239,11 +239,3 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 
 
 }(jQuery));
-
-
-// Stop menu links from working when using mobile accordion style menu
-
-$(".parknav-section-name").click(function(e) {
-  e.preventDefault();
-  console.log("preventDefault", e)
-});
