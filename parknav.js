@@ -39,7 +39,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 		screenSize();
 
 		$(window).resize(function() {
-			if(lastScreenWidth <= 769 && windowWidth() > 769){
+			if(lastScreenWidth <= 767 && windowWidth() > 767){
 				unbindEvents();
 				hideCollapse();
 				bindHover();
@@ -48,7 +48,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 					bigScreen = true;
 				}
 			}
-			if(lastScreenWidth > 769 && windowWidth() <= 769){
+			if(lastScreenWidth > 767 && windowWidth() <= 767){
 				unbindEvents();
 				showCollapse();
 				bindClick();
@@ -58,18 +58,18 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 				}
 			}
 			if(settings.align == "right"){
-				if(lastScreenWidth > 769 && windowWidth() > 769)
+				if(lastScreenWidth > 767 && windowWidth() > 767)
 					fixSubmenuRight();
 			}
 			else{
-				if(lastScreenWidth > 769 && windowWidth() > 769)
+				if(lastScreenWidth > 767 && windowWidth() > 767)
 					fixSubmenuLeft();
 			}
 			lastScreenWidth = windowWidth();
 		});
 
 		function screenSize(){
-			if(windowWidth() <= 769){
+			if(windowWidth() <= 767){
 				showCollapse();
 				bindClick();
 				if(bigScreen == true){

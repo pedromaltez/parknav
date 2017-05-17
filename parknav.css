@@ -383,79 +383,78 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 
 /* RESPONSIVE LAYOUT
 **********************************************************/
-@media (max-width: 768px) {
-  .parknav > li {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box; }
+.parknav > li {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
 
-  .parknav > li > a {
-    padding: 15px 25px; }
+.parknav > li > a {
+  padding: 15px 25px; }
 
-  .parknav a {
-    width: 100%;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box; }
+.parknav a {
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
 
-  .parknav li > .parknav-section ul li.title {
-    border-bottom: 0; }
+.parknav li > .parknav-section ul li.title {
+  border-bottom: 0; }
 
-  .parknav ul.dropdown,
-  .parknav ul.dropdown li ul.dropdown {
-    width: 100% !important;
-    left: 0;
-    position: static !important;
-    border: none;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box; }
+.parknav ul.dropdown,
+.parknav ul.dropdown li ul.dropdown {
+  width: 100% !important;
+  left: 0;
+  position: static !important;
+  border: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
 
-  .parknav ul.dropdown li {
-    background: #fff !important;
-    border: none; }
+.parknav ul.dropdown li {
+  background: #fff !important;
+  border: none; }
 
-  .parknav ul.dropdown > li > a {
-    padding-left: 40px !important; }
+.parknav ul.dropdown > li > a {
+  padding-left: 40px !important; }
 
-  .parknav > li > .parknav-section {
-    width: 100% !important;
-    position: static;
-    border-top: none; }
+.parknav > li > .parknav-section {
+  width: 100% !important;
+  position: static;
+  border-top: none; }
 
-  .parknav > li > .parknav-section .row [class*="col"] {
-    float: none;
-    display: block;
-    width: 100% !important;
-    margin-left: 0;
-    margin-top: 15px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-    .parknav > li > .parknav-section .row [class*="col"] > ul {
-      overflow: hidden; }
+.parknav > li > .parknav-section .row [class*="col"] {
+  float: none;
+  display: block;
+  width: 100% !important;
+  margin-left: 0;
+  margin-top: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .parknav > li > .parknav-section .row [class*="col"] > ul {
+    overflow: hidden; }
 
-  .parknav > li > .parknav-section .row:first-child [class*="col"]:first-child {
-    margin-top: 0; } }
-  @media screen and (max-width: 768px) and (max-width: 768px) {
+.parknav > li > .parknav-section .row:first-child [class*="col"]:first-child {
+  margin-top: 0; }
+  @media screen and (max-width: 768px) {
     .parknav > li > .parknav-section .row:first-child [class*="col"]:first-child {
       margin-top: 5px; } }
 
-@media (max-width: 768px) {
-  .parknav > li > .parknav-section .row {
-    margin-top: 0; }
+.parknav > li > .parknav-section .row {
+  margin-top: 0; }
 
-  .parknav > li > ul.dropdown > li > a {
-    padding-left: 40px !important; }
+.parknav > li > ul.dropdown > li > a {
+  padding-left: 40px !important; }
 
-  .parknav > li > ul.dropdown > li > ul.dropdown > li > a {
-    padding-left: 60px !important; }
+.parknav > li > ul.dropdown > li > ul.dropdown > li > a {
+  padding-left: 60px !important; }
 
-  .parknav > li > ul.dropdown > li > ul.dropdown > li > ul.dropdown > li > a {
-    padding-left: 80px !important; } }
-@media (min-width: 768px) and (max-width: 900px) {
+.parknav > li > ul.dropdown > li > ul.dropdown > li > ul.dropdown > li > a {
+  padding-left: 80px !important; }
+
+@media (min-width: 768px) {
   .parknav > li > .parknav-section {
     width: 100% !important;
     left: 0 !important; } }
@@ -513,56 +512,56 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
     .AP .straplineLink, .parkcameras-shop-by-brand-dropdown {
       display: block; } }
 
-@media screen and (max-width: 768px) {
-  .parknav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 9999999; } }
-.parknav a:not([href]) {
-  cursor: pointer; }
-.parknav .menu-diff {
-  color: #2D4D9C; }
-.parknav .used {
-  background: #444; }
-.parknav li {
-  line-height: normal; }
-  .parknav li a {
-    padding-left: 10px; }
-  .parknav li > .parknav-section ul li {
-    padding: 0; }
-    .parknav li > .parknav-section ul li a {
-      display: block;
-      padding: 4px 0; }
-@media screen and (min-width: 768px) {
-  .parknav {
-    margin-top: 10px; } }
-.parknav .parknav-section .row {
-  margin-left: 0; }
-  .parknav .parknav-section .row .col1 {
-    width: 17%; }
-.parknav .parknav-section .parknav-subheading-with-image + img {
-  margin-top: 10px; }
-@media screen and (max-width: 768px) {
-  .parknav .parknav-section ul {
-    margin-left: 10px;
-    margin-right: 10px;
-    float: none; } }
-@media screen and (min-width: 768px) {
-  .parknav .parknav-section {
-    border-top: none;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    padding: 0; }
-    .parknav .parknav-section:before, .parknav .parknav-section:after {
-      content: " ";
-      display: block;
-      height: 3px;
-      width: 100%;
-      background-color: #444; }
-    .parknav .parknav-section .row {
-      padding: 20px; } }
+.parknav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999999; }
+  .parknav a:not([href]) {
+    cursor: pointer; }
+  .parknav .menu-diff {
+    color: #2D4D9C; }
+  .parknav .used {
+    background: #444; }
+  .parknav li {
+    line-height: normal; }
+    .parknav li a {
+      padding-left: 10px; }
+    .parknav li > .parknav-section ul li {
+      padding: 0; }
+      .parknav li > .parknav-section ul li a {
+        display: block;
+        padding: 4px 0; }
+  @media screen and (min-width: 768px) {
+    .parknav {
+      position: initial;
+      margin-top: 10px; } }
+  .parknav .parknav-section .row {
+    margin-left: 0; }
+    .parknav .parknav-section .row .col1 {
+      width: 17%; }
+  .parknav .parknav-section .parknav-subheading-with-image + img {
+    margin-top: 10px; }
+  @media screen and (max-width: 768px) {
+    .parknav .parknav-section ul {
+      margin-left: 10px;
+      margin-right: 10px;
+      float: none; } }
+  @media screen and (min-width: 768px) {
+    .parknav .parknav-section {
+      border-top: none;
+      border-bottom: none;
+      border-left: none;
+      border-right: none;
+      padding: 0; }
+      .parknav .parknav-section:before, .parknav .parknav-section:after {
+        content: " ";
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: #444; }
+      .parknav .parknav-section .row {
+        padding: 20px; } }
 
 .parkcameras-logo {
   background: url(https://content.parkcameras.com/5/1/images/pc_logo.png) center left no-repeat;
@@ -656,6 +655,9 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
           line-height: 32px;
           text-align: center;
           padding: 5px !important; }
+          @media screen and (min-width: 768px) {
+            .parkcameras-header-links .parkcameras-header-link .miniBasket .notification .icon-basket {
+              display: inline; } }
   @media screen and (min-width: 529px) {
     .parkcameras-header-links {
       margin-top: 12.5px; } }
@@ -709,10 +711,8 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
     clear: left; }
 
 #sli_autocomplete {
-  width: calc(100% - 20px) !important; }
-  @media screen and (max-width: 529px) {
-    #sli_autocomplete {
-      margin-left: 0; } }
+  width: calc(100% - 20px) !important;
+  margin-left: 0; }
 
 @media screen and (max-width: 529px) {
   html {
@@ -785,6 +785,6 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 
   .strapline {
     display: none; } }
-/* 18:04 */
+/* 09:14 */
 
 /*# sourceMappingURL=parknav.css.map */
