@@ -41,7 +41,7 @@ $gutter-small: 5px;
   z-index: 10;
 }
 .parknav > li > a{
-  padding: 10px 13px;
+  padding: 20px 13px;
   font-family: Montserrat, sans-serif;
   font-size: 14px;
   color: #fff;
@@ -60,11 +60,11 @@ $gutter-small: 5px;
 .parknav ul.dropdown,
 .parknav ul.dropdown li ul.dropdown {
   list-style: none;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
   display: none;
-  position: absolute;
-  z-index: 99;
+    position: absolute;
+    z-index: 99;
   min-width: 134px;
   background: #333333;
 }
@@ -100,7 +100,7 @@ $gutter-small: 5px;
 
 /* dropdowns to left side */
 .parknav ul.dropdown li ul.dropdown.left{
-  left: auto;
+    left: auto;
   right: 100%;
 }
 
@@ -126,7 +126,7 @@ $gutter-small: 5px;
   display: none;
   background: #FFF;
   width: 25%;
-  top: 34px;
+  top: 38px;
   font-family: Montserrat, sans-serif;
   font-size: 14px;
   color: #444;
@@ -142,18 +142,18 @@ $gutter-small: 5px;
 }
 
 /* parknav-section list */
-.parknav .parknav-section ul{
+.parknav li .parknav-section ul{
   margin: 0 0 20px 0;
   float: left;
   padding: 0;
   display: block;
   position: relative;
 }
-.parknav .parknav-section ul li{
+.parknav li .parknav-section ul li{
   width: 100%;
   padding: 4px 0;
 }
-.parknav .parknav-section ul li.title{
+.parknav li .parknav-section ul li.title{
   padding: 0 0 5px;
   font-size: 18px;
   font-weight: bold;
@@ -161,26 +161,26 @@ $gutter-small: 5px;
   margin-top: 10px;
 }
 
-.parknav .parknav-section ul li.title.heading-only {
+.parknav li .parknav-section ul li.title.heading-only{
   border-bottom: none;
 }
 
-.parknav .parknav-section ul li.title:first-of-type {
+.parknav li .parknav-section ul li.title:first-of-type{
   margin-top: 0px;
-}
+  }
 
-.parknav .parknav-section ul li.title a {
+.parknav li .parknav-section ul li.title a{
   font-size: 16px;
   font-weight: bold;
   color: #000;
 }
 
-.parknav .parknav-section ul li.title a:hover{
+.parknav li .parknav-section ul li.title a:hover{
   color: #999;
 }
 
 /* parknav-section h5 */
-.parknav .parknav-section h5{
+.parknav li .parknav-section h5{
   width: 100%;
   margin: 0;
   padding: 0;
@@ -193,7 +193,7 @@ $gutter-small: 5px;
   transition: opacity 0.2s linear;
 }
 
-.parknav .parknav-section h5:hover{
+.parknav li .parknav-section h5:hover{
   opacity: 0.8;
   text-decoration: none !important;
 }
@@ -401,10 +401,6 @@ $gutter-small: 5px;
   margin: 15px 0 0 10px;
   font-family: 'Open Sans', sans-serif;
   float: left;
-  -webkit-user-select: none;  /* Chrome all / Safari all */
-  -moz-user-select: none;     /* Firefox all */
-  -ms-user-select: none;      /* IE 10+ */
-  user-select: none;          /* Likely future */
 }
 
 .parknav .parknav-burger {
@@ -423,76 +419,70 @@ $gutter-small: 5px;
 
 /* RESPONSIVE LAYOUT
 **********************************************************/
-
-.parknav > li{
-  display: block;
-  width: 100%;
-  box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-}
-.parknav > li > a{
-  padding: 15px 25px;
-}
-.parknav a{
-  width: 100%;
-
-  box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-}
-.parknav li > .parknav-section ul li.title {
-  border-bottom: 0;
-}
-.parknav ul.dropdown,
-.parknav ul.dropdown li ul.dropdown{
-  width: 100% !important;
-  left: 0;
-  position: static !important;
-  border: none;
-  box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-}
-.parknav ul.dropdown li {
-  background: #fff !important;
-  border: none;
-}
-.parknav ul.dropdown > li > a{
-  padding-left: 40px !important;
-}
-.parknav > li > .parknav-section{
-  width: 100% !important;
-  position: static;
-  border-top: none;
-}
-.parknav > li > .parknav-section .row [class*="col"]{
-  float: none;
-  display: block;
-  width: 100% !important;
-  margin-left: 0;
-  margin-top: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  > ul {
-    overflow: hidden;
+@media (max-width: 768px) {
+  .parknav > li{
+    display: block;
+    width: 100%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
   }
-}
-.parknav > li > .parknav-section .row:first-child  [class*="col"]:first-child {
-  margin-top: 0;
-  @media screen and (max-width: 768px) {
-    margin-top: 5px;
+  .parknav > li > a{
+    padding: 15px 25px;
   }
-}
-.parknav > li > .parknav-section .row{
-  margin-top: 0;
-}
-.parknav > li > ul.dropdown > li > a { padding-left: 40px !important; }
-.parknav > li > ul.dropdown > li > ul.dropdown > li > a{ padding-left: 60px !important; }
-.parknav > li > ul.dropdown > li > ul.dropdown > li > ul.dropdown > li > a{ padding-left: 80px !important; }
+  .parknav a{
+    width: 100%;
 
-@media (min-width: 768px) {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+  }
+  .parknav li > .parknav-section ul li.title {
+    border-bottom: 0;
+  }
+  .parknav ul.dropdown,
+  .parknav ul.dropdown li ul.dropdown{
+    width: 100% !important;
+    left: 0;
+    position: static !important;
+    border: none;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+  }
+  .parknav ul.dropdown li {
+    background: #fff !important;
+    border: none;
+  }
+  .parknav ul.dropdown > li > a{
+    padding-left: 40px !important;
+  }
+  .parknav > li > .parknav-section{
+    width: 100% !important;
+    position: static;
+    border-top: none;
+  }
+  .parknav > li > .parknav-section .row [class*="col"]{
+    float: none;
+    display: block;
+    width: 100% !important;
+    margin-left: 0;
+    margin-top: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .parknav > li > .parknav-section .row:first-child  [class*="col"]:first-child {
+    margin-top: 0;
+  }
+  .parknav > li > .parknav-section .row{
+    margin-top: 0;
+  }
+  .parknav > li > ul.dropdown > li > a { padding-left: 40px !important; }
+  .parknav > li > ul.dropdown > li > ul.dropdown > li > a{ padding-left: 60px !important; }
+  .parknav > li > ul.dropdown > li > ul.dropdown > li > ul.dropdown > li > a{ padding-left: 80px !important; }
+}
+@media (min-width: 768px) and (max-width: 900px) {
   .parknav > li > .parknav-section{
     width: 100% !important;
     left: 0 !important;
@@ -504,11 +494,61 @@ $gutter-small: 5px;
 
 /* Extra Responsive Bits */
 
+/*Full Screen*/
+@media only screen and (min-width: 1156px) {
+
+  .parknav > li > a
+  {
+  padding: 10px 16px;
+  }
+}
+
+
+
+/* Large */
+@media screen and (max-width: 1155px) {
+  .parknav > li > .parknav-section.full-width {
+    top: 55px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .parknav > li > .parknav-section.full-width {
+    top: 54px;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1065px) and (max-width:1155px) {
+  .parknav > li > a {
+    padding: 20px 11px;
+  }
+}
+
+/* Medium */
+@media only screen and (min-width: 965px) and (max-width:1064px) {
+  .parknav > li > a {
+    font-size: 12px;
+    padding: 20px 12px;
+  }
+}
+
+
+/* Small */
+@media only screen and (min-width: 841px) and (max-width: 964px) {
+  .parknav > li > a
+  {
+    font-size: 12px;
+    padding: 20px 8px;
+  }
+}
+
 /* Extra Small */
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 840px) {
   .parknav > li > a {
     font-size: 11px;
-    padding: 10px 7px;
+    padding: 20px 7px;
   }
 
   .parknav li > .parknav-section ul li.title a {
@@ -520,88 +560,11 @@ $gutter-small: 5px;
   }
 }
 
-/* Small */
-@media screen and (min-width: 841px)  {
-  .parknav > li > a
-  {
-    font-size: 12px;
-    padding: 10px 8px;
-  }
-}
-
-/* Medium */
-@media screen and (min-width: 965px) {
-  .parknav > li > a {
-    font-size: 12px;
-    padding: 10px 12px;
-  }
-}
-
-/* Large */
-@media screen and (max-width: 1155px) {
-  .parknav > li > .parknav-section.full-width {
-    top: 33px;
-  }
-}
-@media screen and (max-width: 840px) {
-  .parknav > li > .parknav-section.full-width {
-    top: 34px;
-  }
-}
-
-/*Full Screen*/
-@media screen and (min-width: 1156px) {
-  .parknav > li > a
-  {
-    padding: 10px 16px;
-  }
-}
-
-@media screen and (min-width: 1065px) {
-  .parknav > li > a {
-    padding: 10px 12px;
-  }
-}
-
-// .parknav {
-//   > li {
-//     > a {
-//       @media screen and (min-width: 768px) {
-//         font-size: 11px;
-//         padding: 10px 7px;
-//       }
-//     }
-//   }
-// }
 
 
 /* PARK SPECIFIC AMENDMENTS */
 
-.parkcameras-top-header {
-  margin-top: 50px;
-  .parkcameras-logo, .parkcameras-sli-search {
-    margin-top: 5px;
-    @media screen and (min-width: 529px) {
-      margin-top: 10px;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    margin-top: 20px;
-  }
-}
-
-.AP .straplineLink, .parkcameras-shop-by-brand-dropdown {
-  display: none;
-  @media screen and (min-width: 768px) {
-    display: block;
-  }
-}
-
 .parknav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 9999999;
   a:not([href]) {
     cursor: pointer;
   }
@@ -613,9 +576,6 @@ $gutter-small: 5px;
   }
   li {
     line-height: normal;
-    a {
-      padding-left: 10px;
-    }
     > .parknav-section {
       ul {
         li {
@@ -628,10 +588,6 @@ $gutter-small: 5px;
       }
     }
   }
-  @media screen and (min-width: 768px) {
-    position: initial;
-    margin-top: 10px;
-  }
   .parknav-section {
     .row {
       margin-left: 0;
@@ -639,15 +595,49 @@ $gutter-small: 5px;
         width: 17%;
       }
     }
-    .parknav-subheading-with-image {
-      + img {
-        margin-top: 10px;
+  }
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  .parknav {
+    li {
+      a {
+        padding-left: 10px;
       }
     }
-    @media screen and (max-width: 768px) {
+  }
+  .parkcameras-top-header {
+    overflow: hidden;
+    margin-top: 50px;
+    .parkcameras-logo, .parkcameras-header-links, .parkcameras-sli-search {
+      margin-top: 10px;
+      @media screen and (max-width: 529px) {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .brand_dropdown {
+    display: none;
+  }
+
+  .AP .straplineLink {
+    display: none;
+  }
+}
+
+.parknav {
+  .parknav-section {
+    @media screen and (min-width: 529px) {
       ul {
         margin-left: 10px;
-        margin-right: 10px;
         float: none;
       }
     }
@@ -674,160 +664,122 @@ $gutter-small: 5px;
 
 .parkcameras-logo {
   background: url(https://content.parkcameras.com/5/1/images/pc_logo.png) center left no-repeat;
-  background-size: 170px auto;
-  width: 170px;
-  height: 40px;
+  height: 45px;
+  background-size: 250px auto;
+  width: 250px;
+  margin-left: 10px;
   float: left;
   overflow: hidden;
-  a {
-    overflow: hidden;
-    display: block;
-    height: 100%;
-  }
   span {
     margin-left: -99999999px;
   }
-  @media screen and (min-width: 370px) {
+  @media screen and (max-width: 529px) {
     background-size: 200px auto;
     width: 200px;
   }
-  @media screen and (min-width: 529px) {
-    height: 45px;
-    background-size: 250px auto;
-    width: 250px;
-  }
-  @media screen and (min-width: 768px) {
-    height: 63px;
-    background-size: 338px auto;
-    width: 338px;
+  @media screen and (max-width: 370px) {
+    background-size: 170px auto;
+    width: 170px;
   }
 }
 
 .parkcameras-header-links {
-  float: right;
-  margin-top: 5px;
-  .parkcameras-header-link {
-    list-style: none;
-    color: #444;
-    background: #eee;
-    margin-left: 10px;
-    float: left;
-    height: 40px;
-    line-height: 40px;
-    &:first-child {
-      margin-left: 0;
-    }
-    &:last-child {
+  @media screen and (max-width: 768px) {
+    float: right;
+    margin-right: 10px;
+    .parkcameras-header-link {
+      color: #444;
+      background: #eee;
       margin-left: 10px;
-      @media screen and (min-width: 400px) {
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
         margin-left: 30px;
       }
-    }
-    &:hover {
-      background: darken(#eee, 10%);
-    }
-    > li {
-      line-height: 40px;
-    }
-    + .parkcameras-header-basket-container {
-      background-color: transparent;
-      li {
-        line-height: initial;
+      &:hover {
+        background: darken(#eee, 10%);
       }
-    }
-    a {
-      text-decoration: none;
-      padding: 10px;
-    }
-    .floatl, .floatr {
-      float: none;
-    }
-    .desk {
-      display: none !important;
-      @media screen and (min-width: 768px) {
-        display: block !important;
-      }
-    }
-    .miniBasket {
-      z-index: 99999;
-      height: 40px;
-      float: initial;
-      top: initial;
-      .mini_basket_utilities {
-        overflow: hidden;
-        margin-bottom: 0;
-        > div {
-          width: 45% !important;
-          float: left !important;
-          &:last-child {
-            margin-left: 15px;
-          }
-        }
-        + .promoText {
-          margin-top: 10px;
-        }
-      }
-      .notification {
-        width: 36px;
-        padding: 0;
-        background-color: $parkblue;
-        &:hover {
-          background-color: darken($parkblue, 10%);
-        }
-        .icon-basket {
-          margin: 0;
-          display: block;
-          height: 40px;
-          line-height: 32px;
-          text-align: center;
-          padding: 5px !important;
-          @media screen and (min-width: 768px) {
-            display: inline;
-          }
-        }
-      }
-    }
-  }
-  @media screen and (min-width: 529px) {
-    margin-top: 12.5px;
-  }
-  @media screen and (min-width: 768px) {
-    .parkcameras-header-link {
+      list-style: none;
       float: left;
-      &.parkcameras-header-basket-container {
-        clear: left;
+      height: 40px;
+      line-height: 40px;
+      li {
+        line-height: 40px;
+      }
+      .floatl, .floatr {
+        float: none;
+      }
+      + .parkcameras-header-basket-container {
+        background-color: transparent;
+        @media screen and (max-width: 400px) {
+          margin-left: 10px;
+        }
+      }
+      a {
+        text-decoration: none;
+        padding: 10px;
+      }
+      .desk {
+        display: none !important;
+      }
+      .miniBasket {
+        z-index: 1;
+        height: 40px;
+        @media screen and (max-width: 529px) {
+          float: initial;
+          top: initial;
+        }
+        .notification {
+          width: 36px;
+          padding: 0;
+          background-color: $parkblue;
+          &:hover {
+            background-color: darken($parkblue, 10%);
+          }
+          .icon-basket {
+            margin: 0;
+            display: block;
+            height: 40px;
+            line-height: 32px;
+            text-align: center;
+            padding: 5px !important;
+          }
+        }
       }
     }
   }
 }
 
 .parkcameras-sli-search {
-  float: left !important;
-  display: block;
-  position: initial;
-  width: 100% !important;
-
-  input.sli_searchbox_textfield:focus {
-    width: 100% !important;
-  }
-
-  input.sli_searchbox_textfield {
-    width: 100% !important;
-    float: left;
-    &:focus {
-      background-color: #eee;
-    }
-    @media screen and (min-width: 768px) {
-      margin-left: 0 !important;
+  @media screen and (max-width: 529px) {
+    input.sli_searchbox_textfield:focus {
+      width: 100% !important;
     }
   }
-  .icon-search {
-    position: relative;
-    top: -42px;
-    left: 0px;
-    height: 40px;
-    line-height: 32px;
-    float: right;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: initial;
+    width: 100% !important;
+    .sli_searchform {
+      margin: 0 10px;
+    }
+    input.sli_searchbox_textfield {
+      width: 100% !important;
+      float: left;
+      &:focus {
+        background-color: #eee;
+      }
+    }
+    .icon-search {
+      position: relative;
+      top: -42px;
+      left: 0px;
+      height: 40px;
+      line-height: 32px;
+      float: right;
+    }
   }
 
   input.sli_searchbox_textfield {
@@ -845,6 +797,7 @@ $gutter-small: 5px;
     }
   }
 
+
   .sli-searchbox-textfield-underline {
     display: block;
     width: 100%;
@@ -860,13 +813,14 @@ $gutter-small: 5px;
     //   background-color: $parkblue;
     // }
   }
+
 }
 
 #sli_autocomplete {
   width: calc(100% - 20px) !important;
-  margin-left: 0;
-  // @media screen and (max-width: 529px) {
-  // }
+  @media screen and (max-width: 529px) {
+    margin-left: 0;
+  }
 }
 
 
@@ -876,84 +830,15 @@ $gutter-small: 5px;
   html {
     overflow: initial;
     min-width: initial;
-    &:before, &:after {
-      content: " ";
-      display: table /* 2 */;
-    }
-    &:after {
-      clear: both;
-    }
   }
   #mainBody {
     margin-top: 0;
   }
 }
 
-
-
-
-// No thank you, cookie notice.
-
-#cccwr {
-  display: none;
-}
-
-.awards_list ul li {
-  margin-top: 10px;
-}
-
-.parkcameras-top-header {
-  width: calc(100% - 20px);
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and (min-width: 768px) {
-    max-width: 960px;
-    > .strapline {
-      width: 100%;
-      margin: 0 !important;
-    }
-  }
-  @media screen and (min-width: 1129px) {
-    max-width: 1140px;
-  }
-  + div {
-    @media screen and (max-width: 768px) {
-      position: relative;
-      top: -30px;
-    }
-    @media screen and (max-width: 529px) {
-      top: -35px;
-    }
-  }
-}
-
-.container.parkcameras-homepage-container {
-  @media screen and (max-width: 768px) {
-    #SDBanner {
-      margin-top: 0 !important;
-    }
-    width: 100%;
-    max-width: 100%;
-    > * {
-      max-width: 100%;
-      width: calc(100% - 20px);
-      margin-left: auto;
-      margin-right: auto;
-    }
-    > .parkcameras-carousel-container {
-      max-width: 100%;
-      width: 100%;
-    }
-  }
-  @media screen and (min-width: 950px) {
-    width: 960px;
-  }
-  @media screen and (min-width: 1129px) {
-    width: 1140px;
-  }
-}
-
 // Hide old header
+
+
 @media screen and (max-width: 768px) {
   .megamenuContainer {
     display: none !important;
@@ -972,4 +857,10 @@ $gutter-small: 5px;
 }
 
 
-/* 09:14 */
+// No thank you, cookie notice.
+
+#cccwr {
+  display: none;
+}
+
+/* 01:02 */
