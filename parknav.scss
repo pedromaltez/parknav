@@ -618,10 +618,8 @@ $gutter-small: 5px;
   .parkcameras-shop-by-brand-dropdown {
     display: none;
   }
-  &.container {
-    max-width: 100%;
-    width: 100%;
-  }
+  max-width: 100%;
+  width: 100%;
   .parkcameras-header-links {
     display: none;
   }
@@ -638,6 +636,7 @@ $gutter-small: 5px;
   .parkcameras-top-header {
     margin-top: 50px;
     .parkcameras-logo, .parkcameras-header-links, .parkcameras-sli-search {
+      display: initial;
       margin-top: 10px;
       @media screen and (max-width: 529px) {
         margin-top: 5px;
