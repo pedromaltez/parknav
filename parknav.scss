@@ -618,10 +618,28 @@ $gutter-small: 5px;
   .parkcameras-shop-by-brand-dropdown {
     display: none;
   }
-  max-width: 100%;
-  width: 100%;
   .parkcameras-header-links {
     display: none;
+  }
+  .strapline {
+    width: 100%;
+    margin: 0 !important;
+    max-width: 100%;
+    border: 0;
+    padding: 0;
+    background: #eee;
+    &:hover {
+      background: darken(#eee, 10%);
+    }
+    ul {
+      display: flex;
+      li {
+        display: block;
+        flex: auto;
+        border: none;
+        margin: 0;
+      }
+    }
   }
 }
 
@@ -635,6 +653,8 @@ $gutter-small: 5px;
   }
   .parkcameras-top-header {
     margin-top: 50px;
+    max-width: 100%;
+    width: 100%;
     .parkcameras-logo, .parkcameras-header-links, .parkcameras-sli-search {
       display: initial;
       margin-top: 10px;
@@ -688,7 +708,6 @@ $gutter-small: 5px;
   height: 45px;
   background-size: 250px auto;
   width: 250px;
-  margin-left: 10px;
   float: left;
   overflow: hidden;
   a {
@@ -698,6 +717,9 @@ $gutter-small: 5px;
   }
   span {
     margin-left: -99999999px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-left: 10px;
   }
   @media screen and (max-width: 529px) {
     background-size: 200px auto;
