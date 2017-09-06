@@ -785,6 +785,9 @@ $gutter-small: 5px;
       .miniBasket {
         z-index: 99999;
         height: 40px;
+        .productname {
+          color: #444444;
+        }
         .mini_basket_utilities {
           overflow: hidden;
           margin-bottom: 0;
