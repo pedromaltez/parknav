@@ -1,48 +1,814 @@
 /*
-Error: Invalid CSS after "  @media screen ": expected "{", was "(min-width: 112..."
-        on line 916 of parknav.scss
-
-911:   }
-912:   @media screen and (max-width: 1128px) {
-913:     width: 950px !important;
-914:     margin-left: 0% !important;
-915:   }
-916:   @media screen (min-width: 1129px) {
-917:     margin-left: 460px !important;
-918:   }
-919: }
-920: 
-921: 
-
-Backtrace:
-parknav.scss:916
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:665:in `block'
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:409:in `media_directive'
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:222:in `special_directive'
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:197:in `directive'
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/bin/sass:23:in `load'
-/Users/pedro/usr/lib/rbenv/versions/2.3.1/bin/sass:23:in `<main>'
+NAME: Jet Responsive parknav-section
+AUTHOR PAGE: http://codecanyon.net/user/marcoarib
+ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"  @media screen \": expected \"{\", was \"(min-width: 112...\"\A         on line 916 of parknav.scss\A \A 911:   }\A 912:   @media screen and (max-width: 1128px) {\A 913:     width: 950px !important;\A 914:     margin-left: 0% !important;\A 915:   }\A 916:   @media screen (min-width: 1129px) {\A 917:     margin-left: 460px !important;\A 918:   }\A 919: }\A 920: \A 921: "; }
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/* MENU CONFIGURATION
+**********************************************************/
+.parknav-wrapper {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.parknav {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  float: left;
+  list-style: none;
+  background: #2D4D9C; }
+
+.parknav li {
+  display: inline-block;
+  float: left; }
+
+.parknav a {
+  -o-transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  transition: all .3s linear;
+  outline: none;
+  z-index: 10; }
+
+.parknav > li > a {
+  padding: 20px 13px;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block; }
+
+.parknav > li:hover > a,
+.parknav > li.active > a {
+  background: #F2F2F2;
+  color: #2D4D9C; }
+
+/* DROPDOWN CONFIGURATION
+**********************************************************/
+.parknav ul.dropdown,
+.parknav ul.dropdown li ul.dropdown {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  position: absolute;
+  z-index: 99;
+  min-width: 134px;
+  background: #333333; }
+
+.parknav ul.dropdown {
+  top: 60px; }
+
+.parknav ul.dropdown li ul.dropdown {
+  left: 100%;
+  top: inherit; }
+
+.parknav ul.dropdown li {
+  clear: both;
+  width: 100%;
+  font-size: 12px; }
+
+.parknav ul.dropdown li a {
+  width: 100%;
+  padding: 12px 24px 12px;
+  display: inline-block;
+  float: left;
+  clear: both;
+  font-family: Montserrat, sans-serif;
+  text-decoration: none;
+  color: #999;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+.parknav ul.dropdown li:hover > a {
+  background: #e0e0e0;
+  color: #555; }
+
+/* dropdowns to left side */
+.parknav ul.dropdown li ul.dropdown.left {
+  left: auto;
+  right: 100%; }
+
+/* SUBMENU INDICATORS
+**********************************************************/
+.parknav .indicator {
+  position: relative;
+  left: 5px;
+  top: 0;
+  font-size: 14px;
+  float: right; }
+
+.parknav ul li .indicator {
+  font-size: 12px;
+  top: 1px;
+  left: 10px; }
+
+/* parknav-section
+**********************************************************/
+.parknav li .parknav-section {
+  position: absolute;
+  display: none;
+  background: #FFF;
+  width: 25%;
+  top: 38px;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  color: #444;
+  z-index: 99;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* parknav-section list */
+.parknav .parknav-section ul {
+  margin: 0 0 20px 0;
+  float: left;
+  padding: 0;
+  display: block;
+  position: relative; }
+
+.parknav .parknav-section ul li {
+  width: 100%;
+  padding: 4px 0; }
+
+.parknav .parknav-section ul li.title {
+  padding: 0 0 5px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: solid 1px #2D4D9C;
+  margin-top: 10px; }
+
+.parknav .parknav-section ul li.title.heading-only {
+  border-bottom: none; }
+
+.parknav .parknav-section ul li.title:first-of-type {
+  margin-top: 0px; }
+
+.parknav .parknav-section ul li.title a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000; }
+
+.parknav .parknav-section ul li.title a:hover {
+  color: #999; }
+
+/* parknav-section h5 */
+.parknav .parknav-section h5 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: #2D4D9C;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear; }
+
+.parknav .parknav-section h5:hover {
+  opacity: 0.8;
+  text-decoration: none !important; }
+
+/* parknav-section links */
+.parknav li > .parknav-section a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 12px;
+  -webkit-transition: color 0.2s linear;
+  -webkit-transition: font-weight 0.2s linear;
+  -moz-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear; }
+
+.parknav li > .parknav-section a:hover {
+  color: #2D4D9C;
+  font-weight: bold; }
+
+/* parknav-section images */
+.parknav .parknav-section img {
+  width: 100%;
+  -webkit-transition: border 0.3s linear;
+  -moz-transition: border 0.3s linear;
+  -o-transition: border 0.3s linear;
+  transition: border 0.3s linear; }
+
+/* to fix right attribute on submenus (menu aligned to left (default)) */
+.parknav > li.fix-sub > .parknav-section,
+.parknav > li.fix-sub > .parknav-section.half-width,
+.parknav > li.fix-sub > .dropdown {
+  right: 0; }
+
+/* parknav-section WIDTHS
+**********************************************************/
+.parknav > li > .parknav-section.half-width {
+  width: 50%; }
+
+.parknav > li > .parknav-section.full-width {
+  width: 100%;
+  left: 0; }
+
+/* parknav-section FORM CONFIGURATION
+**********************************************************/
+.parknav li > .parknav-section form {
+  width: 100%; }
+
+/* parknav-section inputs */
+.parknav li > .parknav-section form input[type="text"],
+.parknav li > .parknav-section form textarea {
+  padding: 5px;
+  color: #999;
+  background: #444;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  border: solid 1px transparent;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border 0.3s linear;
+  -moz-transition: border 0.3s linear;
+  -o-transition: border 0.3s linear;
+  transition: border 0.3s linear; }
+
+.parknav li > .parknav-section form input[type="text"]:focus,
+.parknav li > .parknav-section form textarea:focus {
+  border-color: #e0e0e0; }
+
+.parknav li > .parknav-section form input[type="text"] {
+  width: 100%;
+  margin-top: 10px; }
+
+.parknav li > .parknav-section form textarea {
+  width: 100%;
+  margin-top: 10px; }
+
+.parknav li > .parknav-section form input[type="submit"] {
+  width: 25%;
+  float: right;
+  height: 30px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  background: #444;
+  color: #777;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-transition: background 0.3s linear;
+  -moz-transition: background 0.3s linear;
+  -o-transition: background 0.3s linear;
+  transition: background 0.3s linear; }
+
+.parknav li > .parknav-section form input[type="submit"]:hover {
+  background: #e0e0e0;
+  color: #555; }
+
+/* parknav-section GRID SYSTEM
+**********************************************************/
+.parknav-section .row {
+  width: 100%;
+  margin-top: 15px; }
+
+.parknav-section .row:first-child {
+  margin-top: 0; }
+
+.parknav-section .row:before,
+.parknav-section .row:after {
+  display: table;
+  content: "";
+  line-height: 0; }
+
+.parknav-section .row:after {
+  clear: both; }
+
+.parknav-section .row .col1,
+.parknav-section .row .col2,
+.parknav-section .row .col3,
+.parknav-section .row .col4,
+.parknav-section .row .col5,
+.parknav-section .row .col6 {
+  display: block;
+  width: 100%;
+  min-height: 20px;
+  float: left;
+  margin-left: 2.127659574468085%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.parknav-section .row [class*="col"]:first-child {
+  margin-left: 0; }
+
+.parknav-section .row .col1 {
+  width: 16%; }
+
+.parknav-section .row .col2 {
+  width: 31.914893617021278%; }
+
+.parknav-section .row .col3 {
+  width: 48.93617021276595%; }
+
+.parknav-section .row .col4 {
+  width: 65.95744680851064%; }
+
+.parknav-section .row .col5 {
+  width: 82.97872340425532%; }
+
+.parknav-section .row .col6 {
+  width: 100%; }
+
+/* RIGHT ALIGNMENT (MENU ITEM)
+**********************************************************/
+.parknav > li.right {
+  float: right; }
+
+.parknav > li.right > .parknav-section,
+.parknav > li.right > .parknav-section.half-width,
+.parknav > li.right > .dropdown {
+  right: 0; }
+
+/* to fix right attribute on submenus (menu aligned to right) */
+.parknav > li.jsright {
+  float: right; }
+
+.parknav > li.jsright.last > .parknav-section,
+.parknav > li.jsright.last > .parknav-section.half-width,
+.parknav > li.jsright.last > .dropdown {
+  right: 0; }
+
+/* ICONS (FONT AWESOME)
+**********************************************************/
+.parknav > li > a > i {
+  line-height: 23px !important;
+  margin-right: 6px;
+  font-size: 18px;
+  float: left; }
+
+/* COLLAPSIBLE MENU
+**********************************************************/
+.parknav .parknav-mobile-menu {
+  display: none;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  color: #FFF;
+  background: #2D4D9C;
+  font-weight: bold;
+  font-size: 18px; }
+
+.parknav .parknav-mobile-menu .parknav-title {
+  margin: 15px 0 0 10px;
+  font-family: 'Open Sans', sans-serif;
+  float: left;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */ }
+
+.parknav .parknav-burger {
+  margin: 17px 17px 0 0;
+  float: right; }
+
+.parknav .parknav-burger div {
+  margin-bottom: 3px;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #FFF; }
+
+/* RESPONSIVE LAYOUT
+**********************************************************/
+@media (max-width: 768px) {
+  .parknav > li {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+
+  .parknav > li > a {
+    padding: 15px 25px; }
+
+  .parknav a {
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+
+  .parknav li > .parknav-section ul li.title {
+    border-bottom: 0; }
+
+  .parknav ul.dropdown,
+  .parknav ul.dropdown li ul.dropdown {
+    width: 100% !important;
+    left: 0;
+    position: static !important;
+    border: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+
+  .parknav ul.dropdown li {
+    background: #fff !important;
+    border: none; }
+
+  .parknav ul.dropdown > li > a {
+    padding-left: 40px !important; }
+
+  .parknav > li > .parknav-section {
+    width: 100% !important;
+    position: static;
+    border-top: none; }
+
+  .parknav > li > .parknav-section .row [class*="col"] {
+    float: none;
+    display: block;
+    width: 100% !important;
+    margin-left: 0;
+    margin-top: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    .parknav > li > .parknav-section .row [class*="col"] > ul {
+      overflow: hidden; }
+
+  .parknav > li > .parknav-section .row:first-child [class*="col"]:first-child {
+    margin-top: 0; } }
+  @media screen and (max-width: 768px) and (max-width: 768px) {
+    .parknav > li > .parknav-section .row:first-child [class*="col"]:first-child {
+      margin-top: 5px; } }
+
+@media (max-width: 768px) {
+  .parknav > li > .parknav-section .row {
+    margin-top: 0; }
+
+  .parknav > li > ul.dropdown > li > a {
+    padding-left: 40px !important; }
+
+  .parknav > li > ul.dropdown > li > ul.dropdown > li > a {
+    padding-left: 60px !important; }
+
+  .parknav > li > ul.dropdown > li > ul.dropdown > li > ul.dropdown > li > a {
+    padding-left: 80px !important; } }
+@media (min-width: 768px) and (max-width: 900px) {
+  .parknav > li > .parknav-section {
+    width: 100% !important;
+    left: 0 !important; } }
+/* Extra Responsive Bits */
+/*Full Screen*/
+@media only screen and (min-width: 1156px) {
+  .parknav > li > a {
+    padding: 10px 16px; } }
+/* Large */
+@media screen and (max-width: 1155px) {
+  .parknav > li > .parknav-section.full-width {
+    top: 55px; } }
+@media screen and (max-width: 840px) {
+  .parknav > li > .parknav-section.full-width {
+    top: 54px; } }
+@media only screen and (min-width: 1065px) and (max-width: 1155px) {
+  .parknav > li > a {
+    padding: 20px 11px; } }
+/* Medium */
+@media only screen and (min-width: 965px) and (max-width: 1064px) {
+  .parknav > li > a {
+    font-size: 12px;
+    padding: 20px 12px; } }
+/* Small */
+@media only screen and (min-width: 841px) and (max-width: 964px) {
+  .parknav > li > a {
+    font-size: 12px;
+    padding: 20px 8px; } }
+/* Extra Small */
+@media only screen and (min-width: 768px) and (max-width: 840px) {
+  .parknav > li > a {
+    font-size: 11px;
+    padding: 20px 7px; }
+
+  .parknav li > .parknav-section ul li.title a {
+    font-size: 12px; }
+
+  .parknav li > .parknav-section a {
+    font-size: 11px; } }
+/* PARK SPECIFIC AMENDMENTS */
+.parknav {
+  margin-top: 10px; }
+  .parknav a:not([href]) {
+    cursor: pointer; }
+  .parknav .menu-diff {
+    color: #2D4D9C; }
+  .parknav .used {
+    background: #444; }
+  .parknav li {
+    line-height: normal; }
+    .parknav li > .parknav-section ul li {
+      padding: 0; }
+      .parknav li > .parknav-section ul li a {
+        display: block;
+        padding: 4px 0; }
+  .parknav .parknav-section .row {
+    margin-left: 0; }
+    .parknav .parknav-section .row .col1 {
+      width: 17%; }
+  @media screen and (max-width: 768px) {
+    .parknav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 9999999; } }
+
+.parkcameras-top-header .parkcameras-shop-by-brand-dropdown {
+  display: none; }
+.parkcameras-top-header .parkcameras-header-links {
+  display: none; }
+.parkcameras-top-header .strapline {
+  width: 100%;
+  margin: 0 !important;
+  max-width: 100%;
+  border: 0;
+  padding: 0;
+  background: #eee; }
+  .parkcameras-top-header .strapline ul {
+    display: flex; }
+    .parkcameras-top-header .strapline ul li {
+      display: block;
+      flex: auto;
+      border: none;
+      margin: 0;
+      padding: 0;
+      height: initial; }
+      .parkcameras-top-header .strapline ul li:hover {
+        background: #d5d5d5; }
+      .parkcameras-top-header .strapline ul li a {
+        padding: 9px 0;
+        display: block; }
+
+@media screen and (max-width: 768px) {
+  .parknav {
+    margin-top: 0; }
+    .parknav li a {
+      padding-left: 10px; }
+
+  .parkcameras-top-header {
+    margin-top: 50px;
+    max-width: 100%;
+    width: 100%; }
+    .parkcameras-top-header .parkcameras-logo, .parkcameras-top-header .parkcameras-header-links, .parkcameras-top-header .parkcameras-sli-search {
+      display: initial;
+      margin-top: 10px; } }
+    @media screen and (max-width: 768px) and (max-width: 529px) {
+      .parkcameras-top-header .parkcameras-logo, .parkcameras-top-header .parkcameras-header-links, .parkcameras-top-header .parkcameras-sli-search {
+        margin-top: 5px; } }
+
+@media screen and (max-width: 768px) {
+  .AP .straplineLink {
+    display: none; } }
+.parknav .parknav-section .parknav-subheading-with-image + img {
+  margin-top: 10px; }
+@media screen and (max-width: 768px) {
+  .parknav .parknav-section ul {
+    margin-left: 10px;
+    margin-right: 10px;
+    float: none; } }
+@media screen and (min-width: 768px) {
+  .parknav .parknav-section {
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding: 0; }
+    .parknav .parknav-section:before, .parknav .parknav-section:after {
+      content: " ";
+      display: block;
+      height: 3px;
+      width: 100%;
+      background-color: #444; }
+    .parknav .parknav-section .row {
+      padding: 20px; } }
+
+.parkcameras-logo {
+  background: url(https://content.parkcameras.com/5/1/images/pc_logo.png) center left no-repeat;
+  height: 45px;
+  background-size: 250px auto;
+  width: 250px;
+  float: left;
+  overflow: hidden; }
+  .parkcameras-logo a {
+    overflow: hidden;
+    display: block;
+    height: 100%; }
+  .parkcameras-logo span {
+    margin-left: -99999999px; }
+  @media screen and (max-width: 768px) {
+    .parkcameras-logo {
+      margin-left: 10px; } }
+  @media screen and (max-width: 529px) {
+    .parkcameras-logo {
+      background-size: 200px auto;
+      width: 200px; } }
+  @media screen and (max-width: 370px) {
+    .parkcameras-logo {
+      background-size: 170px auto;
+      width: 170px; } }
+
+.parkcameras-header-links .parkcameras-header-link {
+  list-style: none; }
+@media screen and (max-width: 768px) {
+  .parkcameras-header-links {
+    float: right;
+    margin-right: 10px; }
+    .parkcameras-header-links .parkcameras-header-link {
+      color: #444;
+      background: #eee;
+      margin-left: 10px;
+      float: left;
+      height: 40px;
+      line-height: 40px; }
+      .parkcameras-header-links .parkcameras-header-link:first-child {
+        margin-left: 0; }
+      .parkcameras-header-links .parkcameras-header-link:last-child {
+        margin-left: 30px; }
+      .parkcameras-header-links .parkcameras-header-link:hover {
+        background: #d5d5d5; }
+      .parkcameras-header-links .parkcameras-header-link > li {
+        line-height: 40px; }
+      .parkcameras-header-links .parkcameras-header-link .floatl, .parkcameras-header-links .parkcameras-header-link .floatr {
+        float: none; }
+      .parkcameras-header-links .parkcameras-header-link + .parkcameras-header-basket-container {
+        background-color: transparent; }
+        .parkcameras-header-links .parkcameras-header-link + .parkcameras-header-basket-container li {
+          line-height: initial; } }
+      @media screen and (max-width: 768px) and (max-width: 400px) {
+        .parkcameras-header-links .parkcameras-header-link + .parkcameras-header-basket-container {
+          margin-left: 10px; } }
+@media screen and (max-width: 768px) {
+      .parkcameras-header-links .parkcameras-header-link a {
+        text-decoration: none;
+        padding: 10px; }
+      .parkcameras-header-links .parkcameras-header-link .desk {
+        display: none !important; }
+      .parkcameras-header-links .parkcameras-header-link .miniBasket {
+        z-index: 99999;
+        height: 40px; }
+        .parkcameras-header-links .parkcameras-header-link .miniBasket .productname {
+          color: #444444; }
+        .parkcameras-header-links .parkcameras-header-link .miniBasket .mini_basket_utilities {
+          overflow: hidden;
+          margin-bottom: 0; }
+          .parkcameras-header-links .parkcameras-header-link .miniBasket .mini_basket_utilities > div {
+            width: 45% !important;
+            float: left !important; }
+            .parkcameras-header-links .parkcameras-header-link .miniBasket .mini_basket_utilities > div:last-child {
+              margin-left: 15px; }
+          .parkcameras-header-links .parkcameras-header-link .miniBasket .mini_basket_utilities + .promoText {
+            margin-top: 10px; } }
+      @media screen and (max-width: 768px) and (max-width: 529px) {
+        .parkcameras-header-links .parkcameras-header-link .miniBasket {
+          float: initial;
+          top: initial; } }
+@media screen and (max-width: 768px) {
+        .parkcameras-header-links .parkcameras-header-link .miniBasket .notification {
+          width: 36px;
+          padding: 0;
+          background-color: #2D4D9C; }
+          .parkcameras-header-links .parkcameras-header-link .miniBasket .notification:hover {
+            background-color: #223974; }
+          .parkcameras-header-links .parkcameras-header-link .miniBasket .notification .icon-basket {
+            margin: 0;
+            display: block;
+            height: 40px;
+            line-height: 32px;
+            text-align: center;
+            padding: 5px !important; } }
+
+.parkcameras-sli-search {
+  clear: left;
+  width: 60% !important;
+  position: relative; }
+  @media screen and (max-width: 768px) {
+    .parkcameras-sli-search {
+      clear: none;
+      display: block;
+      position: initial;
+      width: 100% !important; }
+      .parkcameras-sli-search .sli_searchform {
+        margin: 0 10px; }
+      .parkcameras-sli-search input.sli_searchbox_textfield {
+        width: 100% !important;
+        float: left; }
+      .parkcameras-sli-search .icon-search {
+        position: relative;
+        top: -42px;
+        left: 0px;
+        height: 40px;
+        line-height: 32px;
+        float: right; } }
+  .parkcameras-sli-search input.sli_searchbox_textfield {
+    width: 100% !important;
+    margin: 0;
+    -webkit-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+    border: none; }
+    .parkcameras-sli-search input.sli_searchbox_textfield:focus {
+      width: 100% !important;
+      border: none;
+      background-color: #eee !important; }
+      .parkcameras-sli-search input.sli_searchbox_textfield:focus + .sli-searchbox-textfield-underline {
+        background-position: left bottom;
+        background-color: #2D4D9C; }
+  .parkcameras-sli-search .sli-searchbox-textfield-underline {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #2D4D9C 34%, #ddd 65%);
+    background-size: 300% 100%;
+    background-position: right bottom;
+    transition: all 200ms linear;
+    clear: left; }
+
+#sli_autocomplete {
+  margin-left: 10px !important;
+  width: calc(100% - 20px) !important; }
+  @media screen and (max-width: 529px) {
+    #sli_autocomplete {
+      margin-left: 0; } }
+  @media screen and (max-width: 768px) {
+    #sli_autocomplete {
+      width: calc(100% - 20px) !important; } }
+  @media screen and (max-width: 949px) {
+    #sli_autocomplete {
+      width: 98% !important; } }
+  @media screen and (max-width: 1128px) {
+    #sli_autocomplete {
+      width: 950px !important;
+      margin-left: 0% !important; } }
+  @media screen and (min-width: 1129px) {
+    #sli_autocomplete {
+      margin-left: 460px !important; } }
+
+@media screen and (max-width: 529px) {
+  html {
+    overflow: initial;
+    min-width: initial; }
+    html:before, html:after {
+      content: " ";
+      display: table; }
+    html:after {
+      clear: both; }
+
+  #mainBody {
+    margin-top: 0; } }
+@media screen and (max-width: 768px) {
+  .megamenuContainer {
+    display: none !important; }
+    .megamenuContainer + .strapline {
+      display: none !important; }
+
+  .topNav {
+    display: none !important; }
+
+  .strapline {
+    display: none; } }
+#cccwr {
+  display: none; }
+
+.awards_list ul li {
+  margin-top: 10px; }
+
+@media screen and (max-width: 768px) {
+  .parkcameras-top-header + div {
+    position: relative;
+    top: -30px; } }
+@media screen and (max-width: 529px) {
+  .parkcameras-top-header + div {
+    top: -35px; } }
+
+@media screen and (max-width: 768px) {
+  .container.parkcameras-homepage-container {
+    width: 100%;
+    max-width: 100%; }
+    .container.parkcameras-homepage-container #SDBanner {
+      margin-top: 0 !important; }
+    .container.parkcameras-homepage-container > * {
+      max-width: 100%;
+      width: calc(100% - 20px);
+      margin-left: auto;
+      margin-right: auto; }
+    .container.parkcameras-homepage-container > .parkcameras-carousel-container {
+      max-width: 100%;
+      width: 100%; } }
+@media only screen and (min-width: 950px) {
+  .container.parkcameras-homepage-container {
+    width: 960px; } }
+@media only screen and (min-width: 1129px) {
+  .container.parkcameras-homepage-container {
+    width: 1140px; } }
+
+/* 01:29 */
+
+/*# sourceMappingURL=parknav.css.map */
