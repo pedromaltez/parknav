@@ -635,8 +635,14 @@ $gutter-small: 5px;
         flex: auto;
         border: none;
         margin: 0;
+        padding: 0;
+        height: initial;
         &:hover {
           background: darken(#eee, 10%);
+        }
+        a {
+          padding: 0 9px;
+          display: block;
         }
       }
     }
