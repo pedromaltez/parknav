@@ -614,6 +614,19 @@ $gutter-small: 5px;
   }
 }
 
+.parkcameras-top-header {
+  .parkcameras-shop-by-brand-dropdown {
+    display: none;
+  }
+  &.container {
+    max-width: 100%;
+    width: 100%;
+  }
+  .parkcameras-header-links {
+    display: none;
+  }
+}
+
 @media screen and (max-width:768px) {
   .parknav {
     li {
@@ -631,11 +644,6 @@ $gutter-small: 5px;
       }
     }
   }
-
-  .brand_dropdown {
-    display: none;
-  }
-
   .AP .straplineLink {
     display: none;
   }
