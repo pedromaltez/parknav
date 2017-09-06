@@ -496,29 +496,31 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   .parknav li > .parknav-section a {
     font-size: 11px; } }
 /* PARK SPECIFIC AMENDMENTS */
-.parknav a:not([href]) {
-  cursor: pointer; }
-.parknav .menu-diff {
-  color: #2D4D9C; }
-.parknav .used {
-  background: #444; }
-.parknav li {
-  line-height: normal; }
-  .parknav li > .parknav-section ul li {
-    padding: 0; }
-    .parknav li > .parknav-section ul li a {
-      display: block;
-      padding: 4px 0; }
-.parknav .parknav-section .row {
-  margin-left: 0; }
-  .parknav .parknav-section .row .col1 {
-    width: 17%; }
-@media screen and (max-width: 768px) {
-  .parknav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 9999999; } }
+.parknav {
+  margin-top: 10px; }
+  .parknav a:not([href]) {
+    cursor: pointer; }
+  .parknav .menu-diff {
+    color: #2D4D9C; }
+  .parknav .used {
+    background: #444; }
+  .parknav li {
+    line-height: normal; }
+    .parknav li > .parknav-section ul li {
+      padding: 0; }
+      .parknav li > .parknav-section ul li a {
+        display: block;
+        padding: 4px 0; }
+  .parknav .parknav-section .row {
+    margin-left: 0; }
+    .parknav .parknav-section .row .col1 {
+      width: 17%; }
+  @media screen and (max-width: 768px) {
+    .parknav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 9999999; } }
 
 .parkcameras-top-header .parkcameras-shop-by-brand-dropdown {
   display: none; }
@@ -543,12 +545,14 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
       .parkcameras-top-header .strapline ul li:hover {
         background: #d5d5d5; }
       .parkcameras-top-header .strapline ul li a {
-        padding: 0 9px;
+        padding: 9px 0;
         display: block; }
 
 @media screen and (max-width: 768px) {
-  .parknav li a {
-    padding-left: 10px; }
+  .parknav {
+    margin-top: 0; }
+    .parknav li a {
+      padding-left: 10px; }
 
   .parkcameras-top-header {
     margin-top: 50px;
@@ -682,54 +686,57 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
             text-align: center;
             padding: 5px !important; } }
 
-@media screen and (max-width: 529px) {
-  .parkcameras-sli-search input.sli_searchbox_textfield:focus {
-    width: 100% !important; } }
-@media screen and (max-width: 768px) {
-  .parkcameras-sli-search {
-    display: block;
-    position: initial;
-    width: 100% !important; }
-    .parkcameras-sli-search .sli_searchform {
-      margin: 0 10px; }
-    .parkcameras-sli-search input.sli_searchbox_textfield {
-      width: 100% !important;
-      float: left; }
-      .parkcameras-sli-search input.sli_searchbox_textfield:focus {
-        background-color: #eee; }
-    .parkcameras-sli-search .icon-search {
-      position: relative;
-      top: -42px;
-      left: 0px;
-      height: 40px;
-      line-height: 32px;
-      float: right; } }
-.parkcameras-sli-search input.sli_searchbox_textfield {
-  -webkit-transition: background-color 200ms linear;
-  transition: background-color 200ms linear;
-  margin-bottom: 0;
-  border: none; }
-  .parkcameras-sli-search input.sli_searchbox_textfield:focus {
+.parkcameras-sli-search {
+  clear: left;
+  width: 60% !important;
+  position: relative; }
+  @media screen and (max-width: 768px) {
+    .parkcameras-sli-search {
+      clear: none;
+      display: block;
+      position: initial;
+      width: 100% !important; }
+      .parkcameras-sli-search .sli_searchform {
+        margin: 0 10px; }
+      .parkcameras-sli-search input.sli_searchbox_textfield {
+        width: 100% !important;
+        float: left; }
+      .parkcameras-sli-search .icon-search {
+        position: relative;
+        top: -42px;
+        left: 0px;
+        height: 40px;
+        line-height: 32px;
+        float: right; } }
+  .parkcameras-sli-search input.sli_searchbox_textfield {
     width: 100% !important;
+    margin: 0;
+    -webkit-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
     border: none; }
-    .parkcameras-sli-search input.sli_searchbox_textfield:focus + .sli-searchbox-textfield-underline {
-      background-position: left bottom;
-      background-color: #2D4D9C; }
-.parkcameras-sli-search .sli-searchbox-textfield-underline {
-  display: block;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(to right, #2D4D9C 34%, #ddd 65%);
-  background-size: 300% 100%;
-  background-position: right bottom;
-  transition: all 200ms linear;
-  clear: left; }
+    .parkcameras-sli-search input.sli_searchbox_textfield:focus {
+      width: 100% !important;
+      border: none;
+      background-color: #eee !important; }
+      .parkcameras-sli-search input.sli_searchbox_textfield:focus + .sli-searchbox-textfield-underline {
+        background-position: left bottom;
+        background-color: #2D4D9C; }
+  .parkcameras-sli-search .sli-searchbox-textfield-underline {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #2D4D9C 34%, #ddd 65%);
+    background-size: 300% 100%;
+    background-position: right bottom;
+    transition: all 200ms linear;
+    clear: left; }
 
-#sli_autocomplete {
-  width: calc(100% - 20px) !important; }
-  @media screen and (max-width: 529px) {
-    #sli_autocomplete {
-      margin-left: 0; } }
+@media screen and (max-width: 529px) {
+  #sli_autocomplete {
+    margin-left: 0; } }
+@media screen and (max-width: 768px) {
+  #sli_autocomplete {
+    width: calc(100% - 20px) !important; } }
 
 @media screen and (max-width: 529px) {
   html {

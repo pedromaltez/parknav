@@ -575,6 +575,7 @@ $gutter-small: 5px;
 /* PARK SPECIFIC AMENDMENTS */
 
 .parknav {
+  margin-top: 10px;
   a:not([href]) {
     cursor: pointer;
   }
@@ -641,7 +642,7 @@ $gutter-small: 5px;
           background: darken(#eee, 10%);
         }
         a {
-          padding: 0 9px;
+          padding: 9px 0;
           display: block;
         }
       }
@@ -651,6 +652,7 @@ $gutter-small: 5px;
 
 @media screen and (max-width:768px) {
   .parknav {
+    margin-top: 0;
     li {
       a {
         padding-left: 10px;
@@ -828,13 +830,18 @@ $gutter-small: 5px;
 }
 
 .parkcameras-sli-search {
-  @media screen and (max-width: 529px) {
-    input.sli_searchbox_textfield:focus {
-      width: 100% !important;
-    }
-  }
+  clear: left;
+  width: 60% !important;
+  position: relative;
+
+  // @media screen and (max-width: 529px) {
+  //   input.sli_searchbox_textfield:focus {
+  //     width: 100% !important;
+  //   }
+  // }
 
   @media screen and (max-width: 768px) {
+    clear: none;
     display: block;
     position: initial;
     width: 100% !important;
@@ -844,9 +851,6 @@ $gutter-small: 5px;
     input.sli_searchbox_textfield {
       width: 100% !important;
       float: left;
-      &:focus {
-        background-color: #eee;
-      }
     }
     .icon-search {
       position: relative;
@@ -859,13 +863,15 @@ $gutter-small: 5px;
   }
 
   input.sli_searchbox_textfield {
+    width: 100% !important;
+    margin: 0;
     -webkit-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
-    margin-bottom: 0;
     border: none;
     &:focus {
       width: 100% !important;
       border: none;
+      background-color: #eee !important;
       + .sli-searchbox-textfield-underline {
         background-position: left bottom;
         background-color: $parkblue;
@@ -892,9 +898,11 @@ $gutter-small: 5px;
 }
 
 #sli_autocomplete {
-  width: calc(100% - 20px) !important;
   @media screen and (max-width: 529px) {
-    margin-left: 0;
+    margin-left: 0;  
+  }
+  @media screen and (max-width: 768px) {
+    width: calc(100% - 20px) !important;
   }
 }
 
