@@ -531,8 +531,6 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
   border: 0;
   padding: 0;
   background: #eee; }
-  .parkcameras-top-header .strapline:hover {
-    background: #d5d5d5; }
   .parkcameras-top-header .strapline ul {
     display: flex; }
     .parkcameras-top-header .strapline ul li {
@@ -540,6 +538,8 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
       flex: auto;
       border: none;
       margin: 0; }
+      .parkcameras-top-header .strapline ul li:hover {
+        background: #d5d5d5; }
 
 @media screen and (max-width: 768px) {
   .parknav li a {
