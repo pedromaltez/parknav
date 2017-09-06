@@ -16,7 +16,8 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 			align: "left",
 			submenuTrigger: "hover",
 			scrollable: true,
-			scrollableMaxHeight: 400
+			scrollableMaxHeight: 400,
+			navExpandAtRes: 768
 		}
 		$.extend( settings, options );
 
@@ -39,7 +40,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 		screenSize();
 
 		$(window).resize(function() {
-			if(lastScreenWidth <= 767 && windowWidth() > 767){
+			if(lastScreenWidth <= settings.navExpandAtRes && windowWidth() > settings.navExpandAtRes){
 				unbindEvents();
 				hideCollapse();
 				bindHover();
@@ -48,7 +49,7 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 					bigScreen = true;
 				}
 			}
-			if(lastScreenWidth > 767 && windowWidth() <= 767){
+			if(lastScreenWidth > settings.navExpandAtRes && windowWidth() <= settings.navExpandAtRes){
 				unbindEvents();
 				showCollapse();
 				bindClick();
@@ -58,18 +59,18 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 				}
 			}
 			if(settings.align == "right"){
-				if(lastScreenWidth > 767 && windowWidth() > 767)
+				if(lastScreenWidth > settings.navExpandAtRes && windowWidth() > settings.navExpandAtRes)
 					fixSubmenuRight();
 			}
 			else{
-				if(lastScreenWidth > 767 && windowWidth() > 767)
+				if(lastScreenWidth > settings.navExpandAtRes && windowWidth() > settings.navExpandAtRes)
 					fixSubmenuLeft();
 			}
 			lastScreenWidth = windowWidth();
 		});
 
 		function screenSize(){
-			if(windowWidth() <= 767){
+			if(windowWidth() <= settings.navExpandAtRes){
 				showCollapse();
 				bindClick();
 				if(bigScreen == true){
