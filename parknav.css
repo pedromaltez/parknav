@@ -734,22 +734,22 @@ ITEM PAGE: http://codecanyon.net/item/jet-responsive-parknav-section/5719593
 #sli_autocomplete {
   margin-left: 10px !important;
   width: calc(100% - 20px) !important; }
-  @media screen and (max-width: 529px) {
+  @media screen and (min-width: 1129px) {
     #sli_autocomplete {
-      margin-left: 0; } }
-  @media screen and (max-width: 768px) {
-    #sli_autocomplete {
-      width: calc(100% - 20px) !important; } }
-  @media screen and (max-width: 949px) {
-    #sli_autocomplete {
-      width: 98% !important; } }
+      margin-left: 460px !important; } }
   @media screen and (max-width: 1128px) {
     #sli_autocomplete {
       width: 950px !important;
       margin-left: 0% !important; } }
-  @media screen and (min-width: 1129px) {
+  @media screen and (max-width: 949px) {
     #sli_autocomplete {
-      margin-left: 460px !important; } }
+      width: 98% !important; } }
+  @media screen and (max-width: 768px) {
+    #sli_autocomplete {
+      width: calc(100% - 20px) !important; } }
+  @media screen and (max-width: 529px) {
+    #sli_autocomplete {
+      margin-left: 0; } }
 
 @media screen and (max-width: 529px) {
   html {
