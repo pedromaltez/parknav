@@ -827,6 +827,40 @@ $gutter-small: 5px;
       }
     }
   }
+  .parkcameras-header-link {
+    color: #444;
+    background: #eee;
+    margin-left: 10px;
+    float: left;
+    position: relative;
+    right: -270px;
+    &:hover {
+      background-color: darken(#eee, 10%);
+    }
+    > li {
+      line-height: 40px;
+    }
+    .floatl, .floatr {
+      float: none;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      padding: 8px 15px;
+      .icon-user, .icon-location {
+        float: right;
+        margin-left: 10px;
+        padding-top: 2px;
+      }
+      .desk {}
+    }
+    .parkcameras-header-basket-container {
+      float: none;
+      position: relative;
+      right: -420px;
+      top: 45px;
+    }
+  }
 }
 
 .parkcameras-sli-search {
