@@ -619,9 +619,6 @@ $gutter-small: 5px;
   .parkcameras-shop-by-brand-dropdown {
     display: none;
   }
-  .parkcameras-header-links {
-    display: none;
-  }
   .strapline {
     width: 100%;
     margin: 0 !important;
@@ -837,9 +834,6 @@ $gutter-small: 5px;
     &:hover {
       background-color: darken(#eee, 10%);
     }
-    > li {
-      line-height: 40px;
-    }
     .floatl, .floatr {
       float: none;
     }
@@ -854,7 +848,7 @@ $gutter-small: 5px;
       }
       .desk {}
     }
-    .parkcameras-header-basket-container {
+    &.parkcameras-header-basket-container {
       float: none;
       position: relative;
       right: -420px;
