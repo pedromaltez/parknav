@@ -913,12 +913,17 @@ $gutter-small: 5px;
   }
   @media screen and (min-width: 1075px) {
     width: 965px !important;
-    margin-left: 370px !important;
-    margin-top: 0;
+    margin-left: 388px !important;
   }
   @media screen and (min-width: 1129px) {
-    margin-left: 460px !important;
+    width: 1140px !important;
+    margin-left: 0 !important;    
   }
+  @media screen and (min-width: 1255px) {
+    width: 1140px !important;
+    margin-left: 0 !important;    
+  }
+  margin-top: 0 !important;
   margin-left: 10px !important;
   width: calc(100% - 20px) !important;
 }
