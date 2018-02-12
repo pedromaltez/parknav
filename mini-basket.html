@@ -1,0 +1,71 @@
+<!--{container}-->
+<div class="parkcameras-header-basket-container miniBasket" id="sscMBC" rel="@SKININSTANCE">
+    <div class="notification view_mb" title="Basket">
+        <span aria-hidden="true" class="icon-cart3"></span>
+        <span class="items desk">@BASKETCOUNT</span>
+        <div class="total desk">@BASKETITEMSTOTAL</div>
+    </div>
+    <div class="mb_panel slide_content" id="miniBasket">
+        <ul class="product_list">
+            @ITEMS @SUMMARYITEMS
+        </ul>
+        @BUTTONS
+    </div>
+    <div class="checkout-link desk" title="Checkout">
+        <a class="checkout btn" href="/checkout-process">Checkout</a>
+    </div>
+</div>
+<!--{end}-->
+<!--{item}-->
+<li class="product @CSSCLASS">
+    <ul class="@INDEX">
+        <li class="remove_product">
+            <span aria-hidden="true" class="icon-remove" onclick="removeFromBasket('true', @BASKETPRODUCTID);"></span>
+        </li>
+        <li class="product_thumb"><a href="@PRODUCTHREF" title="link to @PRODUCTNAME"><img alt="@PRODUCTNAME thumbnail" class="prodImg" itemprop="image" src="@PRODUCTIMAGE"/></a></li>
+        <li class="prod_desc">
+            <h4 class="productname"><a href="@PRODUCTHREF" title="link to @PRODUCTNAME">@PRODUCTNAME</a></h4>
+        </li>
+        <li class="product_qty">@QTYSELECTOR</li>
+        <li class="productprice price">@LINETOTAL</li>
+    </ul>
+    @FORMVALUES
+</li>
+<!--{end}-->
+<!--{noitem}-->
+<div style="width:100%">
+    <ul>
+        <li>
+            <h4 class="productname">Sorry, there are no items in your basket</h4>
+        </li>
+    </ul>
+</div>
+<!--{end}-->
+<!--{repeater}-->
+<li class="product saving">
+    <ul>
+        <li class="delivery_title">@SAVINGTEXT</li>
+        <li class="delivery_total price">@SAVINGAMOUNT</li>
+    </ul>
+</li>
+<li class="delivery">
+    <ul>
+        <li class="delivery_title">@DELIVERYTEXT</li>
+        <li class="delivery_total price">@ESTDELIVERY</li>
+    </ul>
+</li>
+<li class="total_row">
+    <ul>
+        <li class="total_title">Total</li>
+        <li class="total_qty">@BASKETCOUNT</li>
+        <li class="total_price price">@BASKETITEMSTOTAL</li>
+    </ul>
+</li>
+<!--{end}-->
+<!--{norepeater}-->
+<footer class="mini_basket_utilities">
+    <div style="display: inline-flex;"><a class="my_basket btn" href="/basket">View basket</a></div>
+    <div style="float: right; display: inline;"><a class="checkout_now btn" href="/checkout-process">Checkout</a></div>
+</footer>
+<p class="span12 promoText"><a href="/popup/delivery-details" rel="popsmall">FREE DELIVERY ON ORDERS OVER £50*</a></p>
+<!--{end}-->
