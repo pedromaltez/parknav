@@ -790,7 +790,7 @@ padding: 10px 16px;
 
   .parkcameras-header-link {
     &.parkcameras-header-stores {
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 829px) {
         display: none;
       }
       @media screen and (max-width: 768px) {
@@ -884,7 +884,7 @@ padding: 10px 16px;
       }
     }
     &.parkcameras-header-logout {
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 600px) {
         display: none;
       }
     }
