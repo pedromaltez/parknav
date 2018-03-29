@@ -1109,15 +1109,24 @@ padding: 10px 16px;
       width: 100% !important;
       float: left;
     }
-    .icon-search {
-      position: relative;
-      top: -42px;
-      left: 0px;
-      height: 40px;
-      line-height: 32px;
-      float: right;
+  }
+
+  .icon-search {
+    padding: 0 !important;
+    top: 10px;
+    right: 14px;
+    width: 25px;
+
+    @media screen and (max-width: 768px) {
+      top: 20px;
+      right: 20px;
+    }
+    @media screen and (max-width: 529px) {
+      top: 14px;
     }
   }
+
+
 
   input.sli_searchbox_textfield {
     width: 100% !important;
@@ -1286,15 +1295,15 @@ padding: 10px 16px;
   margin-top: 10px;
 }
 
-.parkcameras-top-header + div {
-  @media screen and (max-width: 768px) {
-    position: relative;
-    top: -30px;
-  }
-  @media screen and (max-width: 529px) {
-    top: -35px;
-  }
-}
+// .parkcameras-top-header + div {
+//   @media screen and (max-width: 768px) {
+//     position: relative;
+//     top: -30px;
+//   }
+//   @media screen and (max-width: 529px) {
+//     top: -35px;
+//   }
+// }
 
 .container.parkcameras-homepage-container {
   @media screen and (max-width: 768px) {
